@@ -62,7 +62,7 @@ Here's where you'll put your code. The syntax below places it into a block of co
 --->
 
 # Starter Project
-<iframe width="560" height="315" src="https://www.youtube.com/embed/65kjtID0ET0?si=CWNScLps4HqkB2Pt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/65kjtID0ET0?si=NultT1yZJ1nP4REx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 I chose the retro arcade as my starter project because it allows me to play classic games like Tetris using a simple display and arcade-style buttons. The purpose of this project was to help me master soldering various components, such as a display, buttons, a power switch, and wires. To build it, I first started by soldering the various components of my project on my board, and then screwing a case to finish it off. 
 
