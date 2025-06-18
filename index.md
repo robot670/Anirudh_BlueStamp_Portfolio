@@ -1,7 +1,7 @@
 # Robotic Arm
-Replace this text with a brief description (2-3 sentences) of your project. This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails!
+<!---Replace this text with a brief description (2-3 sentences) of your project. This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails!
 
-You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions:
+You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions: -->
 ```HTML 
 <!--- This is an HTML comment in Markdown -->
 <!--- Anything between these symbols will not render on the published site -->
@@ -11,6 +11,7 @@ You should comment out all portions of your portfolio that you have not complete
 |:--:|:--:|:--:|:--:|
 | Anirudh K. | Mission San Jose High School | Mechanical Engineering | Incoming Junior
 
+<!--- 
 **Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**
 
 ![Headstone Image](logo.svg)
@@ -26,11 +27,11 @@ For your final milestone, explain the outcome of your project. Key details to in
 - What your biggest challenges and triumphs were at BSE
 - A summary of key topics you learned about
 - What you hope to learn in the future after everything you've learned at BSE
-
+--->
 
 
 # Second Milestone
-
+<!---
 **Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -40,9 +41,9 @@ For your second milestone, explain what you've worked on since your previous mil
 - What has been surprising about the project so far
 - Previous challenges you faced that you overcame
 - What needs to be completed before your final milestone 
-
+--->
 # First Milestone
-
+<!---
 **Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CaCazFBhYKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -58,6 +59,20 @@ Here's where you'll put images of your schematics. [Tinkercad](https://www.tinke
 
 # Code
 Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
+--->
+
+# Starter Project
+<iframe width="560" height="315" src="https://www.youtube.com/embed/65kjtID0ET0?si=CWNScLps4HqkB2Pt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+I chose the retro arcade as my starter project because it allows me to play classic games like Tetris using a simple display and arcade-style buttons. The purpose of this project was to help me master soldering various components, such as a display, buttons, a power switch, and wires. To build it, I first started by soldering the various components of my project on my board, and then screwing a case to finish it off. 
+
+One of the main challenges of building my retro arcade starter project was the very small spaces between the pins I needed to solder, meaning that small mistakes could ruin the whole project and would be very difficult to fix. To solve this project, I practiced with multiple pin strips to make my soldering consistent enough to prevent any mistakes. This alllowed me to have perfect solders for my whole starter project. 
+
+My next step is for me to start on my intensive project and to work towards my first milestone.
+- Build the hardware of the robotic arm
+- Learn how to code the servos
+- Code the servos. Assign servo movements to buttons
+
 
 ```c++
 void setup() {
