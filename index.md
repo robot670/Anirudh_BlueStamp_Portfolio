@@ -9,7 +9,7 @@ You should comment out all portions of your portfolio that you have not complete
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
-| Anirudh K. | Mission San Jose High School | Mechanical Engineering | Incoming Junior
+| Anirudh K. | Mission San Jose High School | Mechanical Engineering | Incoming Junior |
 
 <!--- 
 **Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**
@@ -33,6 +33,7 @@ For your final milestone, explain the outcome of your project. Key details to in
 # Second Milestone
 
 **Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
+<img width="620" alt="image" src="https://github.com/user-attachments/assets/7932a065-1669-4438-b0e5-6967948c5735" /> #This is my 2nd milestone schematic
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -42,35 +43,68 @@ For your second milestone, explain what you've worked on since your previous mil
 - Previous challenges you faced that you overcame
 - What needs to be completed before your final milestone 
 --->
-<!---
+
 # First Milestone
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AHl8VPL7Uiw?si=0OXPjJc_zpjvnt9N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CaCazFBhYKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+**Description**
 
-For your first milestone, describe what your project is and how you plan to build it. You can include:
-- An explanation about the different components of your project and how they will all integrate together
-- Technical progress you've made so far
-- Challenges you're facing and solving in your future milestones
-- What your plan is to complete your project
+For my first milestone, I completed the hardware of the robotic arm. I attached the servos, joysticks, and batteries to the Arduino. Using code that resets my servo positions to 90 degrees, I tested my servo movements. I also tested my joysticks by checking their inputs. I soldered a 5-pack battery pack to power my robotic arm. I used zip-ties to prevent tangling while keeping my wires together and more organized.
 
-# Schematics 
-Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
+**Challenges**
 
-# Code
-Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
---->
+One of my biggest challenges was that my LK Cokoinno MG90S servos were not working. I found that while my Tower Pro MG90S Mini Servo for my turret base was working, the LK Cokoinno MG90S servos did not have enough power because my batteries did not provide enough voltage. To solve this, I broke down my battery pack and used its wires along with another battery pack by soldering them together. This new battery pack has space for 5 AA batteries, allowing my robotic arm to have enough voltage for all of my servos. 
+Another challenge that I had was with my servo screws. These scerws are necesary to attach the servos to the arm's components, but they often got stripped, making it very difficult to attach. To solve this, I had to use pliers to gain enough torque to turn the head of the stripped screws.
+
+**Next Steps**
+
+My next steps are to assign inputs from the joystick to move the servos to various positions instead of a preset position. This would allow me to use the joysticks to precisely control my robotic arm. After completing my movement, I will start using Bluetooth to control my robot with my phone using a Bluetooth module and a Bluetooth Serial Terminal. I also want to add buttons to my controller that bring my arm to preset positions. 
+
+**Schematics** 
+
+<img width="518" alt="image" src="https://github.com/user-attachments/assets/8a145ea6-2797-4459-b633-0523e45cb15b" />
+
+Figure 1: This is the wiring schematic for the battery, joysticks, and servos connected to the Arduino.
+
+**Code**
+
+```c++
+#include<Servo.h>
+Servo myservo1;  // Create a servo class
+Servo myservo2;  // Create a servo class
+Servo myservo3;  // Create a servo class
+Servo myservo4;  // Create a servo class
+
+void setup() {  
+myservo1.attach(4);  //Set the servo control pin as D4
+myservo2.attach(5);  //Set the servo control pin as D5
+myservo3.attach(6);  //Set the servo control pin as D6
+myservo4.attach(7);  //Set the servo control pin as D7
+delay(100);          //delay 100ms 
+}
+/////////////////////////////////////////////////////////
+void loop() {
+ myservo1.write(90);  //The servo is 90 degrees
+ myservo2.write(90);  //The servo is 90 degrees
+ myservo3.write(90);  //The servo is 90 degrees
+ myservo4.write(90);  //The servo is 90 degrees
+ delay(1000);
+ }
+```
 
 # Starter Project
 <iframe width="560" height="315" src="https://www.youtube.com/embed/65kjtID0ET0?si=NultT1yZJ1nP4REx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-# Description
+**Description**
+
 I chose the retro arcade as my starter project because it allows me to play classic games like Tetris using a simple display and arcade-style buttons. The purpose of this project was to help me master soldering various components, such as a display, buttons, a power switch, and wires. To build it, I first started by soldering the various components of my project on my board, and then screwing a case to finish it off. 
 
-# Challenges
+**Challenges**
+
 One of the main challenges of building my retro arcade starter project was the very small spaces between the pins I needed to solder, meaning that small mistakes could ruin the whole project and would be very difficult to fix. To solve this project, I practiced with multiple pin strips to make my soldering consistent enough to prevent any mistakes. This alllowed me to have perfect solders for my whole starter project. 
 
-# Next Steps
+**Next Steps**
+
 My next step is for me to start on my intensive project and to work towards my first milestone.
 - Build the hardware of the robotic arm
 - Learn how to code the servos
