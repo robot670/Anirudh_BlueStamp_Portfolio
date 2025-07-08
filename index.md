@@ -44,13 +44,14 @@ For your second milestone, explain what you've worked on since your previous mil
 - What needs to be completed before your final milestone 
 --->
 # Second Milestone
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PIYOtmZmPDk?si=pDYBdSPcMP7ViUBq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 **Description**
+For my second milestone, I coded servo movements, allowing me to precicely control servo positions. I also added an HCO-5 Bluetooth module to send inputs from my phone to the Arduino. To do this, I made an app on MIT App Inventor with buttons coded to send number inputs to the Arduino. The Arduino then uses the inputs to send commands to the servos, moving the arm. 
 
 How does the HCO 5 work
 
 **Challenges**
-
+One of my biggest challenges was 
 
 **Next Steps**
 
@@ -65,12 +66,14 @@ How does the HCO 5 work
 
 **Description**
 
-For my first milestone, I completed the hardware of the robotic arm. I wired the servos, joysticks, and batteries to the Arduino. Using code that resets my servo positions to 90 degrees, I tested my servo movements. I also tested my joysticks by checking their inputs. I soldered a 5-pack battery pack to power my robotic arm. I used zip-ties to prevent tangling while keeping my wires together and more organized.
+For my first milestone, I completed the hardware of the robotic arm. I wired the servos, joysticks, and batteries to the Arduino (Figure 1). Using code that resets my servo positions to 90 degrees, I tested my servo movements. I also tested my joysticks by checking their inputs. I soldered a 5-pack battery pack to power my robotic arm. I used zip-ties to prevent tangling while keeping my wires together and more organized (Figure 2).
 
 
 **How it works**
-This servo uses a potentiometer, which calculates resistance changes based on the position to calculate the servo's current angle. This allows the arm to reset to 90 degrees precisely and only move as much as needed. The potentiometer can see the current position, to help fix any errors from what the angle should be.
+
+This servo uses a potentiometer, which calculates resistance changes based on the position to calculate the servo's current angle. This allows the arm to reset to 90 degrees precisely and only move as much as needed. Using the information from the potentiometer, a feedback loop helps maintain the commanded servo position.
 Servos use electromagnets that repel a permanent magnet to rotate an axle. The polarity of the electromagnet is constantly flipped by a commutator to coninously repel the permanent magnet, allowing for continuous rotation. The torque of the servo is directly proportional to the current provided to the motor. This is because an increased current increases the magnetic force inside the servo motor, increasing the torque. Similarly, an increase in voltage will increase the RPM. This allows all the servos on the arm to move the arm correctly and efficiently.
+Servos use 3 wires to connect to the Arduino. The red wire is for power, the brown for ground, and the yellow for signal. The signal wire receives PWM (Pulse-Width-Modulation) pulses that tell the servo what position to move to (Figure 3).
 Similar to servos, joysticks work using potentiometers, which allow them to track the movement of the joystick. The rotation of the joystick on the 2 axes gets calculated in the x-y plane and is given as values that are sent to the Arduino to move servos on the arm. 
 
 
@@ -79,17 +82,25 @@ Similar to servos, joysticks work using potentiometers, which allow them to trac
 One of my biggest challenges was that my LK Cokoino MG90S servos were not working. I found that while my Tower Pro MG90S Mini Servo for my turret base was working, the LK Cokoinno MG90S servos did not have enough power because my batteries did not provide enough voltage. To solve this, I broke down my battery pack and used its wires along with another battery pack by soldering them together. This new battery pack has space for 5 AA batteries, allowing my robotic arm to have enough voltage for all of my servos. 
 Another challenge that I had was with my servo screws. These screws are necessary to attach the servos to the arm's components, but they often got stripped, making them very difficult to attach. To solve this, I had to use pliers to gain enough torque to turn the head of the stripped screws.
 
+
 **Next Steps**
 
 My next steps are to assign inputs from the joystick to move the servos to various positions instead of a preset position. This would allow me to use the joysticks to precisely control my robotic arm. After completing my movement, I will start using Bluetooth to control my robot with my phone using a Bluetooth module and a Bluetooth Serial Terminal. I also want to add buttons to my controller that bring my arm to preset positions. 
 
-**Schematics** 
+
+**Pictures** 
 
 <img width="518" alt="image" src="https://github.com/user-attachments/assets/8a145ea6-2797-4459-b633-0523e45cb15b" />
 
-Figure 1: This is the wiring schematic for the battery, joysticks, and servos connected to the Arduino.
+Figure 1: Wiring schematic for the battery, joysticks, and servos connected to the Arduino
 
-**Code**
+![PXL_20250708_183658120](https://github.com/user-attachments/assets/a0bdf4d0-151a-401f-9dfb-f3c459c85553)
+
+Figure 2: All of the parts of the robotic arm are wired and attached
+
+![PXL_20250708_214953169](https://github.com/user-attachments/assets/2ea48c21-509f-4eed-8951-395abc9eaf3b)
+
+Figure 3: Close-up of the servos and wiring of the servos
 
 
 
@@ -98,13 +109,15 @@ Figure 1: This is the wiring schematic for the battery, joysticks, and servos co
 
 **Description**
 
-I chose the retro arcade as my starter project because it allows me to play classic games like Tetris using a simple display and arcade-style buttons. The purpose of this project was to help me master soldering various components, such as a display, buttons, a power switch, and wires. To build it, I first started by soldering the various components of my project on my board, and then screwing a case to finish it off. 
+I chose the retro arcade as my starter project because it allows me to play classic games like Tetris using a simple display and arcade-style buttons. The purpose of this project was to help me master soldering various components, such as a display, buttons, a power switch, and wires. To build it, I first started by soldering the various components of my project on my board and then screwing a case to finish it off. 
 
 **Challenges**
+
 
 One of the main challenges of building my retro arcade starter project was the very small spaces between the pins I needed to solder, meaning that small mistakes could ruin the whole project and would be very difficult to fix. To solve this project, I practiced with multiple pin strips to make my soldering consistent enough to prevent any mistakes. This alllowed me to have perfect solders for my whole starter project. 
 
 **Next Steps**
+
 
 My next step is for me to start on my intensive project and to work towards my first milestone.
 - Build the hardware of the robotic arm
@@ -140,6 +153,7 @@ void loop() {
 ```
 
 # Second Milestone
+For this milestone, I added the functionality of controlling my robotic arm with my phone through an app I made on MIT App Inventor, and a Bluetooth HCO-5 module. 
 ```c++
 
 //Uses the Software Serial and the Bluetooth Serial for the Bluetooth functionality
@@ -224,18 +238,6 @@ delayMicroseconds(10);                       // Delays for 10 microseconds to pr
 }
 ```
 
-```c++
-void setup() {
-  // put your setup code here, to run once:
-  Serial.begin(9600);
-  Serial.println("Hello World!");
-}
-
-void loop() {
-  // put your main code here, to run repeatedly:
-
-}
-```
 <!---
 # Bill of Materials
 
