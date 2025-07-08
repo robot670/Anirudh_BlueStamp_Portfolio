@@ -46,7 +46,7 @@ For your second milestone, explain what you've worked on since your previous mil
 # Second Milestone
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PIYOtmZmPDk?si=pDYBdSPcMP7ViUBq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 **Description**
-For my second milestone, I coded servo movements, allowing me to precicely control servo positions. I also added an HCO-5 Bluetooth module to send inputs from my phone to the Arduino. To do this, I made an app on MIT App Inventor with buttons coded to send number inputs to the Arduino. The Arduino then uses the inputs to send commands to the servos, moving the arm. 
+For my second milestone, I coded servo movements, allowing me to precisely control servo positions. I also added an HCO-5 Bluetooth module to send inputs from my phone to the Arduino. To do this, I made an app on MIT App Inventor with buttons coded to send number inputs to the Arduino. The Arduino then uses the inputs to send commands to the servos, moving the arm. 
 
 How does the HCO 5 work
 
@@ -72,7 +72,7 @@ For my first milestone, I completed the hardware of the robotic arm. I wired the
 **How it works**
 
 This servo uses a potentiometer, which calculates resistance changes based on the position to calculate the servo's current angle. This allows the arm to reset to 90 degrees precisely and only move as much as needed. Using the information from the potentiometer, a feedback loop helps maintain the commanded servo position.
-Servos use electromagnets that repel a permanent magnet to rotate an axle. The polarity of the electromagnet is constantly flipped by a commutator to coninously repel the permanent magnet, allowing for continuous rotation. The torque of the servo is directly proportional to the current provided to the motor. This is because an increased current increases the magnetic force inside the servo motor, increasing the torque. Similarly, an increase in voltage will increase the RPM. This allows all the servos on the arm to move the arm correctly and efficiently.
+Servos use electromagnets that repel a permanent magnet to rotate an axle. The polarity of the electromagnet is constantly flipped by a commutator to coninously repel the permanent magnet, allowing for continuous rotation. The torque of the servo is directly proportional to the current provided to the motor. This is because an increased current increases the magnetic force inside the servo motor, increasing the torque. Similarly, an increase in voltage will increase the RPM. This allows all the servos on the arm to move the arm correctly and efficiently (Figure 4).
 Servos use 3 wires to connect to the Arduino. The red wire is for power, the brown for ground, and the yellow for signal. The signal wire receives PWM (Pulse-Width-Modulation) pulses that tell the servo what position to move to (Figure 3).
 Similar to servos, joysticks work using potentiometers, which allow them to track the movement of the joystick. The rotation of the joystick on the 2 axes gets calculated in the x-y plane and is given as values that are sent to the Arduino to move servos on the arm. 
 
@@ -102,6 +102,9 @@ Figure 2: All of the parts of the robotic arm are wired and attached
 
 Figure 3: Close-up of the servos and wiring of the servos
 
+![image](https://github.com/user-attachments/assets/075510f8-5338-4475-beb7-d9ceade39a69)
+
+Figure 4: Servo schematic
 
 
 # Starter Project
