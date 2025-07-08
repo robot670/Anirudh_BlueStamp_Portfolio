@@ -47,6 +47,7 @@ For your second milestone, explain what you've worked on since your previous mil
 
 **Description**
 
+How does the HCO 5 work
 
 **Challenges**
 
@@ -64,16 +65,19 @@ For your second milestone, explain what you've worked on since your previous mil
 
 **Description**
 
-For my first milestone, I completed the hardware of the robotic arm. I attached the servos, joysticks, and batteries to the Arduino. Using code that resets my servo positions to 90 degrees, I tested my servo movements. I also tested my joysticks by checking their inputs. I soldered a 5-pack battery pack to power my robotic arm. I used zip-ties to prevent tangling while keeping my wires together and more organized.
+For my first milestone, I completed the hardware of the robotic arm. I wired the servos, joysticks, and batteries to the Arduino. Using code that resets my servo positions to 90 degrees, I tested my servo movements. I also tested my joysticks by checking their inputs. I soldered a 5-pack battery pack to power my robotic arm. I used zip-ties to prevent tangling while keeping my wires together and more organized.
 
-I am using LK Cokoino MG90S micro DC servos to control the different parts of the arm.  How do servos work
-How do joysticks work
-How does the HCO 5 work
+
+**How it works**
+This servo uses a potentiometer, which calculates resistance changes based on the position to calculate the servo's current angle. This allows the arm to reset to 90 degrees precisely and only move as much as needed. The potentiometer can see the current position, to help fix any errors from what the angle should be.
+Servos use electromagnets that repel a permanent magnet to rotate an axle. The polarity of the electromagnet is constantly flipped by a commutator to coninously repel the permanent magnet, allowing for continuous rotation. The torque of the servo is directly proportional to the current provided to the motor. This is because an increased current increases the magnetic force inside the servo motor, increasing the torque. Similarly, an increase in voltage will increase the RPM. This allows all the servos on the arm to move the arm correctly and efficiently.
+Similar to servos, joysticks work using potentiometers, which allow them to track the movement of the joystick. The rotation of the joystick on the 2 axes gets calculated in the x-y plane and is given as values that are sent to the Arduino to move servos on the arm. 
+
 
 **Challenges**
 
-One of my biggest challenges was that my LK Cokoinno MG90S servos were not working. I found that while my Tower Pro MG90S Mini Servo for my turret base was working, the LK Cokoinno MG90S servos did not have enough power because my batteries did not provide enough voltage. To solve this, I broke down my battery pack and used its wires along with another battery pack by soldering them together. This new battery pack has space for 5 AA batteries, allowing my robotic arm to have enough voltage for all of my servos. 
-Another challenge that I had was with my servo screws. These scerws are necesary to attach the servos to the arm's components, but they often got stripped, making it very difficult to attach. To solve this, I had to use pliers to gain enough torque to turn the head of the stripped screws.
+One of my biggest challenges was that my LK Cokoino MG90S servos were not working. I found that while my Tower Pro MG90S Mini Servo for my turret base was working, the LK Cokoinno MG90S servos did not have enough power because my batteries did not provide enough voltage. To solve this, I broke down my battery pack and used its wires along with another battery pack by soldering them together. This new battery pack has space for 5 AA batteries, allowing my robotic arm to have enough voltage for all of my servos. 
+Another challenge that I had was with my servo screws. These screws are necessary to attach the servos to the arm's components, but they often got stripped, making them very difficult to attach. To solve this, I had to use pliers to gain enough torque to turn the head of the stripped screws.
 
 **Next Steps**
 
