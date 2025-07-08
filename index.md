@@ -43,6 +43,21 @@ For your second milestone, explain what you've worked on since your previous mil
 - Previous challenges you faced that you overcame
 - What needs to be completed before your final milestone 
 --->
+# Second Milestone
+
+**Description**
+
+
+**Challenges**
+
+
+**Next Steps**
+
+
+**Schematics**
+<img width="586" alt="image" src="https://github.com/user-attachments/assets/6a21205d-fbb4-4105-baa7-18da039e251b" />
+
+
 
 # First Milestone
 <iframe width="560" height="315" src="https://www.youtube.com/embed/AHl8VPL7Uiw?si=0OXPjJc_zpjvnt9N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -50,6 +65,10 @@ For your second milestone, explain what you've worked on since your previous mil
 **Description**
 
 For my first milestone, I completed the hardware of the robotic arm. I attached the servos, joysticks, and batteries to the Arduino. Using code that resets my servo positions to 90 degrees, I tested my servo movements. I also tested my joysticks by checking their inputs. I soldered a 5-pack battery pack to power my robotic arm. I used zip-ties to prevent tangling while keeping my wires together and more organized.
+
+I am using LK Cokoino MG90S micro DC servos to control the different parts of the arm.  How do servos work
+How do joysticks work
+How does the HCO 5 work
 
 **Challenges**
 
@@ -67,6 +86,30 @@ My next steps are to assign inputs from the joystick to move the servos to vario
 Figure 1: This is the wiring schematic for the battery, joysticks, and servos connected to the Arduino.
 
 **Code**
+
+
+
+# Starter Project
+<iframe width="560" height="315" src="https://www.youtube.com/embed/65kjtID0ET0?si=NultT1yZJ1nP4REx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+**Description**
+
+I chose the retro arcade as my starter project because it allows me to play classic games like Tetris using a simple display and arcade-style buttons. The purpose of this project was to help me master soldering various components, such as a display, buttons, a power switch, and wires. To build it, I first started by soldering the various components of my project on my board, and then screwing a case to finish it off. 
+
+**Challenges**
+
+One of the main challenges of building my retro arcade starter project was the very small spaces between the pins I needed to solder, meaning that small mistakes could ruin the whole project and would be very difficult to fix. To solve this project, I practiced with multiple pin strips to make my soldering consistent enough to prevent any mistakes. This alllowed me to have perfect solders for my whole starter project. 
+
+**Next Steps**
+
+My next step is for me to start on my intensive project and to work towards my first milestone.
+- Build the hardware of the robotic arm
+- Learn how to code the servos
+- Code the servos. Assign servo movements to buttons
+
+# Appendix
+
+# First Milestone
 
 ```c++
 #include<Servo.h>
@@ -92,24 +135,90 @@ void loop() {
  }
 ```
 
-# Starter Project
-<iframe width="560" height="315" src="https://www.youtube.com/embed/65kjtID0ET0?si=NultT1yZJ1nP4REx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+# Second Milestone
+```c++
 
-**Description**
+//Uses the Software Serial and the Bluetooth Serial for the Bluetooth functionality
+#include <SoftwareSerial.h>
+SoftwareSerial Phone (2,3);
 
-I chose the retro arcade as my starter project because it allows me to play classic games like Tetris using a simple display and arcade-style buttons. The purpose of this project was to help me master soldering various components, such as a display, buttons, a power switch, and wires. To build it, I first started by soldering the various components of my project on my board, and then screwing a case to finish it off. 
+//Uses the library for the servo/arm that moves, reads, and sets the position of the servos.
+#include "src/CokoinoArm.h"
+CokoinoArm arm;
 
-**Challenges**
+//Declares the inputs that are read in the Bluetooth serial
+char values;
 
-One of the main challenges of building my retro arcade starter project was the very small spaces between the pins I needed to solder, meaning that small mistakes could ruin the whole project and would be very difficult to fix. To solve this project, I practiced with multiple pin strips to make my soldering consistent enough to prevent any mistakes. This alllowed me to have perfect solders for my whole starter project. 
+//Servo and bluetooth setup
+void setup() {
+  arm.ServoAttach(4,5,6,7);                   //arm of servo motor connection pins
+  Serial.begin(38400);
+    Phone.begin(9600);
+}
 
-**Next Steps**
+//Runs repeatedly
+void loop() {
 
-My next step is for me to start on my intensive project and to work towards my first milestone.
-- Build the hardware of the robotic arm
-- Learn how to code the servos
-- Code the servos. Assign servo movements to buttons
+//Looks for inputs in the Bluetooth serial
+if (Phone.available()>0){
+  values = Phone.read();                      // Reads the values from the Bluetooth serial and saves them as the variable "values" 
+    Serial.print(values);
+}
 
+//Moves the arm down when input is 1
+if (values == '1'){
+  arm.down(45);                               //(#) is the speed of the servo movement
+}
+
+//Moves the arm up when input is 2
+if (values == '2'){
+  arm.up(45);
+}
+
+//Moves the turret to the right when input is 3
+if (values == '3'){
+  arm.right(10);
+}
+
+//Moves the turret to the left when input is 4
+if (values == '4'){
+  arm.left(10);
+}
+
+//Opens the claw when input is 5
+if (values == '5'){
+  arm.open(10);
+}
+
+//Closes the claw when input is 6
+if (values == '6'){
+  arm.close(10);
+  }
+
+}
+
+//If the buttons are unpressed, the input will be 8, which makes the servos stop moving
+if (values == '8'){ 
+  arm.down(0);
+  arm.up(0);
+  arm.right(0);
+  arm.left(0);
+  arm.open(0);
+  arm.close(0);
+}
+
+//Resets all servos
+if (values == '7'){
+  arm.servo1.write(90);                      //Servo set to 90 degrees
+  arm.servo2.write(90);
+  arm.servo3.write(90);
+  arm.servo4.write(90);
+}
+
+
+delayMicroseconds(10);                       // Delays for 10 microseconds to prevent too many inputs at once
+}
+```
 
 ```c++
 void setup() {
