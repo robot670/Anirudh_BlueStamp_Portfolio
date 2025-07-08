@@ -46,15 +46,21 @@ For your second milestone, explain what you've worked on since your previous mil
 # Second Milestone
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PIYOtmZmPDk?si=pDYBdSPcMP7ViUBq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 **Description**
-For my second milestone, I coded servo movements, allowing me to precisely control servo positions. I also added an HCO-5 Bluetooth module to send inputs from my phone to the Arduino. To do this, I made an app on MIT App Inventor with buttons coded to send number inputs to the Arduino. The Arduino then uses the inputs to send commands to the servos, moving the arm. 
+For my second milestone, I coded servo movements, allowing me to precisely control servo positions. I also added an HCO-5 Bluetooth module to send inputs from my phone to the Arduino. To do this, I made an app on MIT App Inventor with buttons coded to send number inputs to the Arduino. The Arduino then uses the inputs to send commands to the servos, moving the arm. These inputs. I have 1 button to connect to my HCO-5 module, 6 buttons for various arm movements (up, down, left, right, open, close), and 1 button to reset my servos. During this milestone, I improved my battery pack by mounting it to the base of the robotic arm, simplifying my design.  
 
-How does the HCO 5 work
+**How it works**
+
+The HCO-5 Bluetooth module communicates with microcontrollers such as Arduino to recieve commands from my phone through Classic Bluetooth. It acts as a bridge between my phone and the Arduino, receiving  information as bytes, which are then sent to the Arduino. For my robot, when a button was pressed on my phone, it would send a number to the HCO-5 Bluetooth module, which was then received by the Arduino. The Arduino then uses that input and executes the command. For example, the button that moves the arm down would send an input of 1. The Arduiino will recieve this input, and command the servos (2 and 3) to move to bring the arm down.   
 
 **Challenges**
-One of my biggest challenges was 
+One of my biggest challenges was that when I pressed a button, the servo would keep moving, even when I unpressed the button. This would go on until I pressed another button. To work around this problem, I made a button that stops all servos. However, this was not like a joystick, which I wanted to emulate with these buttons. However, I found that I can use the button touch-down and touch-up commands on the MIT App Inventor to give an input that commands the servos to stop moving when the buttons are unpressed. 
+
+While attaching my HCO-5 Bluetooth module, I used a breadboard to connect all of the pins and to make a voltage divider from 5.0V to 3.3V. However, the wires often fell out, so I had to reattach them many times. However, I saw that the working voltage of the HCO-5 Bluetooth module was from 3.3-6.0V, which allowed me to get rid of the voltage divider and the breadboard, making my wiring much more simple and easy to work with. 
+
+
 
 **Next Steps**
-
+For my next steps, I plan on 
 
 **Schematics**
 <img width="586" alt="image" src="https://github.com/user-attachments/assets/6a21205d-fbb4-4105-baa7-18da039e251b" />
@@ -72,8 +78,11 @@ For my first milestone, I completed the hardware of the robotic arm. I wired the
 **How it works**
 
 This servo uses a potentiometer, which calculates resistance changes based on the position to calculate the servo's current angle. This allows the arm to reset to 90 degrees precisely and only move as much as needed. Using the information from the potentiometer, a feedback loop helps maintain the commanded servo position.
-Servos use electromagnets that repel a permanent magnet to rotate an axle. The polarity of the electromagnet is constantly flipped by a commutator to coninously repel the permanent magnet, allowing for continuous rotation. The torque of the servo is directly proportional to the current provided to the motor. This is because an increased current increases the magnetic force inside the servo motor, increasing the torque. Similarly, an increase in voltage will increase the RPM. This allows all the servos on the arm to move the arm correctly and efficiently (Figure 4).
+
+Servos use electromagnets that repel a permanent magnet to rotate an axle. The polarity of the electromagnet is constantly flipped by a commutator to continuously repel the permanent magnet, allowing for continuous rotation (Figure 4). The torque of the servo is directly proportional to the current provided to the motor. This is because an increased current increases the magnetic force inside the servo motor, increasing the torque. Similarly, an increase in voltage will increase the RPM. This allows all the servos on the arm to move the arm correctly and efficiently.
+
 Servos use 3 wires to connect to the Arduino. The red wire is for power, the brown for ground, and the yellow for signal. The signal wire receives PWM (Pulse-Width-Modulation) pulses that tell the servo what position to move to (Figure 3).
+
 Similar to servos, joysticks work using potentiometers, which allow them to track the movement of the joystick. The rotation of the joystick on the 2 axes gets calculated in the x-y plane and is given as values that are sent to the Arduino to move servos on the arm. 
 
 
