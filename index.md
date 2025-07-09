@@ -1,4 +1,4 @@
-# Robotic Arm
+![image](https://github.com/user-attachments/assets/76599589-0fc2-4672-a08f-4e296f956be5)# Robotic Arm
 <!---Replace this text with a brief description (2-3 sentences) of your project. This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails!
 
 You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions: -->
@@ -45,14 +45,19 @@ For your second milestone, explain what you've worked on since your previous mil
 --->
 # Second Milestone
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PIYOtmZmPDk?si=pDYBdSPcMP7ViUBq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
 **Description**
-For my second milestone, I coded servo movements, allowing me to precisely control servo positions. I also added an HCO-5 Bluetooth module to send inputs from my phone to the Arduino. To do this, I made an app on MIT App Inventor with buttons coded to send number inputs to the Arduino. The Arduino then uses the inputs to send commands to the servos, moving the arm. These inputs. I have 1 button to connect to my HCO-5 module, 6 buttons for various arm movements (up, down, left, right, open, close), and 1 button to reset my servos. During this milestone, I improved my battery pack by mounting it to the base of the robotic arm, simplifying my design.  
+
+For my second milestone, I coded servo movements, allowing me to precisely control servo positions. I also added an HCO-5 Bluetooth module to send inputs from my phone to the Arduino. To do this, I made an app on MIT App Inventor with buttons coded to send number inputs to the Arduino. The Arduino then uses the inputs to send commands to the servos, moving the arm. These inputs. I have 1 button to connect to my HCO-5 module, 6 buttons for various arm movements (up, down, left, right, open, close), and 1 button to reset my servos (Figure 7). During this milestone, I improved my battery pack by mounting it to the base of the robotic arm, simplifying my design.  
 
 
 **How it works**
 
 
-The HCO-5 Bluetooth module communicates with microcontrollers such as Arduino to recieve commands from my phone through Classic Bluetooth. It acts as a bridge between my phone and the Arduino, receiving  information as bytes, which are then sent to the Arduino. For my robot, when a button was pressed on my phone, it would send a number to the HCO-5 Bluetooth module, which was then received by the Arduino. The Arduino then uses that input and executes the command. For example, the button that moves the arm down would send an input of 1. The Arduiino will recieve this input and command the servos (2 and 3) to move to bring the arm down.   
+The HCO-5 Bluetooth module communicates with microcontrollers such as Arduino to recieve commands from my phone through Classic Bluetooth. It acts as a bridge between my phone and the Arduino, receiving  information as bytes, which are then sent to the Arduino. For my robot, when a button was pressed on my phone, it would send a number to the HCO-5 Bluetooth module, which the Arduino then received. The Arduino then uses that input and executes the command. For example, the button that moves the arm down would send an input of 1. The Arduiino will recieve this input and command the servos (2 and 3) to move to bring the arm down.   
+
+On my project, I am using the VCC, Ground, Rx, and Tx pins on my HCO-5 Bluetooth module (Figure 6). The VCC and Ground supply voltage and ground, respectively. The Rx and Tx pins communicate with the Arduino's Tx and Rx pins to receive and transmit information.
 
 
 **Challenges**
@@ -60,18 +65,29 @@ The HCO-5 Bluetooth module communicates with microcontrollers such as Arduino to
 
 One of my biggest challenges was that when I pressed a button, the servo would keep moving, even when I unpressed the button. This would go on until I pressed another button. My initial solution to work around this problem was to make a button that stops all servos. However, this was not like a joystick, which I wanted to emulate with these buttons. However, I found that I can use the button touch-down and touch-up commands on the MIT App Inventor to give an input that commands the servos to stop moving when the buttons are unpressed. This allows me to have another input after a button unpress, allowing the arm to stop moving after unpressing the button.
 
-While attaching my HCO-5 Bluetooth module, I used a breadboard to connect all of the pins and to make a voltage divider from 5.0V to 3.3V. However, the wires often fell out, so I had to reattach them many times. However, I saw that the working voltage of the HCO-5 Bluetooth module was from 3.3-6.0V, which allowed me to get rid of the voltage divider and the breadboard, making my wiring much more simple and easy to work with. 
+While attaching my HCO-5 Bluetooth module, I used a breadboard to connect all of the pins and to make a voltage divider from 5.0V to 3.3V. However, the wires often fell out, so I had to reattach them many times. However, I saw that the working voltage of the HCO-5 Bluetooth module was from 3.3-6.0V, which allowed me to get rid of the voltage divider and the breadboard, making my wiring much simpler and easier to work with. 
 
 
 **Next Steps**
 
 
-For my next steps, I plan on adding the functionality of the joysticks, so I can switch inputs between my phone and the joysticks. I also plan on making a thicker claw so it won't get stuck, and it will be able to pick up objects better. I would also like to add buttons for preset positions, such as one position for picking up an object off the ground. 
+For my next steps, I plan to add the functionality of the joysticks. This would allow me to use both my phone and the joysticks as input methods for my robotic arm. I also plan on making a different claw iteration, such as a thicker claw to pick up objects better and to decrease the chance of the claw getting stuck. I would also like to add buttons for preset positions, such as one position for picking up an object off the ground. 
+
 
 **Pictures**
 
 
 <img width="586" alt="image" src="https://github.com/user-attachments/assets/6a21205d-fbb4-4105-baa7-18da039e251b" />
+
+Figure 5: Schematic for the wiring of the servos, joysticks, battery, and HCO-5 Bluetooth module
+
+![image](https://github.com/user-attachments/assets/79f1f6b2-f6e9-4ee4-bec5-ccb8482f6620)
+
+Figure 6: HCO-5 Bluetooth module
+
+![share_3034429520284810762](https://github.com/user-attachments/assets/550471cf-68ff-47b5-b955-65acf081798d)
+
+Figure 7: Bluetooth App
 
 
 
