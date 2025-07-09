@@ -45,13 +45,15 @@ For your second milestone, explain what you've worked on since your previous mil
 
 ## Description
 
-For my second milestone, I coded servo movements, allowing me to precisely control servo positions. I also added an HCO-5 Bluetooth module to send inputs from my phone to the Arduino. To do this, I made an app on MIT App Inventor with buttons coded to send number inputs to the Arduino. The Arduino then uses the inputs to send commands to the servos, moving the arm. I have 1 button to connect to my HCO-5 module and 1 button to reset my servos (Figure 7). The main 6 buttons are coded to various arm movements (up, down, left, right, open, close). The up and down movements are driven by both servos 2 and 3, while opening and closing the claw is driven by servo 4, and the turret is moved by servo 1. During this milestone, I also improved my battery pack by mounting it to the base of the robotic arm, simplifying my design.  
+For my second milestone, I coded servo movements, allowing me to precisely control servo positions. I also added an HCO-5 Bluetooth module to send inputs from my phone to the Arduino. To do this, I made an app on MIT App Inventor with buttons coded to send number inputs to the Arduino. The Arduino then uses those inputs to send commands to the servos, moving the arm. I have 1 button to connect to my HCO-5 module and 1 button to reset my servos (Figure 7). The other six main buttons are coded to various arm movements (up, down, left, right, open, close). The up and down movements are driven by both servos 2 and 3, while opening and closing the claw is driven by servo 4, and the turret is moved by servo 1. During this milestone, I also improved my battery pack by mounting it to the base of the robotic arm, simplifying my design. Refer to (Figure 5) for the milestone 2 wiring schematic.
 
 
 ## How it works
 
+Bluetooth enables low-power, wireless communication between 2 devices using radio waves within the 2.4 GHz frequency band. One device acts as the master, while the other device acts as the slave. The master device will initiate and maintain the communication with the slave device, while the slave device listens and responds to the master. In this example, my phone is the master device, and the HCO-5 Bluetooth module is the slave device. 
 
-The HCO-5 Bluetooth module communicates with microcontrollers such as Arduino to recieve commands from my phone through Classic Bluetooth. It acts as a bridge between my phone and the Arduino, receiving  information as bytes, which are then sent to the Arduino. For my robot, when a button was pressed on my phone, it would send a number to the HCO-5 Bluetooth module, which the Arduino then received. The Arduino then uses that input and executes the command. For example, the button that moves the arm down would send an input of 1. The Arduino will recieve this input and command the servos (2 and 3) to move to bring the arm down.   
+The HCO-5 Bluetooth module communicates with microcontrollers such as Arduino to recieve commands from my phone through Classic Bluetooth. It acts as a bridge between my phone and the Arduino, receiving  information as bytes, which are then sent to the Arduino. For my robot, when a button was pressed on my phone, it would send a number to the HCO-5 Bluetooth module, which the Arduino then received. The Arduino then uses that input and executes the command. For example, the button that moves the arm down would send an input of 1. The Arduino will recieve this input and command the servos (2 and 3) to move to bring the arm down. 
+
 
 On my project, I am using the VCC, Ground, Rx, and Tx pins on my HCO-5 Bluetooth module (Figure 6). The VCC and Ground supply voltage and ground, respectively. The Rx and Tx pins stand for the receiver and transmitter pins that communicate with the Arduino's Tx and Rx pins to receive and transmit information. Using the Rx and Tx pins, the HCO-5 Bluetooth module and Arduino communicate at the set baud rate of 9600 and 38400, respectively. The transmitter takes parallel data and converts it into a stream of bits, which are sent over the wire to the receiver on the other end. The receiver then converts that serial stream of bits back into parallel data. Both the HCO-5 Bluetooth module and the Arduino have Rx and Tx pins, enabling continuous 2-way communication between the devices. 
 
@@ -63,12 +65,13 @@ One of my biggest challenges was that when I pressed a button, the servo would k
 
 While attaching my HCO-5 Bluetooth module, I used a breadboard to connect all of the pins and to make a voltage divider from 5.0V to 3.3V. However, the wires often fell out, so I had to reattach them many times. However, I saw that the working voltage of the HCO-5 Bluetooth module was from 3.3-6.0V, which allowed me to get rid of the voltage divider and the breadboard, making my wiring much simpler and easier to work with. 
 
-Another challenge that I had during this milestone was addinig a limit to my claw movement so it cannot close on itself. While this was not part of my milestone, I wanted to make this improvement to prevent my claw from breaking by continuously closing on itself. 
+Another challenge I had during this milestone was adding a limit to my claw movement so it could not close on itself. While this was not part of my milestone, I wanted to make this improvement to prevent my claw from breaking by continuously closing on itself. To solve this, I want to stop the claw when it goes 20 degrees by reading the angle from the servo and stopping it when it moves to a position of under 20 degrees. However, although I was able to print values for when the angle was under 20 degrees, the claw continued to move under 20 degrees. Since this was not part of this milestone, I will continue on it in the next milestone.
+
 
 ## Next Steps
 
 
-For my next steps, I plan to add the functionality of the joysticks. This would allow me to use both my phone and the joysticks as input methods for my robotic arm. I also plan on making a different claw iteration, such as a thicker claw to pick up objects better and to decrease the chance of the claw getting stuck. I would also like to add buttons for preset positions, such as one position for picking up an object off the ground. I
+For my next steps, I plan to add the functionality of the joysticks. This would allow me to use both my phone and the joysticks as input methods for my robotic arm. I also plan on making a different claw iteration, such as a thicker claw to pick up objects better and to decrease the chance of the claw getting stuck. I would also like to add buttons for preset positions, such as one position for picking up an object off the ground. I will also add a limit to my claw movement so that it cannot move under 20 degrees, preventing it from closing on itself. 
 
 
 ## Pictures
@@ -105,6 +108,11 @@ This servo uses a potentiometer, which calculates resistance changes based on th
 
 Servos use electromagnets that repel a permanent magnet to rotate an axle. The polarity of the electromagnet is constantly flipped by a commutator to continuously repel the permanent magnet, allowing for continuous rotation (Figure 4). The torque of the servo is directly proportional to the current provided to the motor. This is because an increased current increases the magnetic force inside the servo motor, increasing the torque. Similarly, an increase in voltage will increase the RPM. This allows all the servos on the arm to move the arm correctly and efficiently.
 
+![image](https://github.com/user-attachments/assets/075510f8-5338-4475-beb7-d9ceade39a69)
+
+Figure 4: Servo schematic
+
+
 Servos use 3 wires to connect to the Arduino. The red wire is for power, the brown for ground, and the yellow for signal. The signal wire receives PWM (Pulse-Width-Modulation) pulses that tell the servo what position to move to (Figure 3).
 
 Similar to servos, joysticks work using potentiometers, which allow them to track the movement of the joystick. The rotation of the joystick on the 2 axes gets calculated in the x-y plane and is given as values that are sent to the Arduino to move servos on the arm. 
@@ -138,9 +146,6 @@ Figure 2: All of the parts of the robotic arm are wired and attached
 
 Figure 3: Close-up of the servos and wiring of the servos
 
-![image](https://github.com/user-attachments/assets/075510f8-5338-4475-beb7-d9ceade39a69)
-
-Figure 4: Servo schematic
 
 
 # Starter Project
