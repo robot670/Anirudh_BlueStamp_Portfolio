@@ -2,11 +2,6 @@
 
 <!---Replace this text with a brief description (2-3 sentences) of your project. This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails!
 
-You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions: -->
-```HTML 
-<!--- This is an HTML comment in Markdown -->
-<!--- Anything between these symbols will not render on the published site -->
-```
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
@@ -48,34 +43,35 @@ For your second milestone, explain what you've worked on since your previous mil
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PIYOtmZmPDk?si=pDYBdSPcMP7ViUBq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
-**Description**
+## Description
 
-For my second milestone, I coded servo movements, allowing me to precisely control servo positions. I also added an HCO-5 Bluetooth module to send inputs from my phone to the Arduino. To do this, I made an app on MIT App Inventor with buttons coded to send number inputs to the Arduino. The Arduino then uses the inputs to send commands to the servos, moving the arm. These inputs. I have 1 button to connect to my HCO-5 module, 6 buttons for various arm movements (up, down, left, right, open, close), and 1 button to reset my servos (Figure 7). During this milestone, I improved my battery pack by mounting it to the base of the robotic arm, simplifying my design.  
-
-
-**How it works**
+For my second milestone, I coded servo movements, allowing me to precisely control servo positions. I also added an HCO-5 Bluetooth module to send inputs from my phone to the Arduino. To do this, I made an app on MIT App Inventor with buttons coded to send number inputs to the Arduino. The Arduino then uses the inputs to send commands to the servos, moving the arm. I have 1 button to connect to my HCO-5 module and 1 button to reset my servos (Figure 7). The main 6 buttons are coded to various arm movements (up, down, left, right, open, close). The up and down movements are driven by both servos 2 and 3, while opening and closing the claw is driven by servo 4, and the turret is moved by servo 1. During this milestone, I also improved my battery pack by mounting it to the base of the robotic arm, simplifying my design.  
 
 
-The HCO-5 Bluetooth module communicates with microcontrollers such as Arduino to recieve commands from my phone through Classic Bluetooth. It acts as a bridge between my phone and the Arduino, receiving  information as bytes, which are then sent to the Arduino. For my robot, when a button was pressed on my phone, it would send a number to the HCO-5 Bluetooth module, which the Arduino then received. The Arduino then uses that input and executes the command. For example, the button that moves the arm down would send an input of 1. The Arduiino will recieve this input and command the servos (2 and 3) to move to bring the arm down.   
-
-On my project, I am using the VCC, Ground, Rx, and Tx pins on my HCO-5 Bluetooth module (Figure 6). The VCC and Ground supply voltage and ground, respectively. The Rx and Tx pins communicate with the Arduino's Tx and Rx pins to receive and transmit information.
+## How it works
 
 
-**Challenges**
+The HCO-5 Bluetooth module communicates with microcontrollers such as Arduino to recieve commands from my phone through Classic Bluetooth. It acts as a bridge between my phone and the Arduino, receiving  information as bytes, which are then sent to the Arduino. For my robot, when a button was pressed on my phone, it would send a number to the HCO-5 Bluetooth module, which the Arduino then received. The Arduino then uses that input and executes the command. For example, the button that moves the arm down would send an input of 1. The Arduino will recieve this input and command the servos (2 and 3) to move to bring the arm down.   
+
+On my project, I am using the VCC, Ground, Rx, and Tx pins on my HCO-5 Bluetooth module (Figure 6). The VCC and Ground supply voltage and ground, respectively. The Rx and Tx pins stand for the receiver and transmitter pins that communicate with the Arduino's Tx and Rx pins to receive and transmit information. Using the Rx and Tx pins, the HCO-5 Bluetooth module and Arduino communicate at the set baud rate of 9600 and 38400, respectively. The transmitter takes parallel data and converts it into a stream of bits, which are sent over the wire to the receiver on the other end. The receiver then converts that serial stream of bits back into parallel data. Both the HCO-5 Bluetooth module and the Arduino have Rx and Tx pins, enabling continuous 2-way communication between the devices. 
+
+
+## Challenges
 
 
 One of my biggest challenges was that when I pressed a button, the servo would keep moving, even when I unpressed the button. This would go on until I pressed another button. My initial solution to work around this problem was to make a button that stops all servos. However, this was not like a joystick, which I wanted to emulate with these buttons. However, I found that I can use the button touch-down and touch-up commands on the MIT App Inventor to give an input that commands the servos to stop moving when the buttons are unpressed. This allows me to have another input after a button unpress, allowing the arm to stop moving after unpressing the button.
 
 While attaching my HCO-5 Bluetooth module, I used a breadboard to connect all of the pins and to make a voltage divider from 5.0V to 3.3V. However, the wires often fell out, so I had to reattach them many times. However, I saw that the working voltage of the HCO-5 Bluetooth module was from 3.3-6.0V, which allowed me to get rid of the voltage divider and the breadboard, making my wiring much simpler and easier to work with. 
 
+Another challenge that I had during this milestone was addinig a limit to my claw movement so it cannot close on itself. While this was not part of my milestone, I wanted to make this improvement to prevent my claw from breaking by continuously closing on itself. 
 
-**Next Steps**
-
-
-For my next steps, I plan to add the functionality of the joysticks. This would allow me to use both my phone and the joysticks as input methods for my robotic arm. I also plan on making a different claw iteration, such as a thicker claw to pick up objects better and to decrease the chance of the claw getting stuck. I would also like to add buttons for preset positions, such as one position for picking up an object off the ground. 
+## Next Steps
 
 
-**Pictures**
+For my next steps, I plan to add the functionality of the joysticks. This would allow me to use both my phone and the joysticks as input methods for my robotic arm. I also plan on making a different claw iteration, such as a thicker claw to pick up objects better and to decrease the chance of the claw getting stuck. I would also like to add buttons for preset positions, such as one position for picking up an object off the ground. I
+
+
+## Pictures
 
 
 <img width="586" alt="image" src="https://github.com/user-attachments/assets/6a21205d-fbb4-4105-baa7-18da039e251b" />
@@ -97,13 +93,13 @@ Figure 7: Bluetooth App
 <iframe width="560" height="315" src="https://www.youtube.com/embed/AHl8VPL7Uiw?si=0OXPjJc_zpjvnt9N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
-**Description**
+## Description
 
 For my first milestone, I completed the hardware of the robotic arm. I wired the servos, joysticks, and batteries to the Arduino (Figure 1). Using code that resets my servo positions to 90 degrees, I tested my servo movements. I also tested my joysticks by checking their inputs. I soldered a 5-pack battery pack to power my robotic arm. I used zip-ties to prevent tangling while keeping my wires together and more organized (Figure 2).
 
 
 
-**How it works**
+## How it works
 
 This servo uses a potentiometer, which calculates resistance changes based on the position to calculate the servo's current angle. This allows the arm to reset to 90 degrees precisely and only move as much as needed. Using the information from the potentiometer, a feedback loop helps maintain the commanded servo position.
 
@@ -115,20 +111,20 @@ Similar to servos, joysticks work using potentiometers, which allow them to trac
 
 
 
-**Challenges**
+## Challenges
 
 One of my biggest challenges was that my LK Cokoino MG90S servos were not working. I found that while my Tower Pro MG90S Mini Servo for my turret base was working, the LK Cokoinno MG90S servos did not have enough power because my batteries did not provide enough voltage. To solve this, I broke down my battery pack and used its wires along with another battery pack by soldering them together. This new battery pack has space for 5 AA batteries, allowing my robotic arm to have enough voltage for all of my servos. 
 Another challenge that I had was with my servo screws. These screws are necessary to attach the servos to the arm's components, but they often got stripped, making them very difficult to attach. To solve this, I had to use pliers to gain enough torque to turn the head of the stripped screws.
 
 
 
-**Next Steps**
+## Next Steps
 
 My next steps are to assign inputs from the joystick to move the servos to various positions instead of a preset position. This would allow me to use the joysticks to precisely control my robotic arm. After completing my movement, I will start using Bluetooth to control my robot with my phone using a Bluetooth module and a Bluetooth Serial Terminal. I also want to add buttons to my controller that bring my arm to preset positions. 
 
 
 
-**Pictures** 
+## Pictures
 
 <img width="518" alt="image" src="https://github.com/user-attachments/assets/8a145ea6-2797-4459-b633-0523e45cb15b" />
 
@@ -151,18 +147,18 @@ Figure 4: Servo schematic
 <iframe width="560" height="315" src="https://www.youtube.com/embed/65kjtID0ET0?si=NultT1yZJ1nP4REx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
-**Description**
+## Description
 
 I chose the retro arcade as my starter project because it allows me to play classic games like Tetris using a simple display and arcade-style buttons. The purpose of this project was to help me master soldering various components, such as a display, buttons, a power switch, and wires. To build it, I first started by soldering the various components of my project on my board and then screwing a case to finish it off. 
 
 
-**Challenges**
+## Challenges
 
 
 One of the main challenges of building my retro arcade starter project was the very small spaces between the pins I needed to solder, meaning that small mistakes could ruin the whole project and would be very difficult to fix. To solve this project, I practiced with multiple pin strips to make my soldering consistent enough to prevent any mistakes. This alllowed me to have perfect solders for my whole starter project. 
 
 
-**Next Steps**
+## Next Steps
 
 
 My next step is for me to start on my intensive project and to work towards my first milestone.
@@ -172,7 +168,7 @@ My next step is for me to start on my intensive project and to work towards my f
 
 # Appendix
 
-# First Milestone
+## First Milestone
 
 ```c++
 #include<Servo.h>
@@ -198,7 +194,7 @@ void loop() {
  }
 ```
 
-# Second Milestone
+## Second Milestone
 For this milestone, I added the functionality of controlling my robotic arm with my phone through an app I made on MIT App Inventor, and a Bluetooth HCO-5 module. 
 ```c++
 
