@@ -39,6 +39,26 @@ For your second milestone, explain what you've worked on since your previous mil
 - Previous challenges you faced that you overcame
 - What needs to be completed before your final milestone 
 --->
+
+# Third Milestone
+
+## Description
+
+For my third milestone, I added wire sleeves, rubber bands for my claw, a box for my HCO-5, and buttons coded to preset positions. The wire sleeves greatly improved my wiring, and made it a lot more manageable and out of the way. They still allowed full range of motion for my servos and arm movements. Rubber bands on my claw improved my grip, allowing me to pick up objects from the ground. The box for my HCO-05 allowed me to mount my HCO-5 onto my robotic arm while allowing me to wire it and check the pairing light on it. I added buttons to my app on MIT App Inventor that are coded to preset positions that allow me to, at the press of a button, hover my claw over an object in front of the arm to pick it up. With another button, I close the claw on the object. Finally, another button moves that object to another preset position for dropoff. 
+
+![PXL_20250710_170534942~2](https://github.com/user-attachments/assets/dc52142a-b383-40f5-86be-baf399cc779d)
+
+
+## Challenges
+
+One of my main challenges was that when I was trying to pick up objects with my claw, it did not have enough grip to piick them up. To solve this problem , I added rubber bands to my claw to increase its grip. This allowed it to pick up objects such as screwdrivers and spools 
+
+
+
+
+
+
+
 # Second Milestone
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PIYOtmZmPDk?si=pDYBdSPcMP7ViUBq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -47,10 +67,10 @@ For your second milestone, explain what you've worked on since your previous mil
 
 For my second milestone, I coded servo movements, allowing me to precisely control servo positions. I also added an HCO-5 Bluetooth module to send inputs from my phone to the Arduino. To do this, I made an app on MIT App Inventor with buttons coded to send number inputs to the Arduino. The Arduino then uses those inputs to send commands to the servos, moving the arm. I have 1 button to connect to my HCO-5 module and 1 button to reset my servos (Figure 7). The other six main buttons are coded to various arm movements (up, down, left, right, open, close). The up and down movements are driven by both servos 2 and 3, while opening and closing the claw is driven by servo 4, and the turret is moved by servo 1 (Figure 8). During this milestone, I also improved my battery pack by mounting it to the base of the robotic arm, simplifying my design. Refer to (Figure 5) for the milestone 2 wiring schematic.
 
-![share_303442952028481076235](https://github.com/user-attachments/assets/9ad0e360-f225-4ed8-b226-6398d57b69b8) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img width="425" alt="image" src="https://github.com/user-attachments/assets/2af536f3-51e4-4599-a59f-e9a53e773a9a" />
+![share_303442952028481076235](https://github.com/user-attachments/assets/9ad0e360-f225-4ed8-b226-6398d57b69b8) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img width="425" alt="image" src="https://github.com/user-attachments/assets/2af536f3-51e4-4599-a59f-e9a53e773a9a" />
 
 
-Figure 7: Bluetooth App &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Figure 8: Initializing bluetooth and assigning button touchdown and touchup to number inputs
+Figure 7: Bluetooth App &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Figure 8: Initializing bluetooth and assigning button touchdown and touchup to number inputs
  
 
 ## How it works
