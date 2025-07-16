@@ -25,37 +25,29 @@ For your final milestone, explain the outcome of your project. Key details to in
 - What you hope to learn in the future after everything you've learned at BSE
 --->
 
-<!---
-# Second Milestone
-
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
-<img width="620" alt="image" src="https://github.com/user-attachments/assets/7932a065-1669-4438-b0e5-6967948c5735" /> #This is my 2nd milestone schematic
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-For your second milestone, explain what you've worked on since your previous milestone. You can highlight:
-- Technical details of what you've accomplished and how they contribute to the final goal
-- What has been surprising about the project so far
-- Previous challenges you faced that you overcame
-- What needs to be completed before your final milestone 
---->
 
 # Third Milestone
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZH-uhBaCyNU?si=-JbVSa9VHABHDd5z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
 
 ## Description
 
-For my third milestone, I added wire sleeves, rubber bands for my claw, a box for my HCO-5, and buttons coded to preset positions. The wire sleeves greatly improved my wiring, and made it a lot more manageable and out of the way. They still allowed full range of motion for my servos and arm movements. Rubber bands on my claw improved my grip, allowing me to pick up objects from the ground. The box for my HCO-05 allowed me to mount my HCO-5 onto my robotic arm while allowing me to wire it and check the pairing light on it. I added buttons to my app on MIT App Inventor that are coded to preset positions that allow me to, at the press of a button, hover my claw over an object in front of the arm to pick it up. With another button, I close the claw on the object. Finally, another button moves that object to another preset position for dropoff. 
+For my third milestone, I added wire sleeves, rubber bands for my claw, a box for my HCO-5, and buttons coded to preset positions. The wire sleeves significantly improved my wiring, making it more manageable and less visible. They still allowed a full range of motion for my servos and arm movements. Rubber bands on my claw improved my grip, allowing me to pick up objects from the ground. The box for my HCO-05 allowed me to mount my HCO-05 onto my robotic arm while allowing me to wire it and check the pairing light on it. I added buttons to my app on MIT App Inventor that are coded to preset positions, allowing me to, at the press of a button, hover my claw over an object in front of the arm to pick it up. With another button, I close the claw on the object. Finally, another button moves that object to another preset position for dropoff. 
 
-![PXL_20250710_170534942~2](https://github.com/user-attachments/assets/dc52142a-b383-40f5-86be-baf399cc779d)
+Figure 9![PXL_20250710_170534942~2](https://github.com/user-attachments/assets/dc52142a-b383-40f5-86be-baf399cc779d)
+
 
 
 ## Challenges
-One big thing that I wanted to do for this milestone was to be able to pick up objects with my claw. This would allow my robotic arm to act like a human arm. I found that the perfect angle to pick up objects was perpendicular to the ground. However, since the robotic arm was not mounted high, that would make the claw go into the ground. To solve this problem, I decreased my servo 2 angle and increased my servo 3 angle to move my claw to the best angle possible. This was my pickup preset, which sets my arm on the ground, and opens the claw to 35 degrees to be in position to pickup. However, I found that my current claw made of acryllic did not have enough grip to keep thhe object in the claw while moving the object to the dropoff position. The objects kept falling out of the claw. To solve this problem, I added rubber bands to my claw to increase its grip strength. This allows me to pick up a screwdriver at any position and drop it off in the dropoff position. Apart from my rubber bands, another issue caused my transfer between pickup and dropoff to fail. When my arm was moving between those positions, my claw opened for a moment, causing the object picked up to fall out. At first, I tried to fix this by tightening all of my screws. However, this did not work. Then, I realized
 
-One of my main challenges was that when I was trying to pick up objects with my claw, it did not have enough grip to pick them up. To solve this problem, I added rubber bands to my claw to increase its grip. This allowed it to pick up objects such as screwdrivers and spools 
+One of my small challenges was my wiring. Since I had a turret, wiring can get stuck when the turret moves. To solve this, I used wire sleeves and zip ties to keep wires close to the arm and away from the turret, allowing for a full range of motion for my robotic arm.
 
+I used Fusion 360 to design my HCO-5 Bluetooth module box, which I made using a 3D printer. I had to go through multiple iterations because it was difficult to get the hole spacing correct, as measuring by hand is inconsistent, even with calipers. In these iterations, I also had to modify my box's dimensions until they fit the HCO-5 Bluetooth module perfectly. I decided on using a push-fit lid for my box because it is simple to print and doesn't require me to modify my box.
 
+One of the biggest things that I wanted to do for this milestone was to be able to pick up objects with my claw. This would allow my robotic arm to act like a human arm to pick up objects with its degrees of freedom. I found that the perfect angle to pick up objects was perpendicular to the ground. However, since the robotic arm was not mounted high, it would cause the claw to dig into the ground. I decreased the angle of servo 2 and increased the angle of servo 3, which moved my claw to the best angle possible to solve this problem. This was my pickup preset, which sets my arm on the ground and opens the claw to 35 degrees to be in position to pick up objects. 
 
+I found that my current claw, made of acrylic, did not have enough grip to keep the object in the claw while moving the object to the dropoff position. The objects kept falling out of the claw. To solve this problem, I added rubber bands to my claw to increase its grip strength. This allows me to pick up a screwdriver at any position and drop it off in the drop-off position. Apart from my rubber bands, another issue caused my transfer between pickup and dropoff to fail. When my arm was moving between those positions, my claw opened for a moment, causing the object I was picking up to fall out. At first, I tried to fix this by tightening all of my screws. However, this did not work. Then, I realized
 
 
 
@@ -68,10 +60,10 @@ One of my main challenges was that when I was trying to pick up objects with my 
 
 For my second milestone, I coded servo movements, allowing me to precisely control servo positions. I also added an HCO-5 Bluetooth module to send inputs from my phone to the Arduino. To do this, I made an app on MIT App Inventor with buttons coded to send number inputs to the Arduino. The Arduino then uses those inputs to send commands to the servos, moving the arm. I have 1 button to connect to my HCO-5 module and 1 button to reset my servos (Figure 7). The other six main buttons are coded to various arm movements (up, down, left, right, open, close). The up and down movements are driven by both servos 2 and 3, while opening and closing the claw is driven by servo 4, and the turret is moved by servo 1 (Figure 8). During this milestone, I also improved my battery pack by mounting it to the base of the robotic arm, simplifying my design. Refer to (Figure 5) for the milestone 2 wiring schematic.
 
-![share_303442952028481076235](https://github.com/user-attachments/assets/9ad0e360-f225-4ed8-b226-6398d57b69b8) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;; <img width="425" alt="image" src="https://github.com/user-attachments/assets/2af536f3-51e4-4599-a59f-e9a53e773a9a" />
+![share_303442952028481076235](https://github.com/user-attachments/assets/9ad0e360-f225-4ed8-b226-6398d57b69b8) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;; <img width="425" alt="image" src="https://github.com/user-attachments/assets/2af536f3-51e4-4599-a59f-e9a53e773a9a" />
 
 
-Figure 7: Bluetooth App &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Figure 8: Initializing bluetooth and assigning button touchdown and touchup to number inputs
+Figure 7: Bluetooth App &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Figure 8: Initializing bluetooth and assigning button touchdown and touchup to number inputs
  
 
 ## How it works
@@ -313,6 +305,209 @@ if (values == '7'){
 delayMicroseconds(10);                       // Delays for 10 microseconds to prevent too many inputs at once
 }
 ```
+## Third Milestone
+```c++
+
+// Uses the Software Serial and the Bluetooth Serial for the Bluetooth functionality
+#include <SoftwareSerial.h>
+SoftwareSerial Phone (A0,A1);
+
+// Uses the library for the servo/arm that moves, reads, and sets the position of the servos.
+#include "src/CokoinoArm.h"
+CokoinoArm arm;                                                   //Declares object 'arm' in class 'CokoinoArm'
+                                                                  //Object arm is used for all arm commands
+// Declares the inputs that are read in the Bluetooth serial
+char values;
+
+
+// Declares the inputs from the joysticks
+int xL,yL,xR,yR;
+
+
+
+//Servo and bluetooth setup
+void setup() {
+  arm.ServoAttach(6,7,10,11);                                       // arm of servo motor connection pins
+  Serial.begin(38400);                                            // Serial baud rate
+    Phone.begin(9600);                                            // Bluetooth serial baud rate
+  arm.JoyStickAttach(A2,A3,A0,A1);                                // Initializes the Joysticks
+}
+
+// Runs repeatedly
+void loop() {
+
+// Looks for inputs in the Bluetooth serial
+if (Phone.available()>0){
+  values = Phone.read();                                          // Reads the values from the Bluetooth serial and saves them as the variable "values" 
+    Serial.print(values);
+}
+
+// Bluetooth
+
+
+// If the buttons are unpressed, the input will be '0', which makes the servos stop moving
+if (values == '0'){ 
+  arm.down(0);
+  arm.up(0);
+  arm.right(0);
+  arm.left(0);
+  arm.open(0);
+  arm.close(0);
+}
+
+
+// Moves the arm down when input is 'a'
+if (values == 'a'){
+  arm.down(45);                                                   // Function to move arm down
+}                                                                 // (#) = Speed of the servo movement
+
+// Moves the arm up when input is 'b'
+if (values == 'b'){
+  arm.up(45);                                                     // Function to move arm up
+}
+
+// Moves the turret to the right when input is 'c'
+if (values == 'c'){
+  arm.right(10);                                                  // Function to move arm to the right
+}
+
+// Moves the turret to the left when input is 'd'
+if (values == 'd'){
+  arm.left(10);                                                   // Function to move arm to the left
+}
+
+// Opens the claw when input is 'e'
+if (values == 'e'){
+  arm.open(5);                                                    // Function to open claw
+}
+
+// Closes the claw when input is 'f'
+if (values == 'f'){
+  arm.close(5);                                                   // Function to close claw
+}
+
+
+// Resets all servos when input is 'g'
+if (values == 'g'){
+  arm.servo1.write(82);                                           // Function to set servo at a certain angle
+  arm.servo2.write(90);                                           // Reset position servo angles
+  arm.servo3.write(100);
+  arm.servo4.write(90);
+}
+
+// Goes to pickup position when input is 'h'
+if (values == 'h'){
+  arm.servo1.write(82);                                           // Pickup position servo angles
+  arm.servo2.write(150);
+  arm.servo3.write(0);
+  arm.servo4.write(35);
+}
+
+// Goes to dropoff position when input is 'i'
+if (values == 'i'){
+  arm.servo4.write(0);                                            // Dropoff position servo angles
+  arm.servo1.write(180);
+  arm.servo2.write(90);
+  arm.servo3.write(0);
+  arm.servo4.write(0);
+
+}
+
+//Goes to pickup from current turret position when input is 'j'
+if (values == 'j'){
+  arm.servo2.write(150);                                          // Pickup position servo angles without turret movement
+  arm.servo3.write(0);
+  arm.servo4.write(35);
+}
+
+// Opens the claw when input is 'k'
+if (values == 'k'){
+  arm.servo4.write(30);                                           // Sets claw servo to 30 degrees (opens claw)
+}
+
+// Closes the claw when input is 'l'
+if (values == 'l'){
+  arm.servo4.write(0);                                            // Sets claw servo to 0 degrees (closes claw)
+} 
+
+
+
+
+delayMicroseconds(20);                                            // Delays for 20 microseconds to prevent too many inputs at once
+
+
+
+
+//Joysticks
+
+
+//Sets variables for the inputs from the joysticks
+  xL = arm.JoyStickL.read_x();                                    // Uses function that reads the joystick position
+  yL = arm.JoyStickL.read_y();
+  xR = arm.JoyStickR.read_x();
+  yR = arm.JoyStickR.read_y();
+  date_processing(&xL,&yL);                                       // Function for only allowing one direction of the joystick input to be used on the left joystick
+  date_processing(&xR,&yR);                                       // Function for only allowing one direction of the joystick input to be used on the right joystick
+  turnUD();                                                       // Function for moving up and down based on joystick inputs
+  turnLR();                                                       // Funciton for moving left and right based on joystick inputs
+  turnCO();                                                       // Function for opening and closing the claw based on joystick inputs
+}
+
+
+// Function for only allowing one direction of the joystick input to be used on the right joystick
+void date_processing(int *x,int *y){                              // It will make it so that only the x or y can be processed as an input at a time
+  if(abs(512-*x)>abs(512-*y))                       
+    {*y = 512;}                                                   // If x is the greater vector then y will be given a value of 512 (invalidates it later)
+  else
+    {*x = 512;}                                                   // If y is the greater vector then x will be given a value of 512 (invalidates it later)
+}
+
+// Arm movements based on joystick
+void turnUD(void){
+  if(xL!=512){                                                    // Allows this part of the code to only run if the x value is greater than the y value (value not equal to 512)
+    if(0<=xL && xL<=100){arm.up(10);return;}                      // Moves the arm up and down based on the joystick inputs
+    if(900<xL && xL<=1024){arm.down(10)0;return;} 
+    if(100<xL && xL<=200){arm.up(20);return;}
+    if(800<xL && xL<=900){arm.down(20);return;}
+    if(200<xL && xL<=300){arm.up(25);return;}
+    if(700<xL && xL<=800){arm.down(25);return;}
+    if(300<xL && xL<=400){arm.up(30);return;}
+    if(600<xL && xL<=700){arm.down(30);return;}
+    if(400<xL && xL<=480){arm.up(35);return;}
+    if(540<xL && xL<=600){arm.down(35);return;} 
+    }
+}
+
+void turnLR(void){
+  if(yL!=512){
+    if(0<=yL && yL<=100){arm.right(0);return;}                    // Allows this part of the code to only run if the y value is greater than the x value (value not equal to 512)
+    if(900<yL && yL<=1024){arm.left(0);return;}                   // Moves the arm left and right based on the joystick inputs
+    if(100<yL && yL<=200){arm.right(5);return;}
+    if(800<yL && yL<=900){arm.left(5);return;}
+    if(200<yL && yL<=300){arm.right(10);return;}
+    if(700<yL && yL<=800){arm.left(10);return;}
+    if(300<yL && yL<=400){arm.right(15);return;}
+    if(600<yL && yL<=700){arm.left(15);return;}
+    if(400<yL && yL<=480){arm.right(20);return;}
+    if(540<yL && yL<=600){arm.left(20);return;}
+  }
+}
+
+void turnCO(void){
+  if(xR!=512){
+    if(0<=xR && xR<=100){arm.close(0);return;}                    // Allows this part of the code to only run if the y value is greater than the x value (value not equal to 512)
+    if(900<xR && xR<=1024){arm.open(0);return;}                   // Opens and closes the claw based on the joystick inputs
+    if(100<xR && xR<=200){arm.close(5);return;}
+    if(800<xR && xR<=900){arm.open(5);return;}
+    if(200<xR && xR<=300){arm.close(10);return;}
+    if(700<xR && xR<=800){arm.open(10);return;}
+    if(300<xR && xR<=400){arm.close(15);return;}
+    if(600<xR && xR<=700){arm.open(15);return;}
+    if(400<xR && xR<=480){arm.close(20);return;}
+    if(540<xR && xR<=600){arm.open(20);return;} 
+    }
+}
+```
 
 <!---
 # Bill of Materials
@@ -333,6 +528,4 @@ One of the best parts about Github is that you can view how other people set up 
 - [Example 1](https://trashytuber.github.io/YimingJiaBlueStamp/)
 - [Example 2](https://sviatil0.github.io/Sviatoslav_BSE/)
 - [Example 3](https://arneshkumar.github.io/arneshbluestamp/)
-
-To watch the BSE tutorial on how to create a portfolio, click here.
 -->
