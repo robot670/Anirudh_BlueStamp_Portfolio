@@ -35,7 +35,6 @@ For your final milestone, explain the outcome of your project. Key details to in
 
 For my third milestone, I added wire sleeves, rubber bands for my claw, a box for my HCO-5, and buttons coded to preset positions. The wire sleeves significantly improved my wiring, making it more manageable and less visible. They still allowed a full range of motion for my servos and arm movements. Rubber bands on my claw improved my grip, allowing me to pick up objects from the ground. The box for my HCO-05 allowed me to mount my HCO-05 onto my robotic arm while allowing me to wire it and check the pairing light on it. I added buttons to my app on MIT App Inventor that are coded to preset positions, allowing me to, at the press of a button, hover my claw over an object in front of the arm to pick it up. With another button, I close the claw on the object. Finally, another button moves that object to another preset position for dropoff. 
 
-Figure 9![PXL_20250710_170534942~2](https://github.com/user-attachments/assets/dc52142a-b383-40f5-86be-baf399cc779d)
 
 
 
@@ -43,12 +42,22 @@ Figure 9![PXL_20250710_170534942~2](https://github.com/user-attachments/assets/d
 
 One of my small challenges was my wiring. Since I had a turret, wiring can get stuck when the turret moves. To solve this, I used wire sleeves and zip ties to keep wires close to the arm and away from the turret, allowing for a full range of motion for my robotic arm.
 
-I used Fusion 360 to design my HCO-5 Bluetooth module box, which I made using a 3D printer. I had to go through multiple iterations because it was difficult to get the hole spacing correct, as measuring by hand is inconsistent, even with calipers. In these iterations, I also had to modify my box's dimensions until they fit the HCO-5 Bluetooth module perfectly. I decided on using a push-fit lid for my box because it is simple to print and doesn't require me to modify my box.
+I used Fusion 360 to design my HCO-5 Bluetooth module box, which I made using a 3D printer. I had to go through multiple iterations because it was difficult to get the hole spacing correct, as measuring by hand is inconsistent, even with calipers. In these iterations, I also had to modify my box's dimensions until they fit the HCO-5 Bluetooth module perfectly. I decided on using a push-fit lid for my box because it is simple to print and doesn't require me to modify my box (Figure 10).
 
-One of the biggest things that I wanted to do for this milestone was to be able to pick up objects with my claw. This would allow my robotic arm to act like a human arm to pick up objects with its degrees of freedom. I found that the perfect angle to pick up objects was perpendicular to the ground. However, since the robotic arm was not mounted high, it would cause the claw to dig into the ground. I decreased the angle of servo 2 and increased the angle of servo 3, which moved my claw to the best angle possible to solve this problem. This was my pickup preset, which sets my arm on the ground and opens the claw to 35 degrees to be in position to pick up objects. 
+<img width="746" height="526" alt="image" src="https://github.com/user-attachments/assets/4b77f723-c43d-4751-9be2-c39c1b1dd02b" />
+Figure 11: HCO-5 Bluetooth module box
 
-I found that my current claw, made of acrylic, did not have enough grip to keep the object in the claw while moving the object to the dropoff position. The objects kept falling out of the claw. To solve this problem, I added rubber bands to my claw to increase its grip strength. This allows me to pick up a screwdriver at any position and drop it off in the drop-off position. Apart from my rubber bands, another issue caused my transfer between pickup and dropoff to fail. When my arm was moving between those positions, my claw opened for a moment, causing the object I was picking up to fall out. At first, I tried to fix this by tightening all of my screws. However, this did not work. Then, I realized
+<img width="605" height="428" alt="image" src="https://github.com/user-attachments/assets/26b23969-7e7d-4228-b00d-4f5379250d21" /> 
+Figure 10: HCO-5 Bluetooth module box push-fit lid
 
+One of the biggest things that I wanted to do for this milestone was to be able to pick up objects with my claw. This would allow my robotic arm to act like a human arm to pick up objects with its degrees of freedom. I found that the perfect angle to pick up objects was perpendicular to the ground. However, since the robotic arm was not mounted high, it would cause the claw to dig into the ground. I decreased the angle of servo 2 and increased the angle of servo 3, which moved my claw to the best angle possible to solve this problem. This was my pickup preset, which sets my arm on the ground and opens the claw to 35 degrees to be in a position to pick up objects. 
+
+I found that my current claw, made of acrylic, did not have enough grip to keep the object in the claw while moving the object to the dropoff position. The objects kept falling out of the claw. To solve this problem, I added rubber bands to my claw to increase its grip strength. This allows me to pick up a screwdriver at any position and drop it off in the drop-off position. 
+
+Another issue caused my transfer between pickup and dropoff to fail. When my arm was moving between those positions, my claw opened for a moment, causing the object I was picking up to fall out. At first, I tried to fix this by tightening all of my screws. However, this did not work. Then, I found that the moment between pickup and dropoff was when all 4 servos were being used at the same time. This caused the 4th servo (claw) to lose power for a moment, dropping the object. To solve this, I replaced the battery and it worked correctly. 
+
+![PXL_20250710_170534942~2](https://github.com/user-attachments/assets/dc52142a-b383-40f5-86be-baf399cc779d)
+Figure 9: Rubber band claw grip
 
 
 
