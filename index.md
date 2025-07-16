@@ -40,7 +40,7 @@ For my third milestone, I added wire sleeves, rubber bands for my claw, a box fo
 
 ## Challenges
 
-One of my small challenges was my wiring. Since I had a turret, wiring can get stuck when the turret moves. To solve this, I used wire sleeves and zip ties to keep wires close to the arm and away from the turret, allowing for a full range of motion for my robotic arm. Without wiring in the way, my wire sleeves gave my arm a much cleaner and sleeker look.
+One of my small challenges was my wiring. Since I had a turret, wiring can get stuck when the rotating turret moves. To solve this, I used wire sleeves and zip ties to keep wires close to the arm and away from the rotating base, allowing for a full range of motion for my robotic arm. Without wiring in the way, my wire sleeves gave my arm a much cleaner and sleeker look.
 
 I used Fusion 360 to design my HC-05 Bluetooth module box, which I made using a 3D printer. I had to go through multiple iterations because it was difficult to get the hole spacing correct, as measuring by hand is inconsistent, even with calipers. In these iterations, I also had to modify the dimensions of the HC-05 box until it fit the HC-05 Bluetooth module perfectly. I decided on using a push-fit lid for my box because it is simple to print and doesn't require me to modify the box (Figure 10).
 
