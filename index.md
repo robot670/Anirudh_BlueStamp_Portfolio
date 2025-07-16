@@ -33,16 +33,17 @@ For your final milestone, explain the outcome of your project. Key details to in
 
 ## Description
 
-For my third milestone, I added wire sleeves, rubber bands for my claw, a box for my HC-05, and buttons coded to preset positions. The wire sleeves significantly made my wiring more manageable and less visible, while still allowing a full range of motion for my servos and arm movements. Rubber bands on my claw improved my grip, allowing me to pick up objects from the ground. The box for my HC-05 allowed me to mount the HC-05 onto my robotic arm while allowing me to wire it and check its pairing light. I added buttons to my app on MIT App Inventor that are coded to preset positions, allowing me to, at the press of a button, hover my claw over an object in front of the arm to pick it up. With another button, I close the claw on the object. Finally, another button moves that object to another preset position for dropoff. 
+For my third milestone, I added wire sleeves, rubber bands for my claw, a box for my HC-05, and buttons coded to preset positions. The wire sleeves significantly made my wiring more manageable and less visible, while still allowing a full range of motion for my servos and arm movements. Rubber bands on my claw improved my grip, allowing me to pick up objects from the ground. The box for my HC-05 allowed me to mount the HC-05 onto my robotic arm while allowing me to wire it and check its pairing light. I added buttons to my app on MIT App Inventor that are coded to preset positions, allowing me to, at the press of a button, hover my claw over an object in front of the arm to pick it up (Figure 14). With another button, I close the claw on the object. Finally, another button moves that object to another preset position for dropoff. 
 
-
+<img width="500" height="646" alt="share_4075640570769880466424253545243" src="https://github.com/user-attachments/assets/b039986f-bc43-401b-8257-019ce75cadf1" />
+Figure 14: New buttons for preset positions
 
 
 ## Challenges
 
 One of my small challenges was my wiring. Since I had a rotating base, wiring can get stuck when the rotating base moves. To solve this, I used wire sleeves and zip ties to keep wires close to the arm and away from the rotating base, allowing for a full range of motion for my robotic arm. Without wiring in the way, my wire sleeves gave my arm a much cleaner and sleeker look.
 
-I used Fusion 360 to design my HC-05 Bluetooth module box, which I made using a 3D printer. I had to go through multiple iterations because it was difficult to get the hole spacing correct, as measuring by hand is inconsistent, even with calipers. In these iterations, I also had to modify the dimensions of the HC-05 box until it fit the HC-05 Bluetooth module perfectly (Figure 12) (Figure 13). I decided on using a push-fit lid for my box because it is simple to print and doesn't require me to modify the box (Figure 10) (Figure 11).
+I used Fusion 360 to design my HC-05 Bluetooth module box, which I made using a 3D printer (Figure 12). I had to go through multiple iterations because it was difficult to get the hole spacing correct, as measuring by hand is inconsistent, even with calipers. In these iterations, I also had to modify the dimensions of the HC-05 box until it fit the HC-05 Bluetooth module perfectly (Figure 13). I decided on using a push-fit lid for my box because it is simple to print and doesn't require me to modify the box (Figure 10 and Figure 11).
 
 <img width="628" height="376" alt="image" src="https://github.com/user-attachments/assets/ee04c876-58e7-4493-9313-cb0460dd5d06" />
 
