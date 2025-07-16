@@ -42,15 +42,24 @@ For my third milestone, I added wire sleeves, rubber bands for my claw, a box fo
 
 One of my small challenges was my wiring. Since I had a rotating base, wiring can get stuck when the rotating base moves. To solve this, I used wire sleeves and zip ties to keep wires close to the arm and away from the rotating base, allowing for a full range of motion for my robotic arm. Without wiring in the way, my wire sleeves gave my arm a much cleaner and sleeker look.
 
-I used Fusion 360 to design my HC-05 Bluetooth module box, which I made using a 3D printer. I had to go through multiple iterations because it was difficult to get the hole spacing correct, as measuring by hand is inconsistent, even with calipers. In these iterations, I also had to modify the dimensions of the HC-05 box until it fit the HC-05 Bluetooth module perfectly. I decided on using a push-fit lid for my box because it is simple to print and doesn't require me to modify the box (Figure 10).
+I used Fusion 360 to design my HC-05 Bluetooth module box, which I made using a 3D printer. I had to go through multiple iterations because it was difficult to get the hole spacing correct, as measuring by hand is inconsistent, even with calipers. In these iterations, I also had to modify the dimensions of the HC-05 box until it fit the HC-05 Bluetooth module perfectly (Figure 12) (Figure 13). I decided on using a push-fit lid for my box because it is simple to print and doesn't require me to modify the box (Figure 10) (Figure 11).
+
+<img width="628" height="376" alt="image" src="https://github.com/user-attachments/assets/ee04c876-58e7-4493-9313-cb0460dd5d06" />
+
+Figure 13: Picture of HC-05 Bluetooth module box
 
 <img width="720" height="445" alt="image" src="https://github.com/user-attachments/assets/81660d7d-9756-48fd-8a2b-67fe9df4f3fa" />
 
-Figure 11: HC-05 Bluetooth module box
+Figure 12: Drawing of HC-05 Bluetooth module box 
+
+
+<img width="623" height="419" alt="image" src="https://github.com/user-attachments/assets/e2138e21-fd72-4761-a76c-1dd2421aecd1" />
+
+Figure 11: Picture of HC-05 Bluetooth module box push-fit lid
 
 <img width="779" height="284" alt="image" src="https://github.com/user-attachments/assets/fc114b1a-7591-46aa-8469-efa8aa283965" />
 
-Figure 10: HC-05 Bluetooth module box push-fit lid
+Figure 10: Drawing of HC-05 Bluetooth module box push-fit lid
 
 One of the biggest things that I wanted to do for this milestone was to be able to pick up objects with my claw. This would allow my robotic arm to pick up objects with its degrees of freedom, like a human arm. I found that the perfect angle to pick up objects was perpendicular to the ground. However, since the robotic arm was not mounted high, it would cause the claw to dig into the ground. To move my claw to the best angle possible, I decreased the angle of servo 2 and increased the angle of servo 3. This was my pickup preset, which sets my arm on the ground and opens the claw to 35 degrees to be at the right position to pick up objects. 
 
