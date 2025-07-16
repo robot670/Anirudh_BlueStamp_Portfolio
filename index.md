@@ -33,30 +33,30 @@ For your final milestone, explain the outcome of your project. Key details to in
 
 ## Description
 
-For my third milestone, I added wire sleeves, rubber bands for my claw, a box for my HCO-5, and buttons coded to preset positions. The wire sleeves significantly improved my wiring, making it more manageable and less visible. They still allowed a full range of motion for my servos and arm movements. Rubber bands on my claw improved my grip, allowing me to pick up objects from the ground. The box for my HCO-05 allowed me to mount my HCO-05 onto my robotic arm while allowing me to wire it and check the pairing light on it. I added buttons to my app on MIT App Inventor that are coded to preset positions, allowing me to, at the press of a button, hover my claw over an object in front of the arm to pick it up. With another button, I close the claw on the object. Finally, another button moves that object to another preset position for dropoff. 
+For my third milestone, I added wire sleeves, rubber bands for my claw, a box for my HC-05, and buttons coded to preset positions. The wire sleeves significantly made my wiring more manageable and less visible, while still allowing a full range of motion for my servos and arm movements. Rubber bands on my claw improved my grip, allowing me to pick up objects from the ground. The box for my HC-05 allowed me to mount the HC-05 onto my robotic arm while allowing me to wire it and check its pairing light. I added buttons to my app on MIT App Inventor that are coded to preset positions, allowing me to, at the press of a button, hover my claw over an object in front of the arm to pick it up. With another button, I close the claw on the object. Finally, another button moves that object to another preset position for dropoff. 
 
 
 
 
 ## Challenges
 
-One of my small challenges was my wiring. Since I had a turret, wiring can get stuck when the turret moves. To solve this, I used wire sleeves and zip ties to keep wires close to the arm and away from the turret, allowing for a full range of motion for my robotic arm.
+One of my small challenges was my wiring. Since I had a turret, wiring can get stuck when the turret moves. To solve this, I used wire sleeves and zip ties to keep wires close to the arm and away from the turret, allowing for a full range of motion for my robotic arm. Without wiring in the way, my wire sleeves gave my arm a much cleaner and sleeker look.
 
-I used Fusion 360 to design my HCO-5 Bluetooth module box, which I made using a 3D printer. I had to go through multiple iterations because it was difficult to get the hole spacing correct, as measuring by hand is inconsistent, even with calipers. In these iterations, I also had to modify my box's dimensions until they fit the HCO-5 Bluetooth module perfectly. I decided on using a push-fit lid for my box because it is simple to print and doesn't require me to modify my box (Figure 10).
+I used Fusion 360 to design my HC-05 Bluetooth module box, which I made using a 3D printer. I had to go through multiple iterations because it was difficult to get the hole spacing correct, as measuring by hand is inconsistent, even with calipers. In these iterations, I also had to modify the dimensions of the HC-05 box until it fit the HC-05 Bluetooth module perfectly. I decided on using a push-fit lid for my box because it is simple to print and doesn't require me to modify the box (Figure 10).
 
 <img width="746" height="526" alt="image" src="https://github.com/user-attachments/assets/4b77f723-c43d-4751-9be2-c39c1b1dd02b" />
 
-Figure 11: HCO-5 Bluetooth module box
+Figure 11: HC-05 Bluetooth module box
 
 <img width="605" height="428" alt="image" src="https://github.com/user-attachments/assets/26b23969-7e7d-4228-b00d-4f5379250d21" /> 
 
-Figure 10: HCO-5 Bluetooth module box push-fit lid
+Figure 10: HC-05 Bluetooth module box push-fit lid
 
-One of the biggest things that I wanted to do for this milestone was to be able to pick up objects with my claw. This would allow my robotic arm to act like a human arm to pick up objects with its degrees of freedom. I found that the perfect angle to pick up objects was perpendicular to the ground. However, since the robotic arm was not mounted high, it would cause the claw to dig into the ground. I decreased the angle of servo 2 and increased the angle of servo 3, which moved my claw to the best angle possible to solve this problem. This was my pickup preset, which sets my arm on the ground and opens the claw to 35 degrees to be in a position to pick up objects. 
+One of the biggest things that I wanted to do for this milestone was to be able to pick up objects with my claw. This would allow my robotic arm to pick up objects with its degrees of freedom, like a human arm. I found that the perfect angle to pick up objects was perpendicular to the ground. However, since the robotic arm was not mounted high, it would cause the claw to dig into the ground. To move my claw to the best angle possible, I decreased the angle of servo 2 and increased the angle of servo 3. This was my pickup preset, which sets my arm on the ground and opens the claw to 35 degrees to be at the right position to pick up objects. 
 
-I found that my current claw, made of acrylic, did not have enough grip to keep the object in the claw while moving the object to the dropoff position. The objects kept falling out of the claw. To solve this problem, I added rubber bands to my claw to increase its grip strength. This allows me to pick up a screwdriver at any position and drop it off in the drop-off position. 
+I found that my current claw, made of acrylic, did not have enough grip to hold the object while moving it to the drop-off position. The objects kept falling out of the claw. To solve this problem, I added rubber bands to my claw to increase its grip strength. This allows me to pick up objects at any position and drop them off in the drop-off position. 
 
-Another issue caused my transfer between pickup and dropoff to fail. When my arm was moving between those positions, my claw opened for a moment, causing the object I was picking up to fall out. At first, I tried to fix this by tightening all of my screws. However, this did not work. Then, I found that the moment between pickup and dropoff was when all 4 servos were being used at the same time. This caused the 4th servo (claw) to lose power for a moment, dropping the object. To solve this, I replaced the battery and it worked correctly. 
+I also found another issue that caused my transfer between pickup and dropoff to fail. When my arm was moving between those positions, my claw opened for a moment, causing the object I was picking up to fall out. I first attempted to fix this by tightening all of my screws. However, this did not work. Then, I realized that the moment between pickup and dropoff was when all 4 servos were being used at the same time. This caused the 4th servo (claw) to lose power for a moment, dropping the object. To solve this, I replaced the battery, and it worked correctly. 
 
 ![PXL_20250710_170534942~2](https://github.com/user-attachments/assets/dc52142a-b383-40f5-86be-baf399cc779d)
 
@@ -70,7 +70,7 @@ Figure 9: Rubber band claw grip
 
 ## Description
 
-For my second milestone, I coded servo movements, allowing me to precisely control servo positions. I also added an HCO-5 Bluetooth module to send inputs from my phone to the Arduino. To do this, I made an app on MIT App Inventor with buttons coded to send number inputs to the Arduino. The Arduino then uses those inputs to send commands to the servos, moving the arm. I have 1 button to connect to my HCO-5 module and 1 button to reset my servos (Figure 7). The other six main buttons are coded to various arm movements (up, down, left, right, open, close). The up and down movements are driven by both servos 2 and 3, while opening and closing the claw is driven by servo 4, and the turret is moved by servo 1 (Figure 8). During this milestone, I also improved my battery pack by mounting it to the base of the robotic arm, simplifying my design. Refer to (Figure 5) for the milestone 2 wiring schematic.
+For my second milestone, I coded servo movements, allowing me to precisely control servo positions. I also added an HC-05 Bluetooth module to send inputs from my phone to the Arduino. To do this, I made an app on MIT App Inventor with buttons coded to send number inputs to the Arduino. The Arduino then uses those inputs to send commands to the servos, moving the arm. I have 1 button to connect to my HC-05 module and 1 button to reset my servos (Figure 7). The other six main buttons are coded to various arm movements (up, down, left, right, open, close). The up and down movements are driven by both servos 2 and 3, while opening and closing the claw is driven by servo 4, and the turret is moved by servo 1 (Figure 8). During this milestone, I also improved my battery pack by mounting it to the base of the robotic arm, simplifying my design. Refer to (Figure 5) for the milestone 2 wiring schematic.
 
 ![share_303442952028481076235](https://github.com/user-attachments/assets/9ad0e360-f225-4ed8-b226-6398d57b69b8) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;; <img width="425" alt="image" src="https://github.com/user-attachments/assets/2af536f3-51e4-4599-a59f-e9a53e773a9a" />
 
@@ -80,16 +80,16 @@ Figure 7: Bluetooth App &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n
 
 ## How it works
 
-Bluetooth enables low-power, wireless communication between 2 devices using radio waves within the 2.4 GHz frequency band. One device acts as the master, while the other device acts as the slave. The master device will initiate and maintain the communication with the slave device, while the slave device listens and responds to the master. In this example, my phone is the master device, and the HCO-5 Bluetooth module is the slave device. 
+Bluetooth enables low-power, wireless communication between 2 devices using radio waves within the 2.4 GHz frequency band. One device acts as the master, while the other device acts as the slave. The master device will initiate and maintain the communication with the slave device, while the slave device listens and responds to the master. In this example, my phone is the master device, and the HC-05 Bluetooth module is the slave device. 
 
-The HCO-5 Bluetooth module communicates with microcontrollers such as Arduino to recieve commands from my phone through Classic Bluetooth. It acts as a bridge between my phone and the Arduino, receiving  information as bytes, which are then sent to the Arduino. For my robot, when a button was pressed on my phone, it would send a number to the HCO-5 Bluetooth module, which the Arduino then received. The Arduino then uses that input and executes the command. For example, the button that moves the arm down would send an input of 1. The Arduino will recieve this input and command the servos (2 and 3) to move to bring the arm down. 
+The HC-05 Bluetooth module communicates with microcontrollers such as Arduino to recieve commands from my phone through Classic Bluetooth. It acts as a bridge between my phone and the Arduino, receiving  information as bytes, which are then sent to the Arduino. For my robot, when a button was pressed on my phone, it would send a number to the HC-05 Bluetooth module, which the Arduino then received. The Arduino then uses that input and executes the command. For example, the button that moves the arm down would send an input of 1. The Arduino will recieve this input and command the servos (2 and 3) to move to bring the arm down. 
 
 
-On my project, I am using the VCC, Ground, Rx, and Tx pins on my HCO-5 Bluetooth module (Figure 6). The VCC and Ground supply voltage and ground, respectively. The Rx and Tx pins stand for the receiver and transmitter pins that communicate with the Arduino's Tx and Rx pins to receive and transmit information. Using the Rx and Tx pins, the HCO-5 Bluetooth module and Arduino communicate at the set baud rate of 9600 and 38400, respectively. The baud rate is the number of symbol or signal changes per second, relating to the speed of data transmission. The transmitter takes parallel data and converts it into a stream of bits, which are sent over the wire to the receiver on the other end. The receiver then converts that serial stream of bits back into parallel data. Both the HCO-5 Bluetooth module and the Arduino have Rx and Tx pins, enabling continuous 2-way communication between the devices. 
+On my project, I am using the VCC, Ground, Rx, and Tx pins on my HC-05 Bluetooth module (Figure 6). The VCC and Ground supply voltage and ground, respectively. The Rx and Tx pins stand for the receiver and transmitter pins that communicate with the Arduino's Tx and Rx pins to receive and transmit information. Using the Rx and Tx pins, the HC-05 Bluetooth module and Arduino communicate at the set baud rate of 9600 and 38400, respectively. The baud rate is the number of symbol or signal changes per second, relating to the speed of data transmission. The transmitter takes parallel data and converts it into a stream of bits, which are sent over the wire to the receiver on the other end. The receiver then converts that serial stream of bits back into parallel data. Both the HC-05 Bluetooth module and the Arduino have Rx and Tx pins, enabling continuous 2-way communication between the devices. 
 
 ![image](https://github.com/user-attachments/assets/79f1f6b2-f6e9-4ee4-bec5-ccb8482f6620)
 
-Figure 6: HCO-5 Bluetooth module
+Figure 6: HC-05 Bluetooth module
 
 
 ## Challenges
@@ -97,7 +97,7 @@ Figure 6: HCO-5 Bluetooth module
 
 One of my biggest challenges was that when I pressed a button, the servo would keep moving, even when I unpressed the button. This would go on until I pressed another button. My initial solution to work around this problem was to make a button that stops all servos. However, this was not like a joystick, which I wanted to emulate with these buttons. However, I found that I can use the button touch-down and touch-up commands on the MIT App Inventor to give an input that commands the servos to stop moving when the buttons are unpressed. This allows me to have another input after a button is unpressed, allowing the arm to stop moving after unpressing the button.
 
-While attaching my HCO-5 Bluetooth module, I used a breadboard to connect all of the pins and to make a voltage divider from 5.0V to 3.3V. However, the wires often fell out, so I had to reattach them many times. However, I saw that the working voltage of the HCO-5 Bluetooth module was from 3.3-6.0V, which allowed me to get rid of the voltage divider and the breadboard, making my wiring much simpler and easier to work with. 
+While attaching my HC-05 Bluetooth module, I used a breadboard to connect all of the pins and to make a voltage divider from 5.0V to 3.3V. However, the wires often fell out, so I had to reattach them many times. However, I saw that the working voltage of the HC-05 Bluetooth module was from 3.3-6.0V, which allowed me to get rid of the voltage divider and the breadboard, making my wiring much simpler and easier to work with. 
 
 Another challenge I had during this milestone was adding a limit to my claw movement so it could not close on itself. While this was not part of my milestone, I wanted to make this improvement to prevent my claw from breaking by continuously closing on itself. To solve this, I want to stop the claw when it goes 20 degrees by reading the angle from the servo and stopping it when it moves to a position of under 20 degrees. However, although I was able to print values for when the angle was under 20 degrees, the claw continued to move under 20 degrees. Since this was not part of this milestone, I will continue on it in the next milestone.
 
@@ -113,7 +113,7 @@ For my next steps, I plan to add the functionality of the joysticks. This would 
 
 <img width="586" alt="image" src="https://github.com/user-attachments/assets/6a21205d-fbb4-4105-baa7-18da039e251b" />
 
-Figure 5: Schematic for the wiring of the servos, joysticks, battery, and HCO-5 Bluetooth module
+Figure 5: Schematic for the wiring of the servos, joysticks, battery, and HC-05 Bluetooth module
 
 
 
@@ -233,7 +233,7 @@ void loop() {
 ```
 
 ## Second Milestone
-For this milestone, I added the functionality of controlling my robotic arm with my phone through an app I made on MIT App Inventor, and a Bluetooth HCO-5 module. 
+For this milestone, I added the functionality of controlling my robotic arm with my phone through an app I made on MIT App Inventor, and a Bluetooth HC-05 module. 
 ```c++
 
 //Uses the Software Serial and the Bluetooth Serial for the Bluetooth functionality
