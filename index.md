@@ -40,15 +40,15 @@ For my third milestone, I added wire sleeves, rubber bands for my claw, a box fo
 
 ## Challenges
 
-One of my small challenges was my wiring. Since I had a turret, wiring can get stuck when the rotating turret moves. To solve this, I used wire sleeves and zip ties to keep wires close to the arm and away from the rotating base, allowing for a full range of motion for my robotic arm. Without wiring in the way, my wire sleeves gave my arm a much cleaner and sleeker look.
+One of my small challenges was my wiring. Since I had a rotating base, wiring can get stuck when the rotating base moves. To solve this, I used wire sleeves and zip ties to keep wires close to the arm and away from the rotating base, allowing for a full range of motion for my robotic arm. Without wiring in the way, my wire sleeves gave my arm a much cleaner and sleeker look.
 
 I used Fusion 360 to design my HC-05 Bluetooth module box, which I made using a 3D printer. I had to go through multiple iterations because it was difficult to get the hole spacing correct, as measuring by hand is inconsistent, even with calipers. In these iterations, I also had to modify the dimensions of the HC-05 box until it fit the HC-05 Bluetooth module perfectly. I decided on using a push-fit lid for my box because it is simple to print and doesn't require me to modify the box (Figure 10).
 
-<img width="746" height="526" alt="image" src="https://github.com/user-attachments/assets/4b77f723-c43d-4751-9be2-c39c1b1dd02b" />
+<img width="720" height="445" alt="image" src="https://github.com/user-attachments/assets/81660d7d-9756-48fd-8a2b-67fe9df4f3fa" />
 
 Figure 11: HC-05 Bluetooth module box
 
-<img width="605" height="428" alt="image" src="https://github.com/user-attachments/assets/26b23969-7e7d-4228-b00d-4f5379250d21" /> 
+<img width="779" height="284" alt="image" src="https://github.com/user-attachments/assets/fc114b1a-7591-46aa-8469-efa8aa283965" />
 
 Figure 10: HC-05 Bluetooth module box push-fit lid
 
@@ -70,7 +70,7 @@ Figure 9: Rubber band claw grip
 
 ## Description
 
-For my second milestone, I coded servo movements, allowing me to precisely control servo positions. I also added an HC-05 Bluetooth module to send inputs from my phone to the Arduino. To do this, I made an app on MIT App Inventor with buttons coded to send number inputs to the Arduino. The Arduino then uses those inputs to send commands to the servos, moving the arm. I have 1 button to connect to my HC-05 module and 1 button to reset my servos (Figure 7). The other six main buttons are coded to various arm movements (up, down, left, right, open, close). The up and down movements are driven by both servos 2 and 3, while opening and closing the claw is driven by servo 4, and the turret is moved by servo 1 (Figure 8). During this milestone, I also improved my battery pack by mounting it to the base of the robotic arm, simplifying my design. Refer to (Figure 5) for the milestone 2 wiring schematic.
+For my second milestone, I coded servo movements, allowing me to precisely control servo positions. I also added an HC-05 Bluetooth module to send inputs from my phone to the Arduino. To do this, I made an app on MIT App Inventor with buttons coded to send number inputs to the Arduino. The Arduino then uses those inputs to send commands to the servos, moving the arm. I have 1 button to connect to my HC-05 module and 1 button to reset my servos (Figure 7). The other six main buttons are coded to various arm movements (up, down, left, right, open, close). The up and down movements are driven by both servos 2 and 3, while opening and closing the claw is driven by servo 4, and the rotating base is moved by servo 1 (Figure 8). During this milestone, I also improved my battery pack by mounting it to the base of the robotic arm, simplifying my design. Refer to (Figure 5) for the milestone 2 wiring schematic.
 
 ![share_303442952028481076235](https://github.com/user-attachments/assets/9ad0e360-f225-4ed8-b226-6398d57b69b8) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;; <img width="425" alt="image" src="https://github.com/user-attachments/assets/2af536f3-51e4-4599-a59f-e9a53e773a9a" />
 
@@ -158,7 +158,7 @@ Similar to servos, joysticks work using potentiometers, which allow them to trac
 
 ## Challenges
 
-One of my biggest challenges was that my LK Cokoino MG90S servos were not working. I found that while my Tower Pro MG90S Mini Servo for my turret base was working, the LK Cokoinno MG90S servos did not have enough power because my batteries did not provide enough voltage. To solve this, I broke down my battery pack and used its wires along with another battery pack by soldering them together. This new battery pack has space for 5 AA batteries, allowing my robotic arm to have enough voltage for all of my servos. 
+One of my biggest challenges was that my LK Cokoino MG90S servos were not working. I found that while my Tower Pro MG90S Mini Servo for my rotating base was working, the LK Cokoinno MG90S servos did not have enough power because my batteries did not provide enough voltage. To solve this, I broke down my battery pack and used its wires along with another battery pack by soldering them together. This new battery pack has space for 5 AA batteries, allowing my robotic arm to have enough voltage for all of my servos. 
 Another challenge that I had was with my servo screws. These screws are necessary to attach the servos to the arm's components, but they often got stripped, making them very difficult to attach. To solve this, I had to use pliers to gain enough torque to turn the head of the stripped screws.
 
 
@@ -273,12 +273,12 @@ if (values == '2'){
   arm.up(45);
 }
 
-//Moves the turret to the right when input is 3
+//Moves the rotating base to the right when input is 3
 if (values == '3'){
   arm.right(10);
 }
 
-//Moves the turret to the left when input is 4
+//Moves the rotating base to the left when input is 4
 if (values == '4'){
   arm.left(10);
 }
@@ -378,12 +378,12 @@ if (values == 'b'){
   arm.up(45);                                                     // Function to move arm up
 }
 
-// Moves the turret to the right when input is 'c'
+// Moves the rotating base to the right when input is 'c'
 if (values == 'c'){
   arm.right(10);                                                  // Function to move arm to the right
 }
 
-// Moves the turret to the left when input is 'd'
+// Moves the rotating base to the left when input is 'd'
 if (values == 'd'){
   arm.left(10);                                                   // Function to move arm to the left
 }
@@ -425,9 +425,9 @@ if (values == 'i'){
 
 }
 
-//Goes to pickup from current turret position when input is 'j'
+//Goes to pickup from current base position when input is 'j'
 if (values == 'j'){
-  arm.servo2.write(150);                                          // Pickup position servo angles without turret movement
+  arm.servo2.write(150);                                          // Pickup position servo angles without base movement
   arm.servo3.write(0);
   arm.servo4.write(35);
 }
