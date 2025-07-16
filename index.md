@@ -36,6 +36,7 @@ For your final milestone, explain the outcome of your project. Key details to in
 For my third milestone, I added wire sleeves, rubber bands for my claw, a box for my HC-05, and buttons coded to preset positions. The wire sleeves significantly made my wiring more manageable and less visible, while still allowing a full range of motion for my servos and arm movements. Rubber bands on my claw improved my grip, allowing me to pick up objects from the ground. The box for my HC-05 allowed me to mount the HC-05 onto my robotic arm while allowing me to wire it and check its pairing light. I added buttons to my app on MIT App Inventor that are coded to preset positions, allowing me to, at the press of a button, hover my claw over an object in front of the arm to pick it up (Figure 14). With another button, I close the claw on the object. Finally, another button moves that object to another preset position for dropoff. 
 
 <img width="500" height="646" alt="share_4075640570769880466424253545243" src="https://github.com/user-attachments/assets/b039986f-bc43-401b-8257-019ce75cadf1" />
+
 Figure 14: New buttons for preset positions
 
 
