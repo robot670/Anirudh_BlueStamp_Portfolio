@@ -50,8 +50,9 @@ For my third milestone, I added wire sleeves, rubber bands for my claw, a box fo
 
 
 ## Challenges
+One big thing that I wanted to do for this milestone was to be able to pick up objects with my claw. This would allow my robotic arm to act like a human arm. I found that the perfect angle to pick up objects was perpendicular to the ground. However, since the robotic arm was not mounted high, that would make the claw go into the ground. To solve this problem, I decreased my servo 2 angle and increased my servo 3 angle to move my claw to the best angle possible. This was my pickup preset, which sets my arm on the ground, and opens the claw to 35 degrees to be in position to pickup. However, I found that my current claw made of acryllic did not have enough grip to keep thhe object in the claw while moving the object to the dropoff position. The objects kept falling out of the claw. To solve this problem, I added rubber bands to my claw to increase its grip strength. This allows me to pick up a screwdriver at any position and drop it off in the dropoff position. Apart from my rubber bands, another issue caused my transfer between pickup and dropoff to fail. When my arm was moving between those positions, my claw opened for a moment, causing the object picked up to fall out. At first, I tried to fix this by tightening all of my screws. However, this did not work. Then, I realized
 
-One of my main challenges was that when I was trying to pick up objects with my claw, it did not have enough grip to piick them up. To solve this problem , I added rubber bands to my claw to increase its grip. This allowed it to pick up objects such as screwdrivers and spools 
+One of my main challenges was that when I was trying to pick up objects with my claw, it did not have enough grip to pick them up. To solve this problem, I added rubber bands to my claw to increase its grip. This allowed it to pick up objects such as screwdrivers and spools 
 
 
 
