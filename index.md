@@ -25,9 +25,72 @@ For your final milestone, explain the outcome of your project. Key details to in
 - What you hope to learn in the future after everything you've learned at BSE
 --->
 
+# Modification Milestone
+
+## Description
+
+For my modification milestone, I improved my phone-controlled robotic arm by attaching it to a 4WD chassis. This allows me to pick up objects from anywhere using my robot. To move the chassis, I used an H-Bridge to allow my wheels to switch directions, allowing for all directions of movement: forward, backward, left, right. To turn left and right, I move one side of the chassis forward and the other backward. 
+
+
+## Challenges
+
+One of my biggest challenges during this milestone was with my H-Bridge. I connected the batteries to my H-Bridge to power it and the DC motors, but the wheels did not turn, even though the Arduino pins were connected. I found that the H-Bridge needed 5V of regulated power in its VCC port, and would not work properly otherwise. I saw that I should use the Arduino to power the H-Bridge using the VCC port and power the DC motors using the batteries on the power port (Figure 20). When I connected it, I found that the H-Bridge operated correctly, and moved the motors based on the inputs. One problem from this is that I had only one 5V output from my Arduino, and I needed it for both the H-Bridge and the HC-05 Bluetooth module. To solve this problem, I used a breadboard to create a parallel circuit to power both devices (Figure 19).
+
+<img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/db913237-d182-4f6d-b2ca-b3e975594506" />
+
+Figure 20: H-Bridge connection ports
+
+<img width="543" height="579" alt="image" src="https://github.com/user-attachments/assets/db65744f-c754-4b18-9eac-1fda89c7fd35" />
+
+Figure 19: Parallel Connection
+
+I also found that the battery pack powering my DC motors ran out of charge quickly because it was always powering the H-Bridge. To prevent this, I had to remove one battery each time I wanted to turn off power to the H-Bridge and DC motors. To make this a lot more seamless, I added a power button that allowed me to turn the power on and off for the H-Bridge and DC motors. This power button was mounted at the back of the robot using the power button switch push-fit box.
+
+
+## 3D printed components
+
+In my modification milestone, I added numerous 3D-printed components that I designed using Fusion 360 to my robot. I 3D printed the clamps that hold down my robotic arm to the top plate of my chassis (Figure 18). These surround the bottom plate of the robotic arm to provide a secure fit, both horizontally and vertically. These clamps have slits that allow me to use holes on the top chassis plate, which are various distances away from the base of the robotic arm. 
+
+<img width="796" height="427" alt="image" src="https://github.com/user-attachments/assets/91a2d3f5-fa0f-4309-8109-d0b1995ceb11" />
+
+Figure 18: Robotic arm base clamp
+
+
+I also added a power button box that holds the power button for my motor (Figure 17). Since my motors require a separate battery pack from my Arduino, they did not have a power switch, and would always be on. To prevent this, I added a power button switch and a 3D printed holder for it. This holder is a push-fit box, so I did not need any complex locking mechanisms. It is screwed into the top chassis plate similar to the clamps for my robotic arm.
+
+<img width="695" height="506" alt="image" src="https://github.com/user-attachments/assets/97185c3c-b971-477c-84cc-e20fad0ce303" />
+
+Figure 17: Power button switch box
+
+
+To make my robot look more appealing and similar to a car, I added many 3D-printed wall components to the top and bottom of the chassis. I used 4 components screwed onto the top chassis plate that go above the wheels (Figure 16). Screws thread into these components and hold them in place. The bottom components between the top and bottom chassis plates hide the inner components and wiring of the robot, and add to the walls on top of the chassis. () The front and back components cover the corners of the chassis (Figure 14), while the middle components go between the wheels of the robot. (Figure 15) In total, this gives the robot a much more finished look.
+
+
+<img width="699" height="460" alt="image" src="https://github.com/user-attachments/assets/0f69c938-ce9f-45c9-839d-f4c8a119c8ed" />
+
+Figure 16: Car side top component
+
+<img width="692" height="433" alt="image" src="https://github.com/user-attachments/assets/63445e42-8d5d-4275-b83d-58d9ab1a4573" />
+
+Figure 15: Middle car wall component
+
+<img width="722" height="418" alt="image" src="https://github.com/user-attachments/assets/3dbe54cd-0657-4c7b-90ba-0a4f6a5f0e80" />
+
+Figure 14: Back/Front car wall component
+
+
+
+## Pictures
+
+<img width="630" height="524" alt="image" src="https://github.com/user-attachments/assets/c10a0fd6-47d1-409b-a2db-cae0aa7d5fb0" />
+
+Figure 13: Wiring schematic for all components (Arduino, batteries, servos, HC-05 Bluetooth module, H bridge, DC motors, power switch)
+
+
 
 # Third Milestone
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZH-uhBaCyNU?si=-JbVSa9VHABHDd5z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 
 
@@ -37,31 +100,26 @@ For my third milestone, I added wire sleeves, rubber bands for my claw, a box fo
 
 <img width="500" height="646" alt="share_4075640570769880466424253545243" src="https://github.com/user-attachments/assets/b039986f-bc43-401b-8257-019ce75cadf1" />
 
-Figure 14: New buttons for preset positions
+Figure 12: New buttons for preset positions
 
 
 ## Challenges
 
 One of my small challenges was my wiring. Since I had a rotating base, wiring can get stuck when the rotating base moves. To solve this, I used wire sleeves and zip ties to keep wires close to the arm and away from the rotating base, allowing for a full range of motion for my robotic arm. Without wiring in the way, my wire sleeves gave my arm a much cleaner and sleeker look.
 
-I used Fusion 360 to design my HC-05 Bluetooth module box, which I made using a 3D printer (Figure 12). I had to go through multiple iterations because it was difficult to get the hole spacing correct, as measuring by hand is inconsistent, even with calipers. In these iterations, I also had to modify the dimensions of the HC-05 box until it fit the HC-05 Bluetooth module perfectly (Figure 13). I decided on using a push-fit lid for my box because it is simple to print and doesn't require me to modify the box (Figure 10 and Figure 11).
-
-<img width="628" height="376" alt="image" src="https://github.com/user-attachments/assets/ee04c876-58e7-4493-9313-cb0460dd5d06" />
-
-Figure 13: Picture of HC-05 Bluetooth module box
-
-<img width="720" height="445" alt="image" src="https://github.com/user-attachments/assets/81660d7d-9756-48fd-8a2b-67fe9df4f3fa" />
-
-Figure 12: Drawing of HC-05 Bluetooth module box 
+I used Fusion 360 to design my HC-05 Bluetooth module box, which I made using a 3D printer (Figure 11). I had to go through multiple iterations because it was difficult to get the hole spacing correct, as measuring by hand is inconsistent, even with calipers. In these iterations, I also had to modify the dimensions of the HC-05 box until it fit the HC-05 Bluetooth module perfectly. I decided on using a push-fit lid for my box because it is simple to print and doesn't require me to modify the box (Figure 10).
 
 
-<img width="623" height="419" alt="image" src="https://github.com/user-attachments/assets/e2138e21-fd72-4761-a76c-1dd2421aecd1" />
 
-Figure 11: Picture of HC-05 Bluetooth module box push-fit lid
+<img width="823" height="527" alt="image" src="https://github.com/user-attachments/assets/efe8b9d0-9c7a-4a49-ad69-bdc8f2414d17" />
 
-<img width="779" height="284" alt="image" src="https://github.com/user-attachments/assets/fc114b1a-7591-46aa-8469-efa8aa283965" />
+Figure 11: Drawing and picture of HC-05 Bluetooth module box 
 
-Figure 10: Drawing of HC-05 Bluetooth module box push-fit lid
+<img width="784" height="316" alt="image" src="https://github.com/user-attachments/assets/57fdba30-df8a-4f1e-82ee-6275534c465f" />
+
+Figure 10: Drawing and picture of HC-05 Bluetooth module box push-fit lid
+
+
 
 One of the biggest things that I wanted to do for this milestone was to be able to pick up objects with my claw. This would allow my robotic arm to pick up objects with its degrees of freedom, like a human arm. I found that the perfect angle to pick up objects was perpendicular to the ground. However, since the robotic arm was not mounted high, it would cause the claw to dig into the ground. To move my claw to the best angle possible, I decreased the angle of servo 2 and increased the angle of servo 3. This was my pickup preset, which sets my arm on the ground and opens the claw to 35 degrees to be at the right position to pick up objects. 
 
@@ -214,10 +272,7 @@ One of the main challenges of building my retro arcade starter project was the v
 ## Next Steps
 
 
-My next step is for me to start on my intensive project and to work towards my first milestone.
-- Build the hardware of the robotic arm
-- Learn how to code the servos
-- Code the servos. Assign servo movements to buttons
+My next step is for me to start on my intensive project and to work towards my first milestone. This includes build the hardware of the robotic arm, learning how to code the servos, coding the servos, and assigning inputs from my joysticks to servo movements.
 
 # Appendix
 
