@@ -173,7 +173,7 @@ For my second milestone, I coded servo movements, allowing me to precisely contr
 ![share_303442952028481076235](https://github.com/user-attachments/assets/9ad0e360-f225-4ed8-b226-6398d57b69b8) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img width="425" alt="image" src="https://github.com/user-attachments/assets/2af536f3-51e4-4599-a59f-e9a53e773a9a" />
 
 
-Figure 16: Bluetooth App &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Figure 17: Initializing bluetooth and assigning button touchdown and touchup to number inputs
+Figure 16: Bluetooth App &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Figure 17: Initializing bluetooth and assigning buttons to number inputs
  
 
 ## How it works
