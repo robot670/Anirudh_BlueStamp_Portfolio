@@ -55,7 +55,7 @@ DC motors can change direction based on the direction of their current. An L298N
 
 <img width="383" height="199" alt="image" src="https://github.com/user-attachments/assets/001502f7-a8bc-41cb-8475-e51b666137b4" />
 
-Figure 3: How an H-Bridge works
+&nbsp;&nbsp;&nbsp;Figure 3: How an H-Bridge works
 
 
 ## Challenges
@@ -110,6 +110,8 @@ Figure 10: Back/Front car wall component
 <img width="630" height="524" alt="image" src="https://github.com/user-attachments/assets/c10a0fd6-47d1-409b-a2db-cae0aa7d5fb0" />
 
 Figure 11: Wiring schematic for all components (Arduino, batteries, servos, HC-05 Bluetooth module, H-bridge, DC motors, power switch)
+
+
 
 ## Modification Milestone Code
 <details>
@@ -306,6 +308,8 @@ delayMicroseconds(20);                                            // Delays for 
 </details>
 
 
+
+
 # Third Milestone
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZH-uhBaCyNU?si=-JbVSa9VHABHDd5z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -351,9 +355,13 @@ Figure 15: Rubber band claw grip
 
 I also found another issue that caused my transfer between pickup and dropoff to fail. When my arm was moving between those positions, my claw opened for a moment, causing the object I was picking up to fall out. I first attempted to fix this by tightening all of my screws. However, this did not work. Then, I realized that the moment between pickup and dropoff was when all 4 servos were being used at the same time. This caused the 4th servo (claw) to lose power for a moment, dropping the object. To solve this, I replaced the battery, and it worked correctly. 
 
+
+
 ## Third Milestone Code
 <details>  
   <summary> Click to see code </summary>
+
+
 
 ```c++
 
@@ -560,6 +568,8 @@ void turnCO(void){
 </details>  
 
 
+
+
 # Second Milestone
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PIYOtmZmPDk?si=pDYBdSPcMP7ViUBq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -610,6 +620,8 @@ For my next steps, I plan to add the functionality of the joysticks. This would 
 <img width="586" alt="image" src="https://github.com/user-attachments/assets/6a21205d-fbb4-4105-baa7-18da039e251b" />
 
 Figure 19: Schematic for the wiring of the servos, joysticks, battery, and HC-05 Bluetooth module
+
+
 
 ## Second Milestone Code
 <details>  
@@ -703,6 +715,8 @@ delayMicroseconds(10);                       // Delays for 10 microseconds to pr
 </details>  
 
 
+
+
 # First Milestone
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/AHl8VPL7Uiw?si=0OXPjJc_zpjvnt9N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -761,6 +775,8 @@ My next steps are to assign inputs from the joystick to move the servos to vario
 Figure 23: Wiring schematic for the battery, joysticks, and servos connected to the Arduino
 
 
+
+
 ## First Milestone Code
 <details>  
   <summary> Click to see code </summary>
@@ -789,6 +805,9 @@ void loop() {
  }
 ```
 </details>  
+
+
+
 
 
 # Starter Project
