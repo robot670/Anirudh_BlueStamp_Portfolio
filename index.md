@@ -5,7 +5,7 @@
 Replace this text with a brief description (2-3 sentences) of your project. This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails!
 --->
 
-My project this summer at Bluestamp was a phone-controlled robotic arm and car project. When I press a button on my phone, it sends inputs to my robot, which then moves the servos and motors of my robot. This allows me to control my robotic arm like a human arm to pickup and drop off objects. I started with a robotic arm, and then added a car with 4 DC motors under it, allowing me to pick up object from anywhere. 
+My project this summer at Bluestamp was a phone-controlled robotic arm and car project. When I press a button on my phone, it sends inputs to my robot, which then moves the servos and motors of my robot. This allows me to control my robotic arm precisely. I also added pick-up and drop-off positions, which allowed my robotic arm to function like a human arm to pick up and move objects. For my modification, to increase the range of my robotic arm's ability to pick up objects, I added a car with four DC motors underneath, allowing me to pick up objects from anywhere. 
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
@@ -44,7 +44,7 @@ For my modification milestone, I improved my phone-controlled robotic arm by att
 
 ## Challenges
 
-One of my biggest challenges during this milestone was with my H-Bridge. I connected the batteries to my H-Bridge to power it and the DC motors, but the wheels did not turn, even though the Arduino pins were connected. I found that the H-Bridge needed 5V of regulated power in its VCC port, and would not work properly otherwise. I saw that I should use the Arduino to power the H-Bridge using the VCC port and power the DC motors using the batteries on the power port (Figure 20). When I connected it, I found that the H-Bridge operated correctly, and moved the motors based on the inputs. One problem from this is that I had only one 5V output from my Arduino, and I needed it for both the H-Bridge and the HC-05 Bluetooth module. To solve this problem, I used a breadboard to create a parallel circuit to power both devices (Figure 19).
+One of my biggest challenges during this milestone was with my H-Bridge. I connected the batteries to my H-Bridge to power it and the DC motors, but the wheels did not turn, even though the Arduino pins were connected. I found that the H-Bridge needed 5V of regulated power in its VCC port, and would not work properly otherwise. I saw that I should use the Arduino to power the H-Bridge using the VCC port and power the DC motors using the batteries on the power port (Figure 20). When I connected it, I found that the H-Bridge operated correctly, and moved the motors based on the inputs. One problem with this is that I had only one 5V output from my Arduino, and I needed it for both the H-Bridge and the HC-05 Bluetooth module. To solve this problem, I used a breadboard to create a parallel circuit to power both devices (Figure 19).
 
 <img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/db913237-d182-4f6d-b2ca-b3e975594506" />
 
@@ -59,14 +59,14 @@ I also found that the battery pack powering my DC motors ran out of charge quick
 
 ## 3D printed components
 
-In my modification milestone, I added numerous 3D-printed components that I designed using Fusion 360 to my robot. I 3D printed the clamps that hold down my robotic arm to the top plate of my chassis (Figure 18). These surround the bottom plate of the robotic arm to provide a secure fit, both horizontally and vertically. These clamps have slits that allow me to use holes on the top chassis plate, which are various distances away from the base of the robotic arm. 
+In my modification milestone, I added numerous 3D-printed components that I designed using Fusion 360 to my robot. I 3D printed the clamps that hold down my robotic arm to the top plate of my chassis (Figure 18). These surround the bottom plate of the robotic arm to provide a secure fit, both horizontally and vertically. These clamps have slits that allow me to use holes on the top chassis plate, which are at various distances away from the base of the robotic arm. 
 
 <img width="796" height="427" alt="image" src="https://github.com/user-attachments/assets/91a2d3f5-fa0f-4309-8109-d0b1995ceb11" />
 
 Figure 18: Robotic arm base clamp
 
 
-I also added a power button box that holds the power button for my motor (Figure 17). Since my motors require a separate battery pack from my Arduino, they did not have a power switch, and would always be on. To prevent this, I added a power button switch and a 3D printed holder for it. This holder is a push-fit box, so I did not need any complex locking mechanisms. It is screwed into the top chassis plate similar to the clamps for my robotic arm.
+I also added a power button box that holds the power button for my motor (Figure 17). Since my motors require a separate battery pack from my Arduino, they did not have a power switch, and would always be on. To prevent this, I added a power button switch and a 3D printed holder for it. This holder is a push-fit box, so I did not need any complex locking mechanisms. It is screwed into the top chassis plate, similar to the clamps for my robotic arm.
 
 <img width="695" height="506" alt="image" src="https://github.com/user-attachments/assets/97185c3c-b971-477c-84cc-e20fad0ce303" />
 
@@ -89,12 +89,11 @@ Figure 15: Middle car wall component
 Figure 14: Back/Front car wall component
 
 
-
 ## Pictures
 
 <img width="630" height="524" alt="image" src="https://github.com/user-attachments/assets/c10a0fd6-47d1-409b-a2db-cae0aa7d5fb0" />
 
-Figure 13: Wiring schematic for all components (Arduino, batteries, servos, HC-05 Bluetooth module, H bridge, DC motors, power switch)
+Figure 13: Wiring schematic for all components (Arduino, batteries, servos, HC-05 Bluetooth module, H-bridge, DC motors, power switch)
 
 
 
@@ -155,7 +154,7 @@ I also found another issue that caused my transfer between pickup and dropoff to
 
 For my second milestone, I coded servo movements, allowing me to precisely control servo positions. I also added an HC-05 Bluetooth module to send inputs from my phone to the Arduino. To do this, I made an app on MIT App Inventor with buttons coded to send number inputs to the Arduino. The Arduino then uses those inputs to send commands to the servos, moving the arm. I have 1 button to connect to my HC-05 module and 1 button to reset my servos (Figure 7). The other six main buttons are coded to various arm movements (up, down, left, right, open, close). The up and down movements are driven by both servos 2 and 3, while opening and closing the claw is driven by servo 4, and the rotating base is moved by servo 1 (Figure 8). During this milestone, I also improved my battery pack by mounting it to the base of the robotic arm, simplifying my design. Refer to (Figure 5) for the milestone 2 wiring schematic.
 
-![share_303442952028481076235](https://github.com/user-attachments/assets/9ad0e360-f225-4ed8-b226-6398d57b69b8) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img width="425" alt="image" src="https://github.com/user-attachments/assets/2af536f3-51e4-4599-a59f-e9a53e773a9a" />
+![share_303442952028481076235](https://github.com/user-attachments/assets/9ad0e360-f225-4ed8-b226-6398d57b69b8) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img width="425" alt="image" src="https://github.com/user-attachments/assets/2af536f3-51e4-4599-a59f-e9a53e773a9a" />
 
 
 Figure 7: Bluetooth App &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Figure 8: Initializing bluetooth and assigning button touchdown and touchup to number inputs
@@ -283,6 +282,28 @@ One of the main challenges of building my retro arcade starter project was the v
 
 
 My next step is for me to start on my intensive project and to work towards my first milestone. This includes build the hardware of the robotic arm, learning how to code the servos, coding the servos, and assigning inputs from my joysticks to servo movements.
+
+
+
+# Bill of Materials
+
+
+Here's where you'll list the parts in your project. To add more rows, just copy and paste the example rows below.
+Don't forget to place the link of where to buy each component inside the quotation marks in the corresponding row after href =. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize this to your project needs. 
+
+| **Part** | **Note** | **Price** | **Link** |
+|:--:|:--:|:--:|:--:|
+| Robotic Arm Kit | Kit for the robotic arm | $49.99 | <a href="https://www.amazon.com/LK-COKOINO-Compliment-Engineering-Technology/dp/B081FG1JQ1/ref=asc_df_B081FG1JQ1?mcid=9da4c6c9864a305ca1ea713827f50833&hvocijid=2083331172026415723-B081FG1JQ1-&hvexpln=73&tag=hyprod-20&linkCode=df0&hvadid=721245378154&hvpos=&hvnetw=g&hvrand=2083331172026415723&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9032171&hvtargid=pla-2281435178138&psc=1"> Link </a> |
+| HC-05 Bluetooth Module | Used for wireless connection from my phone to my robot | $10.39 | <a href="https://www.amazon.com/HiLetgo-Wireless-Bluetooth-Transceiver-Arduino/dp/B071YJG8DR"> Link </a> |
+| Robot drivetrain kit | 4 DC Motors and base for movement | $41.99 | <a href="https://www.amazon.com/Robot-Smart-Chassis-Speed-Encoder/dp/B0DFH13LBJ?gQT=1"> Link </a> |
+| L298N H-Bridge | Changes the direction of the motors | $7.99 | <a href="https://www.amazon.com/Qunqi-Controller-Module-Stepper-Arduino/dp/B014KMHSW6"> Link </a> |
+| Jumper Wires | Wiring to connect all components | $7.49 | <a href="https://www.amazon.com/EDGELEC-Breadboard-Optional-Assorted-Multicolored/dp/B07GD25V8D/ref=sr_1_2_sspa?dib=eyJ2IjoiMSJ9.I3nSspk5onl8Jong0G-0Eej0s1agLXJoNbNWfIFXRRAEOMuK7c7b9DmCgh8gnhKUOTq503QX8IIwpA7yXyJDHyE27e6vwXn-gkjXyhuBXzIR48hGgOEkilolw7PmeiIcgFcb5S4wzl-UkVWskUiHdUZJM15E7_IyUAeFj7qvU6jCIItRL0VPqUg7yGQ-HYDXzM5vfZecJLZcH5E23KheZvLm-6vdPkEScrxE5a7py2s.dMev98kQUFQeiokRO7DejXrUzpfHPZOnVdCD1dq3x1o&dib_tag=se&keywords=jumper%2Bwires&qid=1753376220&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1"> Link </a> |
+| AA Batteries | Powers the ArduinoNano and the DC motors  | $9.99 | <a href="https://www.amazon.com/AmazonBasics-Performance-Alkaline-Batteries-20-Pack/dp/B00NTCH52W/ref=sr_1_1_ffob_sspa?crid=AL01JPQ69B66&dib=eyJ2IjoiMSJ9.riz1Te5yzJxEwLNmR013N98XpNfPyoNQr-Y5nntdCXbUofnaZV-3fRoGR04Lf7ZJo9WTc8yhidieYeVHT8h50VN778ggLV8OPWL4FsQpHrPTFewWWiaPlnjJCkHAB-8N9f2ANPn9JptiwyYetKZtwcZV4E4P5JY2AHeaJOwumiTeKqEI2iwhfKKDMV6-cSFpTCASU7C0TLSFuuO3lJMw_mbfK0oPAieq-s4teS58VqmCRzFozFx0fnyXTRn7k0s0Z_ikgJ4j8BGY6jLS92rzgfIplbo3RkqZcddlkrpWhbM.FgD-QWWTdvzbOTWC_GHIXH-eg1QxLJ-B3X07TQ-vVVs&dib_tag=se&keywords=AA%2Bbatteries&qid=1753376321&rdc=1&sprefix=aa%2Bbatterie%2Caps%2C198&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1"> Link </a> |
+| 5 AA Battery Holder | Holds the batteries to power the Arduino Nano and the DC motors | $7.99 | <a href="https://www.amazon.com/LampVPath-Battery-Holder-Leads-Wires/dp/B07WRQ44YK/ref=sr_1_1_sspa?dib=eyJ2IjoiMSJ9.iDeEIOEvnhCRTxPFr0HPSnakx6TL2rJdtwGNw7cbQ4sSNdC897I45ym8K0nc5YI5Ju937vYRCKzfxKJ-ywWb_0Hbi6-Ii1RF5cntou400kI5ifU-HD0bbijz7cxLbCAcf4AI4mwPMaTH1krZc2GifdBa-yaenE4WmQHTjPYz0knli_x3VIxzJr3MKcuB4Hix61Dct6aRhjpuyF_p9aZ33OT3hqr9SqUjP_JbHzWkonI.uAezwsj6ZPHZln4e_J2GG7xfZGBb8cMgzXCCYrO0XoY&dib_tag=se&keywords=5+AA+battery+holder&qid=1752183577&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"> Link </a> |
+| Small Breadboard | Parallel connection from the Arduino Nano's 5V pin to the HC-05 and H-Bridge | $6.66 | <a href="https://www.amazon.com/Breadborad-Solderless-Breadboards-Distribution-Connecting/dp/B082VYXDF1/ref=sr_1_2_sspa?crid=18E20Y0ZZ3Z7H&dib=eyJ2IjoiMSJ9.EQvCK09g_r0CejNbKABqFY0gRfQNtZKfRgXvRy06gRhEz3g_IRgyi5UMa6jSz15PY3AGFV-DUMzOvXD_04TpwcXX3wtZS80XtkMSoirtn_8pi5lyxFMDEprXfzO2dEOVneQesvDPJddYI19W_WC0xI1HZcfGolCZZXfJNeezNSzPUk2oRUocbM1zHSYcVX5G325VYDCBLZhkZV2jDa2XmaFh5iNhNJmXsk6e6klCj_g.AoN-P0h_wrmNtrgk_pEwe-AMbFcwHC0clqn5bO2pYMo&dib_tag=se&keywords=breadboard+small&qid=1753377542&sprefix=breadboard+smal%2Caps%2C136&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"> Link </a> |
+
+
+
 
 # Appendix
 
@@ -601,23 +622,196 @@ void turnCO(void){
 }
 ```
 
-<!---
-# Bill of Materials
+## Modification Milestone
+```c++
+
+// Uses the Software Serial and the Bluetooth Serial for the Bluetooth functionality
+#include <SoftwareSerial.h>
+SoftwareSerial Phone (A0,A1);
+
+// Uses the library for the servo/arm that moves, reads, and sets the position of the servos.
+#include "src/CokoinoArm.h"
+CokoinoArm arm;                                                   //Declares object 'arm' in class 'CokoinoArm'
+                                                                  //Object arm is used for all arm commands
+// Declares the inputs that are read in the Bluetooth serial
+char values;
 
 
-Here's where you'll list the parts in your project. To add more rows, just copy and paste the example rows below.
-Don't forget to place the link of where to buy each component inside the quotation marks in the corresponding row after href =. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize this to your project needs. 
+// Declares the inputs from the joysticks
+int xL,yL,xR,yR;
 
-| **Part** | **Note** | **Price** | **Link** |
-|:--:|:--:|:--:|:--:|
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
--->
-<!---
-# Other Resources/Examples
-One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
-- [Example 1](https://trashytuber.github.io/YimingJiaBlueStamp/)
-- [Example 2](https://sviatil0.github.io/Sviatoslav_BSE/)
-- [Example 3](https://arneshkumar.github.io/arneshbluestamp/)
--->
+
+int motor1pin1 = 2;
+int motor1pin2 = 3;
+
+int motor2pin1 = 4;
+int motor2pin2 = 5;
+
+
+
+//Servo and bluetooth setup
+void setup() {
+  arm.ServoAttach(6,7,10,11);                                       // arm of servo motor connection pins
+  Serial.begin(38400);                                            // Serial baud rate
+    Phone.begin(9600);                                            // Bluetooth serial baud rate
+
+  pinMode(motor1pin1, OUTPUT);
+  pinMode(motor1pin2, OUTPUT);
+  pinMode(motor2pin1, OUTPUT);
+  pinMode(motor2pin2, OUTPUT);
+
+}
+
+// Runs repeatedly
+void loop() {
+
+// Looks for inputs in the Bluetooth serial
+if (Phone.available()>0){
+  values = Phone.read();                                          // Reads the values from the Bluetooth serial and saves them as the variable "values" 
+    Serial.print(values);
+}
+
+
+// Bluetooth
+
+
+// If the buttons are unpressed, the input will be '0', which makes the servos stop moving
+if (values == '0'){ 
+  arm.down(0);
+  arm.up(0);
+  arm.right(0);
+  arm.left(0);
+  arm.open(0);
+  arm.close(0);
+}
+
+
+// Moves the arm down when input is 'a'
+if (values == 'a'){
+  arm.down(45);                                                   // Function to move arm down
+}                                                                 // (#) = Speed of the servo movement
+
+// Moves the arm up when input is 'b'
+if (values == 'b'){
+  arm.up(45);                                                     // Function to move arm up
+}
+
+// Moves the rotating base to the right when input is 'c'
+if (values == 'c'){
+  arm.right(10);                                                  // Function to move arm to the right
+}
+
+// Moves the rotating bases to the left when input is 'd'
+if (values == 'd'){
+  arm.left(10);                                                   // Function to move arm to the left
+}
+
+// Opens the claw when input is 'e'
+if (values == 'e'){
+  arm.open(5);                                                    // Function to open claw
+}
+
+// Closes the claw when input is 'f'
+if (values == 'f'){
+  arm.close(5);                                                   // Function to close claw
+}
+
+
+// Resets all servos when input is 'g'
+if (values == 'g'){
+  arm.servo1.write(82);                                           // Function to set servo at a certain angle
+  arm.servo2.write(90);                                           // Reset position servo angles
+  arm.servo3.write(100);
+  arm.servo4.write(90);
+}
+
+// Goes to pickup position when input is 'h'
+if (values == 'h'){
+  arm.servo1.write(82);                                           // Pickup position servo angles
+  arm.servo2.write(180);
+  arm.servo3.write(0);
+  arm.servo4.write(35);
+}
+
+// Goes to dropoff position when input is 'i'
+if (values == 'i'){
+  arm.servo4.write(0);                                            // Dropoff position servo angles
+  arm.servo1.write(180);
+  arm.servo2.write(90);
+  arm.servo3.write(0);
+  arm.servo4.write(0);
+
+}
+
+
+// Opens the claw when input is 'k'
+if (values == 'j'){
+  arm.servo4.write(30);                                           // Sets claw servo to 30 degrees (opens claw)
+}
+
+// Closes the claw when input is 'l'
+if (values == 'k'){
+  arm.servo4.write(0);                                            // Sets claw servo to 0 degrees (closes claw)
+} 
+
+//Moves the arm to inside the robot to store object in robot when input is 'j'
+if (values == 'l'){
+  arm.servo1.write(82);
+  arm.servo2.write(45);                                          // Pickup position servo angles without base movement
+  arm.servo3.write(135);
+  arm.servo4.write(0);
+}
+
+// If the buttons are unpressed, the input will be '1', which makes the motors stop moving
+if (values == '1'){
+  digitalWrite(motor1pin1, LOW);
+  digitalWrite(motor1pin2, LOW);
+  digitalWrite(motor2pin1, LOW);
+  digitalWrite(motor2pin2, LOW);
+}
+
+// Moves the robot forward
+if (values == 'm'){
+  digitalWrite(motor1pin1, LOW);
+  digitalWrite(motor1pin2, HIGH);
+
+  digitalWrite(motor2pin1, HIGH);
+  digitalWrite(motor2pin2, LOW);
+}
+
+//Moves the robot backward
+if (values == 'n'){
+  digitalWrite(motor1pin1, HIGH);
+  digitalWrite(motor1pin2, LOW);
+
+  digitalWrite(motor2pin1, LOW);
+  digitalWrite(motor2pin2, HIGH);
+}
+
+// Rotates the robot to the left
+if (values == 'o'){
+  digitalWrite(motor1pin1, LOW);
+  digitalWrite(motor1pin2, HIGH);
+
+  digitalWrite(motor2pin1, LOW);
+  digitalWrite(motor2pin2, HIGH);
+}
+
+//Rotates the robot to the right
+if (values == 'p'){
+  digitalWrite(motor1pin1, HIGH);
+  digitalWrite(motor1pin2, LOW);
+
+  digitalWrite(motor2pin1, HIGH);
+  digitalWrite(motor2pin2, LOW);
+}
+
+
+delayMicroseconds(20);                                            // Delays for 20 microseconds to prevent too many inputs at once
+
+}
+```
+
+
+
+
