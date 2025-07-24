@@ -55,7 +55,7 @@ DC motors can change direction based on the direction of their current. An L298N
 
 <img width="383" height="199" alt="image" src="https://github.com/user-attachments/assets/001502f7-a8bc-41cb-8475-e51b666137b4" />
 
-&nbsp;&nbsp;&nbsp;Figure 3: How an H-Bridge works
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Figure 3: How an H-Bridge works
 
 
 ## Challenges
@@ -358,7 +358,7 @@ I also found another issue that caused my transfer between pickup and dropoff to
 
 
 ## Third Milestone Code
-<details>  
+<details markdown='1'>
   <summary> Click to see code </summary>
 
 
@@ -624,7 +624,7 @@ Figure 19: Schematic for the wiring of the servos, joysticks, battery, and HC-05
 
 
 ## Second Milestone Code
-<details>  
+<details markdown='1'>
   <summary> Click to see code </summary>
 
 
@@ -778,7 +778,7 @@ Figure 23: Wiring schematic for the battery, joysticks, and servos connected to 
 
 
 ## First Milestone Code
-<details>  
+<details markdown='1'>
   <summary> Click to see code </summary>
 
 ```c++
