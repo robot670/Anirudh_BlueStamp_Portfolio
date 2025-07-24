@@ -307,19 +307,12 @@ My next step is for me to start on my intensive project and to work towards my f
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
 | Robotic Arm Kit | Kit for the robotic arm | $49.99 | <a href="https://www.amazon.com/LK-COKOINO-Compliment-Engineering-Technology/dp/B081FG1JQ1/ref=asc_df_B081FG1JQ1?mcid=9da4c6c9864a305ca1ea713827f50833&hvocijid=2083331172026415723-B081FG1JQ1-&hvexpln=73&tag=hyprod-20&linkCode=df0&hvadid=721245378154&hvpos=&hvnetw=g&hvrand=2083331172026415723&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9032171&hvtargid=pla-2281435178138&psc=1"> Link </a> |
-
 | HC-05 Bluetooth Module | Used for wireless connection from my phone to my robot | $10.39 | <a href="https://www.amazon.com/HiLetgo-Wireless-Bluetooth-Transceiver-Arduino/dp/B071YJG8DR"> Link </a> |
-
 | Robot drivetrain kit | 4 DC Motors and base for movement | $41.99 | <a href="https://www.amazon.com/Robot-Smart-Chassis-Speed-Encoder/dp/B0DFH13LBJ?gQT=1"> Link </a> |
-
 | L298N H-Bridge | Changes the direction of the motors | $7.99 | <a href="https://www.amazon.com/Qunqi-Controller-Module-Stepper-Arduino/dp/B014KMHSW6"> Link </a> |
-
 | Jumper Wires | Wiring to connect all components | $7.49 | <a href="https://www.amazon.com/EDGELEC-Breadboard-Optional-Assorted-Multicolored/dp/B07GD25V8D/ref=sr_1_2_sspa?dib=eyJ2IjoiMSJ9.I3nSspk5onl8Jong0G-0Eej0s1agLXJoNbNWfIFXRRAEOMuK7c7b9DmCgh8gnhKUOTq503QX8IIwpA7yXyJDHyE27e6vwXn-gkjXyhuBXzIR48hGgOEkilolw7PmeiIcgFcb5S4wzl-UkVWskUiHdUZJM15E7_IyUAeFj7qvU6jCIItRL0VPqUg7yGQ-HYDXzM5vfZecJLZcH5E23KheZvLm-6vdPkEScrxE5a7py2s.dMev98kQUFQeiokRO7DejXrUzpfHPZOnVdCD1dq3x1o&dib_tag=se&keywords=jumper%2Bwires&qid=1753376220&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1"> Link </a> |
-
 | AA Batteries | Powers the ArduinoNano and the DC motors  | $9.99 | <a href="https://www.amazon.com/AmazonBasics-Performance-Alkaline-Batteries-20-Pack/dp/B00NTCH52W/ref=sr_1_1_ffob_sspa?crid=AL01JPQ69B66&dib=eyJ2IjoiMSJ9.riz1Te5yzJxEwLNmR013N98XpNfPyoNQr-Y5nntdCXbUofnaZV-3fRoGR04Lf7ZJo9WTc8yhidieYeVHT8h50VN778ggLV8OPWL4FsQpHrPTFewWWiaPlnjJCkHAB-8N9f2ANPn9JptiwyYetKZtwcZV4E4P5JY2AHeaJOwumiTeKqEI2iwhfKKDMV6-cSFpTCASU7C0TLSFuuO3lJMw_mbfK0oPAieq-s4teS58VqmCRzFozFx0fnyXTRn7k0s0Z_ikgJ4j8BGY6jLS92rzgfIplbo3RkqZcddlkrpWhbM.FgD-QWWTdvzbOTWC_GHIXH-eg1QxLJ-B3X07TQ-vVVs&dib_tag=se&keywords=AA%2Bbatteries&qid=1753376321&rdc=1&sprefix=aa%2Bbatterie%2Caps%2C198&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1"> Link </a> |
-
 | 5 AA Battery Holder | Holds the batteries to power the Arduino Nano and the DC motors | $7.99 | <a href="https://www.amazon.com/LampVPath-Battery-Holder-Leads-Wires/dp/B07WRQ44YK/ref=sr_1_1_sspa?dib=eyJ2IjoiMSJ9.iDeEIOEvnhCRTxPFr0HPSnakx6TL2rJdtwGNw7cbQ4sSNdC897I45ym8K0nc5YI5Ju937vYRCKzfxKJ-ywWb_0Hbi6-Ii1RF5cntou400kI5ifU-HD0bbijz7cxLbCAcf4AI4mwPMaTH1krZc2GifdBa-yaenE4WmQHTjPYz0knli_x3VIxzJr3MKcuB4Hix61Dct6aRhjpuyF_p9aZ33OT3hqr9SqUjP_JbHzWkonI.uAezwsj6ZPHZln4e_J2GG7xfZGBb8cMgzXCCYrO0XoY&dib_tag=se&keywords=5+AA+battery+holder&qid=1752183577&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"> Link </a> |
-
 | Small Breadboard | Parallel connection from the Arduino Nano's 5V pin to the HC-05 and H-Bridge | $6.66 | <a href="https://www.amazon.com/Breadborad-Solderless-Breadboards-Distribution-Connecting/dp/B082VYXDF1/ref=sr_1_2_sspa?crid=18E20Y0ZZ3Z7H&dib=eyJ2IjoiMSJ9.EQvCK09g_r0CejNbKABqFY0gRfQNtZKfRgXvRy06gRhEz3g_IRgyi5UMa6jSz15PY3AGFV-DUMzOvXD_04TpwcXX3wtZS80XtkMSoirtn_8pi5lyxFMDEprXfzO2dEOVneQesvDPJddYI19W_WC0xI1HZcfGolCZZXfJNeezNSzPUk2oRUocbM1zHSYcVX5G325VYDCBLZhkZV2jDa2XmaFh5iNhNJmXsk6e6klCj_g.AoN-P0h_wrmNtrgk_pEwe-AMbFcwHC0clqn5bO2pYMo&dib_tag=se&keywords=breadboard+small&qid=1753377542&sprefix=breadboard+smal%2Caps%2C136&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"> Link </a> |
 
 
