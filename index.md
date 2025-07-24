@@ -39,12 +39,24 @@ For your final milestone, explain the outcome of your project. Key details to in
 
 ## Description
 
-For my modification milestone, I improved my phone-controlled robotic arm by attaching it to a 4WD chassis. This allows me to pick up objects from anywhere using my robot. To move the chassis, I used an H-Bridge to allow my wheels to switch directions, allowing for all directions of movement: forward, backward, left, and right. To turn left and right, I move one side of the chassis forward and the other backward. To add these new features to my robot, I added many new buttons to the app I made on MIT App Inventor to move the car in all directions. I used the button touchdown and touchup commands in MIT App Inventor for these movements, because they were not set positions. In addition to the chassis, I also added many 3D printed components, such as clamps to keep my robotic arm's base down to the chassis, walls for structural rigidity, and a power button switch box at the back of the robot to turn the external battery pack powering my DC motors on and off. 
+For my modification milestone, I improved my phone-controlled robotic arm by attaching it to a 4WD chassis. This allows me to pick up objects from anywhere using my robot. To move the chassis, I used an H-Bridge to allow my wheels to switch directions, allowing for all directions of movement: forward, backward, left, and right. To turn left and right, I move one side of the chassis forward and the other backward. To add these new features to my robot, I added many new buttons to the app I made on MIT App Inventor to move the car in all directions (Figure 23). I used the button touchdown and touchup commands in MIT App Inventor for these movements, because they were not set positions (Figure 22). In addition to the chassis, I also added many 3D printed components, such as clamps to keep my robotic arm's base down to the chassis, walls for structural rigidity, and a power button switch box at the back of the robot to turn the external battery pack powering my DC motors on and off. 
+
+
 <img width="400" height="800" alt="share_5599700110188042459323423" src="https://github.com/user-attachments/assets/464791e7-acd8-4fb7-b3ed-db60713c9fde" />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<img width="375" height="1800" alt="image" src="https://github.com/user-attachments/assets/b638ed03-402d-45b5-8941-11c6f1b2f889" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img width="377" height="1800" alt="image" src="https://github.com/user-attachments/assets/b638ed03-402d-45b5-8941-11c6f1b2f889" />
 
+Figure 23: Robotic Arm and Car buttons
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Figure 22: Robotic Arm and Car button input code
 
+## How it works
+
+DC motors can change direction based on the direction of their current. An L298N H-Bridge can connect to 2 motors to drive them and change their direction (Figure 21). Although it can only connect to 2 motors, the left and right side pairs of motors always move at the same time and direction, so only 2 connections are needed. By changing the direction of either side of the car's motors, the car can move in any direction, left, right, forward, or backward. 
+
+<img width="383" height="199" alt="image" src="https://github.com/user-attachments/assets/001502f7-a8bc-41cb-8475-e51b666137b4" />
+
+Figure 21: How an H-Bridge works
 
 
 ## Challenges
@@ -274,7 +286,7 @@ Figure 1: Wiring schematic for the battery, joysticks, and servos connected to t
 
 ## Description
 
-I chose the retro arcade as my starter project because it allows me to play classic games like Tetris using a simple display and arcade-style buttons. The purpose of this project was to help me master soldering various components, such as a display, buttons, a power switch, and wires. To build it, I first started by soldering the various components of my project on my board and then screwing a case to finish it off. 
+I chose the retro arcade as my starter project because it allows me to play classic games like Tetris using a simple display and arcade-style buttons. The purpose of this project was to help me master soldering various components, such as a display, buttons, a power switch, and wires. To build it, I first started by soldering the various components of my project onto my board and then screwing a case to finish it off. 
 
 
 ## Challenges
@@ -292,9 +304,6 @@ My next step is for me to start on my intensive project and to work towards my f
 
 # Bill of Materials
 
-
-Here's where you'll list the parts in your project. To add more rows, just copy and paste the example rows below.
-Don't forget to place the link of where to buy each component inside the quotation marks in the corresponding row after href =. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize this to your project needs. 
 
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
