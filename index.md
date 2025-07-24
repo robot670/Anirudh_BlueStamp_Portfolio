@@ -114,7 +114,7 @@ Figure 11: Wiring schematic for all components (Arduino, batteries, servos, HC-0
 
 
 ## Modification Milestone Code
-<details>
+<details markdown='1'>
   <summary> Click to see code </summary>
 
 ```c++
