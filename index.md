@@ -1,11 +1,18 @@
 # Robotic Arm
+<!---
 
-<!---Replace this text with a brief description (2-3 sentences) of your project. This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails!
 
+Replace this text with a brief description (2-3 sentences) of your project. This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails!
+--->
+
+My project this summer at Bluestamp was a phone-controlled robotic arm and car project. When I press a button on my phone, it sends inputs to my robot, which then moves the servos and motors of my robot. This allows me to control my robotic arm like a human arm to pickup and drop off objects. I started with a robotic arm, and then added a car with 4 DC motors under it, allowing me to pick up object from anywhere. 
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
 | Anirudh K. | Mission San Jose High School | Mechanical Engineering | Incoming Junior |
+
+![PXL_20250724_154950807](https://github.com/user-attachments/assets/64098335-6aa5-4b05-9e02-9a43c5972e2a)
+
 
 <!--- 
 **Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**
@@ -24,6 +31,9 @@ For your final milestone, explain the outcome of your project. Key details to in
 - A summary of key topics you learned about
 - What you hope to learn in the future after everything you've learned at BSE
 --->
+
+
+
 
 # Modification Milestone
 
