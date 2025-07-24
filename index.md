@@ -44,7 +44,7 @@ For my modification milestone, I improved my phone-controlled robotic arm by att
 
 <img width="400" height="800" alt="share_5599700110188042459323423" src="https://github.com/user-attachments/assets/464791e7-acd8-4fb7-b3ed-db60713c9fde" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<img width="377" height="1800" alt="image" src="https://github.com/user-attachments/assets/b638ed03-402d-45b5-8941-11c6f1b2f889" />
+<img width="400" height="800" alt="image" src="https://github.com/user-attachments/assets/b638ed03-402d-45b5-8941-11c6f1b2f889" />
 
 Figure 23: Robotic Arm and Car buttons
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
