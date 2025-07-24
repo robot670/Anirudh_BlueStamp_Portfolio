@@ -39,12 +39,17 @@ For your final milestone, explain the outcome of your project. Key details to in
 
 ## Description
 
-For my modification milestone, I improved my phone-controlled robotic arm by attaching it to a 4WD chassis. This allows me to pick up objects from anywhere using my robot. To move the chassis, I used an H-Bridge to allow my wheels to switch directions, allowing for all directions of movement: forward, backward, left, right. To turn left and right, I move one side of the chassis forward and the other backward. 
+For my modification milestone, I improved my phone-controlled robotic arm by attaching it to a 4WD chassis. This allows me to pick up objects from anywhere using my robot. To move the chassis, I used an H-Bridge to allow my wheels to switch directions, allowing for all directions of movement: forward, backward, left, and right. To turn left and right, I move one side of the chassis forward and the other backward. To add these new features to my robot, I added many new buttons to the app I made on MIT App Inventor to move the car in all directions. I used the button touchdown and touchup commands in MIT App Inventor for these movements, because they were not set positions. In addition to the chassis, I also added many 3D printed components, such as clamps to keep my robotic arm's base down to the chassis, walls for structural rigidity, and a power button switch box at the back of the robot to turn the external battery pack powering my DC motors on and off. 
+<img width="400" height="800" alt="share_5599700110188042459323423" src="https://github.com/user-attachments/assets/464791e7-acd8-4fb7-b3ed-db60713c9fde" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img width="375" height="1800" alt="image" src="https://github.com/user-attachments/assets/b638ed03-402d-45b5-8941-11c6f1b2f889" />
+
+
 
 
 ## Challenges
 
-One of my biggest challenges during this milestone was with my H-Bridge. I connected the batteries to my H-Bridge to power it and the DC motors, but the wheels did not turn, even though the Arduino pins were connected. I found that the H-Bridge needed 5V of regulated power in its VCC port, and would not work properly otherwise. I saw that I should use the Arduino to power the H-Bridge using the VCC port and power the DC motors using the batteries on the power port (Figure 20). When I connected it, I found that the H-Bridge operated correctly, and moved the motors based on the inputs. One problem with this is that I had only one 5V output from my Arduino, and I needed it for both the H-Bridge and the HC-05 Bluetooth module. To solve this problem, I used a breadboard to create a parallel circuit to power both devices (Figure 19).
+One of my biggest challenges during this milestone was with my H-Bridge. I connected the batteries to my H-Bridge to power it and the DC motors, but the wheels did not turn, even though the Arduino pins were connected. I found that the H-Bridge needed 5V of regulated power in its VCC port, and would not work properly otherwise. I saw that I should use the Arduino to power the H-Bridge using the VCC port and power the DC motors using the batteries on the power port (Figure 20). When I connected it, I found that the H-Bridge operated correctly and moved the motors based on the inputs. One problem with this is that I had only one 5V output from my Arduino, and I needed it for both the H-Bridge and the HC-05 Bluetooth module. To solve this problem, I used a breadboard to create a parallel circuit to power both devices (Figure 19).
 
 <img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/db913237-d182-4f6d-b2ca-b3e975594506" />
 
@@ -73,7 +78,7 @@ I also added a power button box that holds the power button for my motor (Figure
 Figure 17: Power button switch box
 
 
-To make my robot look more appealing and similar to a car, I added many 3D-printed wall components to the top and bottom of the chassis. I used 4 components screwed onto the top chassis plate that go above the wheels (Figure 16). Screws thread into these components and hold them in place. The bottom components between the top and bottom chassis plates hide the inner components and wiring of the robot, and add to the walls on top of the chassis. () The front and back components cover the corners of the chassis (Figure 14), while the middle components go between the wheels of the robot. (Figure 15) In total, this gives the robot a much more finished look.
+To make my robot look more appealing and similar to a car, I added many 3D-printed wall components to the top and bottom of the chassis. I used 4 components screwed onto the top chassis plate that go above the wheels (Figure 16). Screws thread into these components and hold them in place. The bottom components between the top and bottom chassis plates cover the inner components and wiring of the robot and add to the walls on top of the chassis. The front and back components cover the corners of the chassis (Figure 14), while the middle components go between the wheels of the robot. (Figure 15) In total, this gives the robot a much more finished look. This also greatly improves the structural integrity of my robot.
 
 
 <img width="699" height="460" alt="image" src="https://github.com/user-attachments/assets/0f69c938-ce9f-45c9-839d-f4c8a119c8ed" />
@@ -105,7 +110,7 @@ Figure 13: Wiring schematic for all components (Arduino, batteries, servos, HC-0
 
 ## Description
 
-For my third milestone, I added wire sleeves, rubber bands for my claw, a box for my HC-05, and buttons coded to preset positions. The wire sleeves significantly made my wiring more manageable and less visible, while still allowing a full range of motion for my servos and arm movements. Rubber bands on my claw improved my grip, allowing me to pick up objects from the ground. The box for my HC-05 allowed me to mount the HC-05 onto my robotic arm while allowing me to wire it and check its pairing light. I added buttons to my app on MIT App Inventor that are coded to preset positions, allowing me to, at the press of a button, hover my claw over an object in front of the arm to pick it up (Figure 14). With another button, I close the claw on the object. Finally, another button moves that object to another preset position for dropoff. 
+For my third milestone, I added wire sleeves, rubber bands for my claw, a box for my HC-05, and buttons coded to preset positions. The wire sleeves significantly made my wiring more manageable and less visible, while still allowing a full range of motion for my servos and arm movements. Rubber bands on my claw improved my grip, allowing me to pick up objects from the ground. The box for my HC-05 allowed me to mount the HC-05 onto my robotic arm while allowing me to wire it and check its pairing light. I added buttons to my app on MIT App Inventor that are coded to preset positions, allowing me to, at the press of a button, hover my claw over an object in front of the arm to pick it up (Figure 14). With another button, I close the claw on the object. Finally, another button moves that object to another preset position for drop-off. 
 
 <img width="500" height="646" alt="share_4075640570769880466424253545243" src="https://github.com/user-attachments/assets/b039986f-bc43-401b-8257-019ce75cadf1" />
 
@@ -114,7 +119,7 @@ Figure 12: New buttons for preset positions
 
 ## Challenges
 
-One of my small challenges was my wiring. Since I had a rotating base, wiring can get stuck when the rotating base moves. To solve this, I used wire sleeves and zip ties to keep wires close to the arm and away from the rotating base, allowing for a full range of motion for my robotic arm. Without wiring in the way, my wire sleeves gave my arm a much cleaner and sleeker look.
+One of my small challenges was my wiring. Since I have a rotating base, the wiring can get stuck when the rotating base moves. To solve this, I used wire sleeves and zip ties to keep wires close to the arm and away from the rotating base, allowing for a full range of motion for my robotic arm. Without wiring in the way, my wire sleeves gave my arm a much cleaner and sleeker look.
 
 I used Fusion 360 to design my HC-05 Bluetooth module box, which I made using a 3D printer (Figure 11). I had to go through multiple iterations because it was difficult to get the hole spacing correct, as measuring by hand is inconsistent, even with calipers. In these iterations, I also had to modify the dimensions of the HC-05 box until it fit the HC-05 Bluetooth module perfectly. I decided on using a push-fit lid for my box because it is simple to print and doesn't require me to modify the box (Figure 10).
 
@@ -122,11 +127,11 @@ I used Fusion 360 to design my HC-05 Bluetooth module box, which I made using a 
 
 <img width="823" height="527" alt="image" src="https://github.com/user-attachments/assets/efe8b9d0-9c7a-4a49-ad69-bdc8f2414d17" />
 
-Figure 11: Drawing and picture of HC-05 Bluetooth module box 
+Figure 11: Drawing and picture of the HC-05 Bluetooth module box 
 
 <img width="784" height="316" alt="image" src="https://github.com/user-attachments/assets/57fdba30-df8a-4f1e-82ee-6275534c465f" />
 
-Figure 10: Drawing and picture of HC-05 Bluetooth module box push-fit lid
+Figure 10: Drawing and picture of the HC-05 Bluetooth module box push-fit lid
 
 
 
@@ -294,13 +299,21 @@ Don't forget to place the link of where to buy each component inside the quotati
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
 | Robotic Arm Kit | Kit for the robotic arm | $49.99 | <a href="https://www.amazon.com/LK-COKOINO-Compliment-Engineering-Technology/dp/B081FG1JQ1/ref=asc_df_B081FG1JQ1?mcid=9da4c6c9864a305ca1ea713827f50833&hvocijid=2083331172026415723-B081FG1JQ1-&hvexpln=73&tag=hyprod-20&linkCode=df0&hvadid=721245378154&hvpos=&hvnetw=g&hvrand=2083331172026415723&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9032171&hvtargid=pla-2281435178138&psc=1"> Link </a> |
+
 | HC-05 Bluetooth Module | Used for wireless connection from my phone to my robot | $10.39 | <a href="https://www.amazon.com/HiLetgo-Wireless-Bluetooth-Transceiver-Arduino/dp/B071YJG8DR"> Link </a> |
+
 | Robot drivetrain kit | 4 DC Motors and base for movement | $41.99 | <a href="https://www.amazon.com/Robot-Smart-Chassis-Speed-Encoder/dp/B0DFH13LBJ?gQT=1"> Link </a> |
+
 | L298N H-Bridge | Changes the direction of the motors | $7.99 | <a href="https://www.amazon.com/Qunqi-Controller-Module-Stepper-Arduino/dp/B014KMHSW6"> Link </a> |
+
 | Jumper Wires | Wiring to connect all components | $7.49 | <a href="https://www.amazon.com/EDGELEC-Breadboard-Optional-Assorted-Multicolored/dp/B07GD25V8D/ref=sr_1_2_sspa?dib=eyJ2IjoiMSJ9.I3nSspk5onl8Jong0G-0Eej0s1agLXJoNbNWfIFXRRAEOMuK7c7b9DmCgh8gnhKUOTq503QX8IIwpA7yXyJDHyE27e6vwXn-gkjXyhuBXzIR48hGgOEkilolw7PmeiIcgFcb5S4wzl-UkVWskUiHdUZJM15E7_IyUAeFj7qvU6jCIItRL0VPqUg7yGQ-HYDXzM5vfZecJLZcH5E23KheZvLm-6vdPkEScrxE5a7py2s.dMev98kQUFQeiokRO7DejXrUzpfHPZOnVdCD1dq3x1o&dib_tag=se&keywords=jumper%2Bwires&qid=1753376220&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1"> Link </a> |
+
 | AA Batteries | Powers the ArduinoNano and the DC motors  | $9.99 | <a href="https://www.amazon.com/AmazonBasics-Performance-Alkaline-Batteries-20-Pack/dp/B00NTCH52W/ref=sr_1_1_ffob_sspa?crid=AL01JPQ69B66&dib=eyJ2IjoiMSJ9.riz1Te5yzJxEwLNmR013N98XpNfPyoNQr-Y5nntdCXbUofnaZV-3fRoGR04Lf7ZJo9WTc8yhidieYeVHT8h50VN778ggLV8OPWL4FsQpHrPTFewWWiaPlnjJCkHAB-8N9f2ANPn9JptiwyYetKZtwcZV4E4P5JY2AHeaJOwumiTeKqEI2iwhfKKDMV6-cSFpTCASU7C0TLSFuuO3lJMw_mbfK0oPAieq-s4teS58VqmCRzFozFx0fnyXTRn7k0s0Z_ikgJ4j8BGY6jLS92rzgfIplbo3RkqZcddlkrpWhbM.FgD-QWWTdvzbOTWC_GHIXH-eg1QxLJ-B3X07TQ-vVVs&dib_tag=se&keywords=AA%2Bbatteries&qid=1753376321&rdc=1&sprefix=aa%2Bbatterie%2Caps%2C198&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1"> Link </a> |
+
 | 5 AA Battery Holder | Holds the batteries to power the Arduino Nano and the DC motors | $7.99 | <a href="https://www.amazon.com/LampVPath-Battery-Holder-Leads-Wires/dp/B07WRQ44YK/ref=sr_1_1_sspa?dib=eyJ2IjoiMSJ9.iDeEIOEvnhCRTxPFr0HPSnakx6TL2rJdtwGNw7cbQ4sSNdC897I45ym8K0nc5YI5Ju937vYRCKzfxKJ-ywWb_0Hbi6-Ii1RF5cntou400kI5ifU-HD0bbijz7cxLbCAcf4AI4mwPMaTH1krZc2GifdBa-yaenE4WmQHTjPYz0knli_x3VIxzJr3MKcuB4Hix61Dct6aRhjpuyF_p9aZ33OT3hqr9SqUjP_JbHzWkonI.uAezwsj6ZPHZln4e_J2GG7xfZGBb8cMgzXCCYrO0XoY&dib_tag=se&keywords=5+AA+battery+holder&qid=1752183577&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"> Link </a> |
+
 | Small Breadboard | Parallel connection from the Arduino Nano's 5V pin to the HC-05 and H-Bridge | $6.66 | <a href="https://www.amazon.com/Breadborad-Solderless-Breadboards-Distribution-Connecting/dp/B082VYXDF1/ref=sr_1_2_sspa?crid=18E20Y0ZZ3Z7H&dib=eyJ2IjoiMSJ9.EQvCK09g_r0CejNbKABqFY0gRfQNtZKfRgXvRy06gRhEz3g_IRgyi5UMa6jSz15PY3AGFV-DUMzOvXD_04TpwcXX3wtZS80XtkMSoirtn_8pi5lyxFMDEprXfzO2dEOVneQesvDPJddYI19W_WC0xI1HZcfGolCZZXfJNeezNSzPUk2oRUocbM1zHSYcVX5G325VYDCBLZhkZV2jDa2XmaFh5iNhNJmXsk6e6klCj_g.AoN-P0h_wrmNtrgk_pEwe-AMbFcwHC0clqn5bO2pYMo&dib_tag=se&keywords=breadboard+small&qid=1753377542&sprefix=breadboard+smal%2Caps%2C136&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"> Link </a> |
+
 
 
 
