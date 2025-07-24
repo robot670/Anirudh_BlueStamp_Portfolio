@@ -11,6 +11,8 @@ My project this summer at Bluestamp was a phone-controlled robotic arm and car p
 |:--:|:--:|:--:|:--:|
 | Anirudh K. | Mission San Jose High School | Mechanical Engineering | Incoming Junior |
 
+![AnirudhK](https://github.com/user-attachments/assets/364dcf44-6121-407d-9d03-a9fd0c8d7b97)
+
 ![PXL_20250724_154950807](https://github.com/user-attachments/assets/64098335-6aa5-4b05-9e02-9a43c5972e2a)
 
 
@@ -53,9 +55,9 @@ Figure 2: Robotic Arm and Car button input code
 
 DC motors can change direction based on the direction of their current. An L298N H-Bridge can connect to 2 motors to drive them and change their direction (Figure 3). Although it can only connect to 2 motors, the left and right side pairs of motors always move at the same time and direction, so only 2 connections are needed. By changing the direction of either side of the car's motors, the car can move in any direction, left, right, forward, or backward. 
 
-<img width="383" height="199" alt="image" src="https://github.com/user-attachments/assets/001502f7-a8bc-41cb-8475-e51b666137b4" />
+<img width="509" height="275" alt="image" src="https://github.com/user-attachments/assets/d64fffa0-0066-411f-89e4-fb60c5c7326b" />
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Figure 3: How an H-Bridge works
+Figure 3: How an H-Bridge works
 
 
 ## Challenges
@@ -110,6 +112,211 @@ Figure 10: Back/Front car wall component
 <img width="630" height="524" alt="image" src="https://github.com/user-attachments/assets/c10a0fd6-47d1-409b-a2db-cae0aa7d5fb0" />
 
 Figure 11: Wiring schematic for all components (Arduino, batteries, servos, HC-05 Bluetooth module, H-bridge, DC motors, power switch)
+
+
+
+
+
+
+# Third Milestone
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZH-uhBaCyNU?si=-JbVSa9VHABHDd5z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
+
+## Description
+
+For my third milestone, I added wire sleeves, rubber bands for my claw, a box for my HC-05, and buttons coded to preset positions. The wire sleeves significantly made my wiring more manageable and less visible, while still allowing a full range of motion for my servos and arm movements. Rubber bands on my claw improved my grip, allowing me to pick up objects from the ground. The box for my HC-05 allowed me to mount the HC-05 onto my robotic arm while allowing me to wire it and check its pairing light. I added buttons to my app on MIT App Inventor that are coded to preset positions, allowing me to, at the press of a button, hover my claw over an object in front of the arm to pick it up (Figure 12). With another button, I close the claw on the object. Finally, another button moves that object to another preset position for drop-off. 
+
+<img width="500" height="646" alt="share_4075640570769880466424253545243" src="https://github.com/user-attachments/assets/b039986f-bc43-401b-8257-019ce75cadf1" />
+
+Figure 12: New buttons for preset positions
+
+
+## Challenges
+
+One of my small challenges was my wiring. Since I have a rotating base, the wiring can get stuck when the rotating base moves. To solve this, I used wire sleeves and zip ties to keep wires close to the arm and away from the rotating base, allowing for a full range of motion for my robotic arm. Without wiring in the way, my wire sleeves gave my arm a much cleaner and sleeker look.
+
+I used Fusion 360 to design my HC-05 Bluetooth module box, which I made using a 3D printer (Figure 13). I had to go through multiple iterations because it was difficult to get the hole spacing correct, as measuring by hand is inconsistent, even with calipers. In these iterations, I also had to modify the dimensions of the HC-05 box until it fit the HC-05 Bluetooth module perfectly. I decided on using a push-fit lid for my box because it is simple to print and doesn't require me to modify the box (Figure 14).
+
+
+
+<img width="823" height="527" alt="image" src="https://github.com/user-attachments/assets/efe8b9d0-9c7a-4a49-ad69-bdc8f2414d17" />
+
+Figure 13: Drawing and picture of the HC-05 Bluetooth module box 
+
+<img width="784" height="316" alt="image" src="https://github.com/user-attachments/assets/57fdba30-df8a-4f1e-82ee-6275534c465f" />
+
+Figure 14: Drawing and picture of the HC-05 Bluetooth module box push-fit lid
+
+
+
+One of the biggest things that I wanted to do for this milestone was to be able to pick up objects with my claw. This would allow my robotic arm to pick up objects with its degrees of freedom, like a human arm. I found that the perfect angle to pick up objects was perpendicular to the ground. However, since the robotic arm was not mounted high, it would cause the claw to dig into the ground. To move my claw to the best angle possible, I decreased the angle of servo 2 and increased the angle of servo 3. This was my pickup preset, which sets my arm on the ground and opens the claw to 35 degrees to be at the right position to pick up objects. 
+
+I found that my current claw, made of acrylic, did not have enough grip to hold the object while moving it to the drop-off position. The objects kept falling out of the claw. To solve this problem, I added rubber bands to my claw to increase its grip strength (Figure 15). This allows me to pick up objects at any position and drop them off in the drop-off position. 
+
+
+![PXL_20250710_170534942~2](https://github.com/user-attachments/assets/dc52142a-b383-40f5-86be-baf399cc779d)
+
+Figure 15: Rubber band claw grip
+
+
+I also found another issue that caused my transfer between pickup and dropoff to fail. When my arm was moving between those positions, my claw opened for a moment, causing the object I was picking up to fall out. I first attempted to fix this by tightening all of my screws. However, this did not work. Then, I realized that the moment between pickup and dropoff was when all 4 servos were being used at the same time. This caused the 4th servo (claw) to lose power for a moment, dropping the object. To solve this, I replaced the battery, and it worked correctly. 
+
+
+
+# Second Milestone
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PIYOtmZmPDk?si=pDYBdSPcMP7ViUBq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+## Description
+
+For my second milestone, I coded servo movements, allowing me to precisely control servo positions. I also added an HC-05 Bluetooth module to send inputs from my phone to the Arduino. To do this, I made an app on MIT App Inventor with buttons coded to send number inputs to the Arduino. The Arduino then uses those inputs to send commands to the servos, moving the arm. I have 1 button to connect to my HC-05 module and 1 button to reset my servos (Figure 16). The other six main buttons are coded to various arm movements (up, down, left, right, open, close). The up and down movements are driven by both servos 2 and 3, while opening and closing the claw is driven by servo 4, and the rotating base is moved by servo 1 (Figure 17). During this milestone, I also improved my battery pack by mounting it to the base of the robotic arm, simplifying my design. Refer to (Figure 19) for the milestone 2 wiring schematic.
+
+![share_303442952028481076235](https://github.com/user-attachments/assets/9ad0e360-f225-4ed8-b226-6398d57b69b8) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img width="425" alt="image" src="https://github.com/user-attachments/assets/2af536f3-51e4-4599-a59f-e9a53e773a9a" />
+
+
+Figure 16: Bluetooth App &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Figure 17: Initializing Bluetooth/assigning buttons to number inputs
+ 
+
+## How it works
+
+Bluetooth enables low-power, wireless communication between 2 devices using radio waves within the 2.4 GHz frequency band. One device acts as the master, while the other device acts as the slave. The master device will initiate and maintain the communication with the slave device, while the slave device listens and responds to the master. In this example, my phone is the master device, and the HC-05 Bluetooth module is the slave device. 
+
+The HC-05 Bluetooth module communicates with microcontrollers such as Arduino to recieve commands from my phone through Classic Bluetooth. It acts as a bridge between my phone and the Arduino, receiving  information as bytes, which are then sent to the Arduino. For my robot, when a button was pressed on my phone, it would send a number to the HC-05 Bluetooth module, which the Arduino then received. The Arduino then uses that input and executes the command. For example, the button that moves the arm down would send an input of 1. The Arduino will recieve this input and command the servos (Figures 2 and 3) to move to bring the arm down. 
+
+
+On my project, I am using the VCC, Ground, Rx, and Tx pins on my HC-05 Bluetooth module (Figure 18). The VCC and Ground supply voltage and ground, respectively. The Rx and Tx pins stand for the receiver and transmitter pins that communicate with the Arduino's Tx and Rx pins to receive and transmit information. Using the Rx and Tx pins, the HC-05 Bluetooth module and Arduino communicate at the set baud rates of 9600 and 38400, respectively. The baud rate is the number of symbols or signal changes per second, relating to the speed of data transmission. The transmitter takes parallel data and converts it into a stream of bits, which are sent over the wire to the receiver on the other end. The receiver then converts that serial stream of bits back into parallel data. Both the HC-05 Bluetooth module and the Arduino have Rx and Tx pins, enabling continuous 2-way communication between the devices. 
+
+![image](https://github.com/user-attachments/assets/79f1f6b2-f6e9-4ee4-bec5-ccb8482f6620)
+
+Figure 18: HC-05 Bluetooth module
+
+
+## Challenges
+
+
+One of my biggest challenges was that when I pressed a button, the servo would keep moving, even when I unpressed the button. This would go on until I pressed another button. My initial solution to work around this problem was to make a button that stops all servos. However, this was not like a joystick, which I wanted to emulate with these buttons. However, I found that I can use the button touch-down and touch-up commands on the MIT App Inventor to give an input that commands the servos to stop moving when the buttons are unpressed. This allows me to have another input after a button is unpressed, allowing the arm to stop moving after unpressing the button.
+
+While attaching my HC-05 Bluetooth module, I used a breadboard to connect all of the pins and to make a voltage divider from 5.0V to 3.3V. However, the wires often fell out, so I had to reattach them many times. However, I saw that the working voltage of the HC-05 Bluetooth module was from 3.3-6.0V, which allowed me to get rid of the voltage divider and the breadboard, making my wiring much simpler and easier to work with. 
+
+Another challenge I had during this milestone was adding a limit to my claw movement so it could not close on itself. While this was not part of my milestone, I wanted to make this improvement to prevent my claw from breaking by continuously closing on itself. To solve this, I want to stop the claw when it goes 20 degrees by reading the angle from the servo and stopping it when it moves to a position of under 20 degrees. However, although I was able to print values for when the angle was under 20 degrees, the claw continued to move under 20 degrees. Since this was not part of this milestone, I will continue on it in the next milestone.
+
+
+## Next Steps
+
+
+For my next steps, I plan to add the functionality of the joysticks. This would allow me to use both my phone and the joysticks as input methods for my robotic arm. I also plan on making a different claw iteration, such as a thicker claw to pick up objects better and to decrease the chance of the claw getting stuck. I would also like to add buttons for preset positions, such as one position for picking up an object off the ground. I will also add a limit to my claw movement so that it cannot move under 20 degrees, preventing it from closing on itself. 
+
+
+## Pictures
+
+
+<img width="586" alt="image" src="https://github.com/user-attachments/assets/6a21205d-fbb4-4105-baa7-18da039e251b" />
+
+Figure 19: Schematic for the wiring of the servos, joysticks, battery, and HC-05 Bluetooth module
+
+
+
+
+
+# First Milestone
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AHl8VPL7Uiw?si=0OXPjJc_zpjvnt9N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+## Description
+
+For my first milestone, I completed the hardware of the robotic arm. I wired the servos, joysticks, and batteries to the Arduino (Figure 23). Using code that resets my servo positions to 90 degrees, I tested my servo movements. I also tested my joysticks by checking their inputs. I soldered a 5-pack battery pack to power my robotic arm. I used zip-ties to prevent tangling while keeping my wires together and more organized (Figure 20).
+
+
+![PXL_20250708_183658120](https://github.com/user-attachments/assets/a0bdf4d0-151a-401f-9dfb-f3c459c85553)
+
+Figure 20: All of the parts of the robotic arm are wired and attached
+
+
+## How it works
+
+This servo uses a potentiometer, which calculates resistance changes based on the position to calculate the servo's current angle. This allows the arm to reset to 90 degrees precisely and only move as much as needed. Using the information from the potentiometer, a feedback loop helps maintain the commanded servo position.
+
+Servos use electromagnets that repel a permanent magnet to rotate an axle. The polarity of the electromagnet is constantly flipped by a commutator to continuously repel the permanent magnet, allowing for continuous rotation (Figure 21). The torque of the servo is directly proportional to the current provided to the motor. This is because an increased current increases the magnetic force inside the servo motor, increasing the torque. Similarly, an increase in voltage will increase the RPM. This allows all the servos on the arm to move the arm correctly and efficiently.
+
+![image](https://github.com/user-attachments/assets/075510f8-5338-4475-beb7-d9ceade39a69)
+
+Figure 21: Servo schematic
+
+
+Servos use 3 wires to connect to the Arduino. The red wire is for power, the brown for ground, and the yellow for signal. The signal wire receives PWM (Pulse-Width-Modulation) pulses that tell the servo what position to move to (Figure 22).
+
+
+![PXL_20250708_214953169](https://github.com/user-attachments/assets/2ea48c21-509f-4eed-8951-395abc9eaf3b)
+
+Figure 22: Close-up of the servos and wiring of the servos
+
+
+Similar to servos, joysticks work using potentiometers, which allow them to track the movement of the joystick. The rotation of the joystick on the 2 axes gets calculated in the x-y plane and is given as values that are sent to the Arduino to move servos on the arm. 
+
+
+
+## Challenges
+
+One of my biggest challenges was that my LK Cokoino MG90S servos were not working. I found that while my Tower Pro MG90S Mini Servo for my rotating base was working, the LK Cokoinno MG90S servos did not have enough power because my batteries did not provide enough voltage. To solve this, I broke down my battery pack and used its wires along with another battery pack by soldering them together. This new battery pack has space for 5 AA batteries, allowing my robotic arm to have enough voltage for all of my servos. 
+Another challenge that I had was with my servo screws. These screws are necessary to attach the servos to the arm's components, but they often got stripped, making them very difficult to attach. To solve this, I had to use pliers to gain enough torque to turn the head of the stripped screws.
+
+
+
+## Next Steps
+
+My next steps are to assign inputs from the joystick to move the servos to various positions instead of a preset position. This would allow me to use the joysticks to precisely control my robotic arm. After completing my movement, I will start using Bluetooth to control my robot with my phone using a Bluetooth module and a Bluetooth Serial Terminal. I also want to add buttons to my controller that bring my arm to preset positions. 
+
+
+
+## Pictures
+
+<img width="518" alt="image" src="https://github.com/user-attachments/assets/8a145ea6-2797-4459-b633-0523e45cb15b" />
+
+Figure 23: Wiring schematic for the battery, joysticks, and servos connected to the Arduino
+
+
+
+
+
+
+# Starter Project
+<iframe width="560" height="315" src="https://www.youtube.com/embed/65kjtID0ET0?si=NultT1yZJ1nP4REx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+## Description
+
+I chose the retro arcade as my starter project because it allows me to play classic games like Tetris using a simple display and arcade-style buttons. The purpose of this project was to help me master soldering various components, such as a display, buttons, a power switch, and wires. To build it, I first started by soldering the various components of my project onto my board and then screwing a case to finish it off. 
+
+
+## Challenges
+
+
+One of the main challenges of building my retro arcade starter project was the very small spaces between the pins I needed to solder, meaning that small mistakes could ruin the whole project and would be very difficult to fix. To solve this project, I practiced with multiple pin strips to make my soldering consistent enough to prevent any mistakes. This alllowed me to have perfect solders for my whole starter project. 
+
+
+## Next Steps
+
+
+My next step is for me to start on my intensive project and to work towards my first milestone. This includes build the hardware of the robotic arm, learning how to code the servos, coding the servos, and assigning inputs from my joysticks to servo movements.
+
+
+
+# Bill of Materials
+
+
+| **Part** | **Note** | **Price** | **Link** |
+|:--:|:--:|:--:|:--:|
+| Robotic Arm Kit | Kit for the robotic arm | $49.99 | <a href="https://www.amazon.com/LK-COKOINO-Compliment-Engineering-Technology/dp/B081FG1JQ1/ref=asc_df_B081FG1JQ1?mcid=9da4c6c9864a305ca1ea713827f50833&hvocijid=2083331172026415723-B081FG1JQ1-&hvexpln=73&tag=hyprod-20&linkCode=df0&hvadid=721245378154&hvpos=&hvnetw=g&hvrand=2083331172026415723&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9032171&hvtargid=pla-2281435178138&psc=1"> Link </a> |
+| HC-05 Bluetooth Module | Used for wireless connection from my phone to my robot | $10.39 | <a href="https://www.amazon.com/HiLetgo-Wireless-Bluetooth-Transceiver-Arduino/dp/B071YJG8DR"> Link </a> |
+| Robot drivetrain kit | 4 DC Motors and base for movement | $41.99 | <a href="https://www.amazon.com/Robot-Smart-Chassis-Speed-Encoder/dp/B0DFH13LBJ?gQT=1"> Link </a> |
+| L298N H-Bridge | Changes the direction of the motors | $7.99 | <a href="https://www.amazon.com/Qunqi-Controller-Module-Stepper-Arduino/dp/B014KMHSW6"> Link </a> |
+| Jumper Wires | Wiring to connect all components | $7.49 | <a href="https://www.amazon.com/EDGELEC-Breadboard-Optional-Assorted-Multicolored/dp/B07GD25V8D/ref=sr_1_2_sspa?dib=eyJ2IjoiMSJ9.I3nSspk5onl8Jong0G-0Eej0s1agLXJoNbNWfIFXRRAEOMuK7c7b9DmCgh8gnhKUOTq503QX8IIwpA7yXyJDHyE27e6vwXn-gkjXyhuBXzIR48hGgOEkilolw7PmeiIcgFcb5S4wzl-UkVWskUiHdUZJM15E7_IyUAeFj7qvU6jCIItRL0VPqUg7yGQ-HYDXzM5vfZecJLZcH5E23KheZvLm-6vdPkEScrxE5a7py2s.dMev98kQUFQeiokRO7DejXrUzpfHPZOnVdCD1dq3x1o&dib_tag=se&keywords=jumper%2Bwires&qid=1753376220&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1"> Link </a> |
+| AA Batteries | Powers the ArduinoNano and the DC motors  | $9.99 | <a href="https://www.amazon.com/AmazonBasics-Performance-Alkaline-Batteries-20-Pack/dp/B00NTCH52W/ref=sr_1_1_ffob_sspa?crid=AL01JPQ69B66&dib=eyJ2IjoiMSJ9.riz1Te5yzJxEwLNmR013N98XpNfPyoNQr-Y5nntdCXbUofnaZV-3fRoGR04Lf7ZJo9WTc8yhidieYeVHT8h50VN778ggLV8OPWL4FsQpHrPTFewWWiaPlnjJCkHAB-8N9f2ANPn9JptiwyYetKZtwcZV4E4P5JY2AHeaJOwumiTeKqEI2iwhfKKDMV6-cSFpTCASU7C0TLSFuuO3lJMw_mbfK0oPAieq-s4teS58VqmCRzFozFx0fnyXTRn7k0s0Z_ikgJ4j8BGY6jLS92rzgfIplbo3RkqZcddlkrpWhbM.FgD-QWWTdvzbOTWC_GHIXH-eg1QxLJ-B3X07TQ-vVVs&dib_tag=se&keywords=AA%2Bbatteries&qid=1753376321&rdc=1&sprefix=aa%2Bbatterie%2Caps%2C198&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1"> Link </a> |
+| 5 AA Battery Holder | Holds the batteries to power the Arduino Nano and the DC motors | $7.99 | <a href="https://www.amazon.com/LampVPath-Battery-Holder-Leads-Wires/dp/B07WRQ44YK/ref=sr_1_1_sspa?dib=eyJ2IjoiMSJ9.iDeEIOEvnhCRTxPFr0HPSnakx6TL2rJdtwGNw7cbQ4sSNdC897I45ym8K0nc5YI5Ju937vYRCKzfxKJ-ywWb_0Hbi6-Ii1RF5cntou400kI5ifU-HD0bbijz7cxLbCAcf4AI4mwPMaTH1krZc2GifdBa-yaenE4WmQHTjPYz0knli_x3VIxzJr3MKcuB4Hix61Dct6aRhjpuyF_p9aZ33OT3hqr9SqUjP_JbHzWkonI.uAezwsj6ZPHZln4e_J2GG7xfZGBb8cMgzXCCYrO0XoY&dib_tag=se&keywords=5+AA+battery+holder&qid=1752183577&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"> Link </a> |
+| Small Breadboard | Parallel connection from the Arduino Nano's 5V pin to the HC-05 and H-Bridge | $6.66 | <a href="https://www.amazon.com/Breadborad-Solderless-Breadboards-Distribution-Connecting/dp/B082VYXDF1/ref=sr_1_2_sspa?crid=18E20Y0ZZ3Z7H&dib=eyJ2IjoiMSJ9.EQvCK09g_r0CejNbKABqFY0gRfQNtZKfRgXvRy06gRhEz3g_IRgyi5UMa6jSz15PY3AGFV-DUMzOvXD_04TpwcXX3wtZS80XtkMSoirtn_8pi5lyxFMDEprXfzO2dEOVneQesvDPJddYI19W_WC0xI1HZcfGolCZZXfJNeezNSzPUk2oRUocbM1zHSYcVX5G325VYDCBLZhkZV2jDa2XmaFh5iNhNJmXsk6e6klCj_g.AoN-P0h_wrmNtrgk_pEwe-AMbFcwHC0clqn5bO2pYMo&dib_tag=se&keywords=breadboard+small&qid=1753377542&sprefix=breadboard+smal%2Caps%2C136&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"> Link </a> |
 
 
 
@@ -307,53 +514,6 @@ delayMicroseconds(20);                                            // Delays for 
 ```
 </details>
 
-
-
-
-# Third Milestone
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZH-uhBaCyNU?si=-JbVSa9VHABHDd5z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-
-
-
-## Description
-
-For my third milestone, I added wire sleeves, rubber bands for my claw, a box for my HC-05, and buttons coded to preset positions. The wire sleeves significantly made my wiring more manageable and less visible, while still allowing a full range of motion for my servos and arm movements. Rubber bands on my claw improved my grip, allowing me to pick up objects from the ground. The box for my HC-05 allowed me to mount the HC-05 onto my robotic arm while allowing me to wire it and check its pairing light. I added buttons to my app on MIT App Inventor that are coded to preset positions, allowing me to, at the press of a button, hover my claw over an object in front of the arm to pick it up (Figure 12). With another button, I close the claw on the object. Finally, another button moves that object to another preset position for drop-off. 
-
-<img width="500" height="646" alt="share_4075640570769880466424253545243" src="https://github.com/user-attachments/assets/b039986f-bc43-401b-8257-019ce75cadf1" />
-
-Figure 12: New buttons for preset positions
-
-
-## Challenges
-
-One of my small challenges was my wiring. Since I have a rotating base, the wiring can get stuck when the rotating base moves. To solve this, I used wire sleeves and zip ties to keep wires close to the arm and away from the rotating base, allowing for a full range of motion for my robotic arm. Without wiring in the way, my wire sleeves gave my arm a much cleaner and sleeker look.
-
-I used Fusion 360 to design my HC-05 Bluetooth module box, which I made using a 3D printer (Figure 13). I had to go through multiple iterations because it was difficult to get the hole spacing correct, as measuring by hand is inconsistent, even with calipers. In these iterations, I also had to modify the dimensions of the HC-05 box until it fit the HC-05 Bluetooth module perfectly. I decided on using a push-fit lid for my box because it is simple to print and doesn't require me to modify the box (Figure 14).
-
-
-
-<img width="823" height="527" alt="image" src="https://github.com/user-attachments/assets/efe8b9d0-9c7a-4a49-ad69-bdc8f2414d17" />
-
-Figure 13: Drawing and picture of the HC-05 Bluetooth module box 
-
-<img width="784" height="316" alt="image" src="https://github.com/user-attachments/assets/57fdba30-df8a-4f1e-82ee-6275534c465f" />
-
-Figure 14: Drawing and picture of the HC-05 Bluetooth module box push-fit lid
-
-
-
-One of the biggest things that I wanted to do for this milestone was to be able to pick up objects with my claw. This would allow my robotic arm to pick up objects with its degrees of freedom, like a human arm. I found that the perfect angle to pick up objects was perpendicular to the ground. However, since the robotic arm was not mounted high, it would cause the claw to dig into the ground. To move my claw to the best angle possible, I decreased the angle of servo 2 and increased the angle of servo 3. This was my pickup preset, which sets my arm on the ground and opens the claw to 35 degrees to be at the right position to pick up objects. 
-
-I found that my current claw, made of acrylic, did not have enough grip to hold the object while moving it to the drop-off position. The objects kept falling out of the claw. To solve this problem, I added rubber bands to my claw to increase its grip strength (Figure 15). This allows me to pick up objects at any position and drop them off in the drop-off position. 
-
-
-![PXL_20250710_170534942~2](https://github.com/user-attachments/assets/dc52142a-b383-40f5-86be-baf399cc779d)
-
-Figure 15: Rubber band claw grip
-
-
-I also found another issue that caused my transfer between pickup and dropoff to fail. When my arm was moving between those positions, my claw opened for a moment, causing the object I was picking up to fall out. I first attempted to fix this by tightening all of my screws. However, this did not work. Then, I realized that the moment between pickup and dropoff was when all 4 servos were being used at the same time. This caused the 4th servo (claw) to lose power for a moment, dropping the object. To solve this, I replaced the battery, and it worked correctly. 
 
 
 
@@ -569,60 +729,6 @@ void turnCO(void){
 
 
 
-
-# Second Milestone
-<iframe width="560" height="315" src="https://www.youtube.com/embed/PIYOtmZmPDk?si=pDYBdSPcMP7ViUBq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-
-## Description
-
-For my second milestone, I coded servo movements, allowing me to precisely control servo positions. I also added an HC-05 Bluetooth module to send inputs from my phone to the Arduino. To do this, I made an app on MIT App Inventor with buttons coded to send number inputs to the Arduino. The Arduino then uses those inputs to send commands to the servos, moving the arm. I have 1 button to connect to my HC-05 module and 1 button to reset my servos (Figure 16). The other six main buttons are coded to various arm movements (up, down, left, right, open, close). The up and down movements are driven by both servos 2 and 3, while opening and closing the claw is driven by servo 4, and the rotating base is moved by servo 1 (Figure 17). During this milestone, I also improved my battery pack by mounting it to the base of the robotic arm, simplifying my design. Refer to (Figure 19) for the milestone 2 wiring schematic.
-
-![share_303442952028481076235](https://github.com/user-attachments/assets/9ad0e360-f225-4ed8-b226-6398d57b69b8) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img width="425" alt="image" src="https://github.com/user-attachments/assets/2af536f3-51e4-4599-a59f-e9a53e773a9a" />
-
-
-Figure 16: Bluetooth App &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Figure 17: Initializing Bluetooth/assigning buttons to number inputs
- 
-
-## How it works
-
-Bluetooth enables low-power, wireless communication between 2 devices using radio waves within the 2.4 GHz frequency band. One device acts as the master, while the other device acts as the slave. The master device will initiate and maintain the communication with the slave device, while the slave device listens and responds to the master. In this example, my phone is the master device, and the HC-05 Bluetooth module is the slave device. 
-
-The HC-05 Bluetooth module communicates with microcontrollers such as Arduino to recieve commands from my phone through Classic Bluetooth. It acts as a bridge between my phone and the Arduino, receiving  information as bytes, which are then sent to the Arduino. For my robot, when a button was pressed on my phone, it would send a number to the HC-05 Bluetooth module, which the Arduino then received. The Arduino then uses that input and executes the command. For example, the button that moves the arm down would send an input of 1. The Arduino will recieve this input and command the servos (Figures 2 and 3) to move to bring the arm down. 
-
-
-On my project, I am using the VCC, Ground, Rx, and Tx pins on my HC-05 Bluetooth module (Figure 18). The VCC and Ground supply voltage and ground, respectively. The Rx and Tx pins stand for the receiver and transmitter pins that communicate with the Arduino's Tx and Rx pins to receive and transmit information. Using the Rx and Tx pins, the HC-05 Bluetooth module and Arduino communicate at the set baud rates of 9600 and 38400, respectively. The baud rate is the number of symbols or signal changes per second, relating to the speed of data transmission. The transmitter takes parallel data and converts it into a stream of bits, which are sent over the wire to the receiver on the other end. The receiver then converts that serial stream of bits back into parallel data. Both the HC-05 Bluetooth module and the Arduino have Rx and Tx pins, enabling continuous 2-way communication between the devices. 
-
-![image](https://github.com/user-attachments/assets/79f1f6b2-f6e9-4ee4-bec5-ccb8482f6620)
-
-Figure 18: HC-05 Bluetooth module
-
-
-## Challenges
-
-
-One of my biggest challenges was that when I pressed a button, the servo would keep moving, even when I unpressed the button. This would go on until I pressed another button. My initial solution to work around this problem was to make a button that stops all servos. However, this was not like a joystick, which I wanted to emulate with these buttons. However, I found that I can use the button touch-down and touch-up commands on the MIT App Inventor to give an input that commands the servos to stop moving when the buttons are unpressed. This allows me to have another input after a button is unpressed, allowing the arm to stop moving after unpressing the button.
-
-While attaching my HC-05 Bluetooth module, I used a breadboard to connect all of the pins and to make a voltage divider from 5.0V to 3.3V. However, the wires often fell out, so I had to reattach them many times. However, I saw that the working voltage of the HC-05 Bluetooth module was from 3.3-6.0V, which allowed me to get rid of the voltage divider and the breadboard, making my wiring much simpler and easier to work with. 
-
-Another challenge I had during this milestone was adding a limit to my claw movement so it could not close on itself. While this was not part of my milestone, I wanted to make this improvement to prevent my claw from breaking by continuously closing on itself. To solve this, I want to stop the claw when it goes 20 degrees by reading the angle from the servo and stopping it when it moves to a position of under 20 degrees. However, although I was able to print values for when the angle was under 20 degrees, the claw continued to move under 20 degrees. Since this was not part of this milestone, I will continue on it in the next milestone.
-
-
-## Next Steps
-
-
-For my next steps, I plan to add the functionality of the joysticks. This would allow me to use both my phone and the joysticks as input methods for my robotic arm. I also plan on making a different claw iteration, such as a thicker claw to pick up objects better and to decrease the chance of the claw getting stuck. I would also like to add buttons for preset positions, such as one position for picking up an object off the ground. I will also add a limit to my claw movement so that it cannot move under 20 degrees, preventing it from closing on itself. 
-
-
-## Pictures
-
-
-<img width="586" alt="image" src="https://github.com/user-attachments/assets/6a21205d-fbb4-4105-baa7-18da039e251b" />
-
-Figure 19: Schematic for the wiring of the servos, joysticks, battery, and HC-05 Bluetooth module
-
-
-
 ## Second Milestone Code
 <details markdown='1'>
   <summary> Click to see code </summary>
@@ -716,67 +822,6 @@ delayMicroseconds(10);                       // Delays for 10 microseconds to pr
 
 
 
-
-# First Milestone
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/AHl8VPL7Uiw?si=0OXPjJc_zpjvnt9N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-
-## Description
-
-For my first milestone, I completed the hardware of the robotic arm. I wired the servos, joysticks, and batteries to the Arduino (Figure 23). Using code that resets my servo positions to 90 degrees, I tested my servo movements. I also tested my joysticks by checking their inputs. I soldered a 5-pack battery pack to power my robotic arm. I used zip-ties to prevent tangling while keeping my wires together and more organized (Figure 20).
-
-
-![PXL_20250708_183658120](https://github.com/user-attachments/assets/a0bdf4d0-151a-401f-9dfb-f3c459c85553)
-
-Figure 20: All of the parts of the robotic arm are wired and attached
-
-
-## How it works
-
-This servo uses a potentiometer, which calculates resistance changes based on the position to calculate the servo's current angle. This allows the arm to reset to 90 degrees precisely and only move as much as needed. Using the information from the potentiometer, a feedback loop helps maintain the commanded servo position.
-
-Servos use electromagnets that repel a permanent magnet to rotate an axle. The polarity of the electromagnet is constantly flipped by a commutator to continuously repel the permanent magnet, allowing for continuous rotation (Figure 21). The torque of the servo is directly proportional to the current provided to the motor. This is because an increased current increases the magnetic force inside the servo motor, increasing the torque. Similarly, an increase in voltage will increase the RPM. This allows all the servos on the arm to move the arm correctly and efficiently.
-
-![image](https://github.com/user-attachments/assets/075510f8-5338-4475-beb7-d9ceade39a69)
-
-Figure 21: Servo schematic
-
-
-Servos use 3 wires to connect to the Arduino. The red wire is for power, the brown for ground, and the yellow for signal. The signal wire receives PWM (Pulse-Width-Modulation) pulses that tell the servo what position to move to (Figure 22).
-
-
-![PXL_20250708_214953169](https://github.com/user-attachments/assets/2ea48c21-509f-4eed-8951-395abc9eaf3b)
-
-Figure 22: Close-up of the servos and wiring of the servos
-
-
-Similar to servos, joysticks work using potentiometers, which allow them to track the movement of the joystick. The rotation of the joystick on the 2 axes gets calculated in the x-y plane and is given as values that are sent to the Arduino to move servos on the arm. 
-
-
-
-## Challenges
-
-One of my biggest challenges was that my LK Cokoino MG90S servos were not working. I found that while my Tower Pro MG90S Mini Servo for my rotating base was working, the LK Cokoinno MG90S servos did not have enough power because my batteries did not provide enough voltage. To solve this, I broke down my battery pack and used its wires along with another battery pack by soldering them together. This new battery pack has space for 5 AA batteries, allowing my robotic arm to have enough voltage for all of my servos. 
-Another challenge that I had was with my servo screws. These screws are necessary to attach the servos to the arm's components, but they often got stripped, making them very difficult to attach. To solve this, I had to use pliers to gain enough torque to turn the head of the stripped screws.
-
-
-
-## Next Steps
-
-My next steps are to assign inputs from the joystick to move the servos to various positions instead of a preset position. This would allow me to use the joysticks to precisely control my robotic arm. After completing my movement, I will start using Bluetooth to control my robot with my phone using a Bluetooth module and a Bluetooth Serial Terminal. I also want to add buttons to my controller that bring my arm to preset positions. 
-
-
-
-## Pictures
-
-<img width="518" alt="image" src="https://github.com/user-attachments/assets/8a145ea6-2797-4459-b633-0523e45cb15b" />
-
-Figure 23: Wiring schematic for the battery, joysticks, and servos connected to the Arduino
-
-
-
-
 ## First Milestone Code
 <details markdown='1'>
   <summary> Click to see code </summary>
@@ -805,50 +850,6 @@ void loop() {
  }
 ```
 </details>  
-
-
-
-
-
-# Starter Project
-<iframe width="560" height="315" src="https://www.youtube.com/embed/65kjtID0ET0?si=NultT1yZJ1nP4REx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-
-## Description
-
-I chose the retro arcade as my starter project because it allows me to play classic games like Tetris using a simple display and arcade-style buttons. The purpose of this project was to help me master soldering various components, such as a display, buttons, a power switch, and wires. To build it, I first started by soldering the various components of my project onto my board and then screwing a case to finish it off. 
-
-
-## Challenges
-
-
-One of the main challenges of building my retro arcade starter project was the very small spaces between the pins I needed to solder, meaning that small mistakes could ruin the whole project and would be very difficult to fix. To solve this project, I practiced with multiple pin strips to make my soldering consistent enough to prevent any mistakes. This alllowed me to have perfect solders for my whole starter project. 
-
-
-## Next Steps
-
-
-My next step is for me to start on my intensive project and to work towards my first milestone. This includes build the hardware of the robotic arm, learning how to code the servos, coding the servos, and assigning inputs from my joysticks to servo movements.
-
-
-
-# Bill of Materials
-
-
-| **Part** | **Note** | **Price** | **Link** |
-|:--:|:--:|:--:|:--:|
-| Robotic Arm Kit | Kit for the robotic arm | $49.99 | <a href="https://www.amazon.com/LK-COKOINO-Compliment-Engineering-Technology/dp/B081FG1JQ1/ref=asc_df_B081FG1JQ1?mcid=9da4c6c9864a305ca1ea713827f50833&hvocijid=2083331172026415723-B081FG1JQ1-&hvexpln=73&tag=hyprod-20&linkCode=df0&hvadid=721245378154&hvpos=&hvnetw=g&hvrand=2083331172026415723&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9032171&hvtargid=pla-2281435178138&psc=1"> Link </a> |
-| HC-05 Bluetooth Module | Used for wireless connection from my phone to my robot | $10.39 | <a href="https://www.amazon.com/HiLetgo-Wireless-Bluetooth-Transceiver-Arduino/dp/B071YJG8DR"> Link </a> |
-| Robot drivetrain kit | 4 DC Motors and base for movement | $41.99 | <a href="https://www.amazon.com/Robot-Smart-Chassis-Speed-Encoder/dp/B0DFH13LBJ?gQT=1"> Link </a> |
-| L298N H-Bridge | Changes the direction of the motors | $7.99 | <a href="https://www.amazon.com/Qunqi-Controller-Module-Stepper-Arduino/dp/B014KMHSW6"> Link </a> |
-| Jumper Wires | Wiring to connect all components | $7.49 | <a href="https://www.amazon.com/EDGELEC-Breadboard-Optional-Assorted-Multicolored/dp/B07GD25V8D/ref=sr_1_2_sspa?dib=eyJ2IjoiMSJ9.I3nSspk5onl8Jong0G-0Eej0s1agLXJoNbNWfIFXRRAEOMuK7c7b9DmCgh8gnhKUOTq503QX8IIwpA7yXyJDHyE27e6vwXn-gkjXyhuBXzIR48hGgOEkilolw7PmeiIcgFcb5S4wzl-UkVWskUiHdUZJM15E7_IyUAeFj7qvU6jCIItRL0VPqUg7yGQ-HYDXzM5vfZecJLZcH5E23KheZvLm-6vdPkEScrxE5a7py2s.dMev98kQUFQeiokRO7DejXrUzpfHPZOnVdCD1dq3x1o&dib_tag=se&keywords=jumper%2Bwires&qid=1753376220&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1"> Link </a> |
-| AA Batteries | Powers the ArduinoNano and the DC motors  | $9.99 | <a href="https://www.amazon.com/AmazonBasics-Performance-Alkaline-Batteries-20-Pack/dp/B00NTCH52W/ref=sr_1_1_ffob_sspa?crid=AL01JPQ69B66&dib=eyJ2IjoiMSJ9.riz1Te5yzJxEwLNmR013N98XpNfPyoNQr-Y5nntdCXbUofnaZV-3fRoGR04Lf7ZJo9WTc8yhidieYeVHT8h50VN778ggLV8OPWL4FsQpHrPTFewWWiaPlnjJCkHAB-8N9f2ANPn9JptiwyYetKZtwcZV4E4P5JY2AHeaJOwumiTeKqEI2iwhfKKDMV6-cSFpTCASU7C0TLSFuuO3lJMw_mbfK0oPAieq-s4teS58VqmCRzFozFx0fnyXTRn7k0s0Z_ikgJ4j8BGY6jLS92rzgfIplbo3RkqZcddlkrpWhbM.FgD-QWWTdvzbOTWC_GHIXH-eg1QxLJ-B3X07TQ-vVVs&dib_tag=se&keywords=AA%2Bbatteries&qid=1753376321&rdc=1&sprefix=aa%2Bbatterie%2Caps%2C198&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1"> Link </a> |
-| 5 AA Battery Holder | Holds the batteries to power the Arduino Nano and the DC motors | $7.99 | <a href="https://www.amazon.com/LampVPath-Battery-Holder-Leads-Wires/dp/B07WRQ44YK/ref=sr_1_1_sspa?dib=eyJ2IjoiMSJ9.iDeEIOEvnhCRTxPFr0HPSnakx6TL2rJdtwGNw7cbQ4sSNdC897I45ym8K0nc5YI5Ju937vYRCKzfxKJ-ywWb_0Hbi6-Ii1RF5cntou400kI5ifU-HD0bbijz7cxLbCAcf4AI4mwPMaTH1krZc2GifdBa-yaenE4WmQHTjPYz0knli_x3VIxzJr3MKcuB4Hix61Dct6aRhjpuyF_p9aZ33OT3hqr9SqUjP_JbHzWkonI.uAezwsj6ZPHZln4e_J2GG7xfZGBb8cMgzXCCYrO0XoY&dib_tag=se&keywords=5+AA+battery+holder&qid=1752183577&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"> Link </a> |
-| Small Breadboard | Parallel connection from the Arduino Nano's 5V pin to the HC-05 and H-Bridge | $6.66 | <a href="https://www.amazon.com/Breadborad-Solderless-Breadboards-Distribution-Connecting/dp/B082VYXDF1/ref=sr_1_2_sspa?crid=18E20Y0ZZ3Z7H&dib=eyJ2IjoiMSJ9.EQvCK09g_r0CejNbKABqFY0gRfQNtZKfRgXvRy06gRhEz3g_IRgyi5UMa6jSz15PY3AGFV-DUMzOvXD_04TpwcXX3wtZS80XtkMSoirtn_8pi5lyxFMDEprXfzO2dEOVneQesvDPJddYI19W_WC0xI1HZcfGolCZZXfJNeezNSzPUk2oRUocbM1zHSYcVX5G325VYDCBLZhkZV2jDa2XmaFh5iNhNJmXsk6e6klCj_g.AoN-P0h_wrmNtrgk_pEwe-AMbFcwHC0clqn5bO2pYMo&dib_tag=se&keywords=breadboard+small&qid=1753377542&sprefix=breadboard+smal%2Caps%2C136&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"> Link </a> |
-
-
-
-
 
 
 
