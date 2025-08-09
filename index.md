@@ -1,9 +1,5 @@
-# Robotic Arm
-<!---
+# Robotic Arm and Car Project
 
-
-Replace this text with a brief description (2-3 sentences) of your project. This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails!
---->
 
 My project this summer at Bluestamp was a phone-controlled robotic arm and car project. When I press a button on my phone, it sends inputs to my robot, which then moves the servos and motors of my robot. This allows me to control my robotic arm precisely. I also added pick-up and drop-off positions, which allowed my robotic arm to function like a human arm to pick up and move objects. For my modification, to increase the range of my robotic arm's ability to pick up objects, I added a car with four DC motors underneath, allowing me to pick up objects from anywhere. 
 
@@ -14,26 +10,6 @@ My project this summer at Bluestamp was a phone-controlled robotic arm and car p
 ![AnirudhK](https://github.com/user-attachments/assets/364dcf44-6121-407d-9d03-a9fd0c8d7b97)
 
 ![PXL_20250724_154950807](https://github.com/user-attachments/assets/64098335-6aa5-4b05-9e02-9a43c5972e2a)
-
-
-<!--- 
-**Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**
-
-![Headstone Image](logo.svg)
-  
-# Final Milestone
-
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-For your final milestone, explain the outcome of your project. Key details to include are:
-- What you've accomplished since your previous milestone
-- What your biggest challenges and triumphs were at BSE
-- A summary of key topics you learned about
-- What you hope to learn in the future after everything you've learned at BSE
---->
-
 
 
 
